@@ -30,9 +30,10 @@
               <div class="field-error" id="errWeight"></div>
             </div>
             <div class="field">
-              <label for="patientAge">Idade (meses)</label>
-              <input id="patientAge" name="patientAge" type="number" min="0" max="240" step="1" inputmode="numeric">
-              <div class="field-error"></div>
+              <label for="patientDob">Data de Nascimento</label>
+              <input id="patientDob" name="patientDob" type="date">
+              <div class="field-error" id="errDob"></div>
+              <div class="age-display" id="ageDisplay" aria-live="polite"></div>
             </div>
           </div>
         </form>

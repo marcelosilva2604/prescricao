@@ -11,7 +11,7 @@
     medications: [],
     selected: [],
     validatedIds: new Set(),
-    patient: { name: '', weight: '', age: '' },
+    patient: { name: '', weight: '', dob: '' },
     pendingMedicationId: null,
     editingIndex: null,
     catalogLoaded: false,
@@ -23,9 +23,11 @@
     el.form = document.getElementById('patientForm');
     el.patientName = document.getElementById('patientName');
     el.patientWeight = document.getElementById('patientWeight');
-    el.patientAge = document.getElementById('patientAge');
+    el.patientDob = document.getElementById('patientDob');
+    el.ageDisplay = document.getElementById('ageDisplay');
     el.errName = document.getElementById('errName');
     el.errWeight = document.getElementById('errWeight');
+    el.errDob = document.getElementById('errDob');
     el.medicationSearch = document.getElementById('medicationSearch');
     el.medicationList = document.getElementById('medicationList');
     el.addMedBtn = document.getElementById('addMedBtn');
@@ -118,9 +120,64 @@
       renderPreview();
       renderSelected();
     });
-    el.patientAge.addEventListener('input', (e) => {
-      state.patient.age = e.target.value;
+    el.patientDob.addEventListener('input', (e) => {
+      state.patient.dob = e.target.value;
+      renderAgeDisplay();
     });
+    // Constrain date picker to past dates.
+    el.patientDob.max = todayIsoLocal();
+  }
+
+  function todayIsoLocal() {
+    const d = new Date();
+    const pad = (n) => String(n).padStart(2, '0');
+    return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+  }
+
+  function computeAge(dobStr) {
+    if (!dobStr) return null;
+    const parts = dobStr.split('-').map(Number);
+    if (parts.length !== 3) return null;
+    const [y, m, d] = parts;
+    const dob = new Date(y, m - 1, d);
+    if (isNaN(dob.getTime())) return null;
+    const now = new Date();
+    if (dob > now) return { error: 'future' };
+    let years = now.getFullYear() - dob.getFullYear();
+    let months = now.getMonth() - dob.getMonth();
+    const days = now.getDate() - dob.getDate();
+    if (days < 0) months -= 1;
+    if (months < 0) {
+      years -= 1;
+      months += 12;
+    }
+    return { years, months };
+  }
+
+  function formatAge(age) {
+    if (!age) return '';
+    if (age.error === 'future') return '';
+    const { years, months } = age;
+    if (years === 0 && months === 0) return 'Menos de 1 mês';
+    if (years === 0) return `${months} ${months === 1 ? 'mês' : 'meses'}`;
+    if (months === 0) return `${years} ${years === 1 ? 'ano' : 'anos'}`;
+    return `${years} ${years === 1 ? 'ano' : 'anos'} e ${months} ${months === 1 ? 'mês' : 'meses'}`;
+  }
+
+  function renderAgeDisplay() {
+    const age = computeAge(state.patient.dob);
+    if (!age) {
+      el.ageDisplay.textContent = '';
+      el.errDob.textContent = '';
+      return;
+    }
+    if (age.error === 'future') {
+      el.ageDisplay.textContent = '';
+      el.errDob.textContent = 'Data de nascimento não pode ser no futuro.';
+      return;
+    }
+    el.errDob.textContent = '';
+    el.ageDisplay.textContent = `Idade: ${formatAge(age)}`;
   }
 
   function validate() {
@@ -528,13 +585,15 @@
       if (state.selected.length || state.patient.name || state.patient.weight) {
         if (!confirm('Limpar todos os dados desta prescrição?')) return;
       }
-      state.patient = { name: '', weight: '', age: '' };
+      state.patient = { name: '', weight: '', dob: '' };
       state.selected = [];
       state.validatedIds = new Set();
       state.editingIndex = null;
       el.patientName.value = '';
       el.patientWeight.value = '';
-      el.patientAge.value = '';
+      el.patientDob.value = '';
+      el.ageDisplay.textContent = '';
+      el.errDob.textContent = '';
       el.medicationSearch.value = '';
       el.medicationSearch.dataset.selectedId = '';
       el.addMedBtn.disabled = true;

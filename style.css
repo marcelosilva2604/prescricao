@@ -114,6 +114,12 @@ html, body {
   min-height: 1rem;
   margin-top: 0.2rem;
 }
+.age-display {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.1rem;
+  min-height: 1rem;
+}
 
 /* ── Buttons ───────────────────────────────────────────────────────── */
 .btn {
