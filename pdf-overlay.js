@@ -19,9 +19,9 @@
   };
 
   const LAYOUT = {
-    patientNameY: 680,
-    patientNameSize: 24,
-    gapAfterPatientName: 40,
+    patientNameY: 668,
+    patientNameSize: 32,
+    gapAfterPatientName: 50,
     routeHeaderSize: 18,
     routeHeaderLineHeight: 18,
     gapAfterRouteHeader: 20,
@@ -67,8 +67,9 @@
   }
 
   // Extract "250mg/5ml" or "100mcg/jato" from a longer presentation string.
+  // Second part after '/' may be numeric ("5ml") or alphabetic ("ml", "jato").
   function presentationShort(presentation) {
-    const match = presentation.match(/^[\d.,]+\s*\w+(?:[\/+]\s*[\d.,]+\s*\w+)*/);
+    const match = presentation.match(/^[\d.,]+\s*\w+(?:[\/+]\s*\w+)*/);
     return match ? match[0].trim() : presentation;
   }
 
@@ -76,12 +77,23 @@
     return FREQUENCY_MAP[dosesPerDay] || `${dosesPerDay}x/dia`;
   }
 
+  // Portuguese articles/conjunctions/prepositions kept lowercase mid-name.
+  const LOWERCASE_PARTICLES = new Set([
+    'e', 'de', 'da', 'do', 'das', 'dos',
+    'a', 'o', 'as', 'os',
+    'em', 'no', 'na', 'nos', 'nas',
+    'para', 'por', 'com', 'sem',
+  ]);
   function capitalizeWords(str) {
     return str
       .trim()
       .toLowerCase()
       .split(/\s+/)
-      .map((w) => (w ? w[0].toUpperCase() + w.slice(1) : w))
+      .map((w, i) => {
+        if (!w) return w;
+        if (i > 0 && LOWERCASE_PARTICLES.has(w)) return w;
+        return w[0].toUpperCase() + w.slice(1);
+      })
       .join(' ');
   }
 
@@ -218,13 +230,16 @@
       const page = output.addPage(copied);
 
       if (pageIdx === 0) {
-        page.drawText(patientName, {
+        // Fake-bold by drawing twice with a half-pt offset — Bickham only ships Regular.
+        const nameOpts = {
           x: ZONE.left,
           y: LAYOUT.patientNameY,
           size: LAYOUT.patientNameSize,
           font: bickham,
           color: rgb(0, 0, 0),
-        });
+        };
+        page.drawText(patientName, nameOpts);
+        page.drawText(patientName, { ...nameOpts, x: nameOpts.x + 0.5, y: nameOpts.y + 0.5 });
       }
 
       for (const op of pageLayouts[pageIdx].ops) {

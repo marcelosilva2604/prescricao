@@ -216,8 +216,10 @@ html, body {
   position: relative;
 }
 .prev-name {
-  font-size: 1.7rem;
-  margin-bottom: 1.4rem;
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-shadow: 0.5px 0.5px 0 currentColor;
+  margin-bottom: 1.5rem;
 }
 .prev-name.placeholder { color: #bcc1c9; font-style: italic; }
 .prev-group { margin-bottom: 1.25rem; }
