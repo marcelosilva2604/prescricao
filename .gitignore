@@ -14,3 +14,8 @@ node_modules/
 # Editor folders
 .vscode/
 .idea/
+
+# Local reference materials (large, not part of deploy)
+taketomo.pdf
+taketomo_index.json
+PROMPT_CLAUDE_CODE.md

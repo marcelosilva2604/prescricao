@@ -3,50 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prescrição Pediátrica — Em Construção</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      background: #f5f7fa;
-      color: #1a1a1a;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-      line-height: 1.5;
-    }
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem 1.5rem;
-      box-sizing: border-box;
-    }
-    main {
-      max-width: 600px;
-      width: 100%;
-      text-align: center;
-      padding: 2.5rem 1.5rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin: 0 0 1rem;
-    }
-    p {
-      font-size: 1.125rem;
-      margin: 0 0 2rem;
-    }
-    footer {
-      font-size: 0.875rem;
-      color: #666;
-      margin-top: 3rem;
-    }
-  </style>
+  <title>Prescrição Pediátrica</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <main>
-    <h1>Hello World</h1>
-    <p>Aplicativo de prescrição pediátrica em desenvolvimento.</p>
-    <footer>Dr. Marcelo Carvalho — CRM 165999</footer>
+  <header class="topbar">
+    <h1>Prescrição Pediátrica</h1>
+    <button id="newPrescriptionBtn" type="button" class="btn">Nova Prescrição</button>
+  </header>
+
+  <main class="layout">
+    <!-- ── Left column: form ───────────────────────────────────────── -->
+    <section aria-label="Formulário de prescrição">
+      <div class="panel">
+        <h2>Paciente</h2>
+        <form id="patientForm" autocomplete="off" onsubmit="return false;">
+          <div class="field">
+            <label for="patientName">Nome do Paciente</label>
+            <input id="patientName" name="patientName" type="text" required autocomplete="off" inputmode="text">
+            <div class="field-error" id="errName"></div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="patientWeight">Peso (kg)</label>
+              <input id="patientWeight" name="patientWeight" type="number" min="0.5" max="100" step="0.1" required inputmode="decimal">
+              <div class="field-error" id="errWeight"></div>
+            </div>
+            <div class="field">
+              <label for="patientAge">Idade (meses)</label>
+              <input id="patientAge" name="patientAge" type="number" min="0" max="240" step="1" inputmode="numeric">
+              <div class="field-error"></div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="panel">
+        <h2>Adicionar Medicação</h2>
+        <div class="med-select-row">
+          <input id="medicationSearch" type="text" placeholder="Buscar por nome ou categoria…" autocomplete="off" aria-label="Buscar medicação">
+          <button id="addMedBtn" type="button" class="btn btn-primary" disabled>Adicionar</button>
+        </div>
+        <ul id="medicationList" class="med-list" role="listbox" aria-label="Medicações disponíveis"></ul>
+      </div>
+
+      <div class="panel">
+        <h2>Medicações da Prescrição</h2>
+        <ul id="selectedList" class="selected-list"></ul>
+      </div>
+
+      <div class="action-footer">
+        <button id="generateBtn" type="button" class="btn btn-primary btn-block" disabled title="Adicione paciente e medicações">
+          Gerar PDF
+        </button>
+      </div>
+    </section>
+
+    <!-- ── Right column: preview ───────────────────────────────────── -->
+    <section aria-label="Pré-visualização">
+      <div class="panel preview-wrap">
+        <h2>Pré-visualização</h2>
+        <div id="preview"></div>
+      </div>
+    </section>
   </main>
+
+  <!-- ── First-time medication modal ──────────────────────────────── -->
+  <dialog id="firstTimeModal" aria-labelledby="firstTimeTitle">
+    <div class="modal-header">
+      <h2>Confirme os parâmetros</h2>
+      <div class="modal-sub" id="firstTimeTitle"></div>
+    </div>
+    <div class="modal-body">
+      <div id="ftFixedNotice" style="display:none;"></div>
+      <div class="field" id="ftDoseField">
+        <label for="ftDose">Dose (mg/kg/dia)</label>
+        <input id="ftDose" type="number" step="0.1" min="0" inputmode="decimal">
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="ftFrequency">Frequência (x/dia)</label>
+          <select id="ftFrequency">
+            <option value="1">1 (24/24h)</option>
+            <option value="2">2 (12/12h)</option>
+            <option value="3">3 (8/8h)</option>
+            <option value="4">4 (6/6h)</option>
+            <option value="6">6 (4/4h)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="ftDuration">Duração (dias)</label>
+          <input id="ftDuration" type="number" step="1" min="1" max="60" inputmode="numeric">
+        </div>
+      </div>
+      <div class="field" id="ftMaxField">
+        <label for="ftMaxDose">Dose máxima (mg/dia)</label>
+        <input id="ftMaxDose" type="number" step="1" min="0" inputmode="numeric">
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button id="ftCancel" type="button" class="btn">Cancelar</button>
+      <button id="ftConfirm" type="button" class="btn btn-primary">Confirmar</button>
+    </div>
+  </dialog>
+
+  <!-- ── Max dose exceeded modal ──────────────────────────────────── -->
+  <dialog id="maxDoseModal" aria-labelledby="maxDoseTitle">
+    <div class="modal-header">
+      <h2 id="maxDoseTitle">⚠️ Atenção: dose máxima excedida</h2>
+    </div>
+    <div class="modal-body" id="mdBody"></div>
+    <div class="modal-actions stacked">
+      <button id="mdUseMax" type="button" class="btn btn-warning"></button>
+      <button id="mdKeep" type="button" class="btn">Manter dose calculada</button>
+      <button id="mdCancel" type="button" class="btn">Cancelar</button>
+    </div>
+  </dialog>
+
+  <!-- ── Libraries ─────────────────────────────────────────────────── -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+  <script src="https://unpkg.com/@pdf-lib/fontkit@1.1.1/dist/fontkit.umd.min.js"></script>
+
+  <!-- ── App scripts ───────────────────────────────────────────────── -->
+  <script src="./pdf-overlay.js"></script>
+  <script src="./app.js"></script>
 </body>
 </html>
