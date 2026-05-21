@@ -218,8 +218,9 @@
     const output = await PDFDocument.create();
     output.registerFontkit(fontkit);
 
-    // No subset — pdf-lib's CFF subsetter renders Bickham as gibberish glyphs.
-    const bickham = await output.embedFont(fontBytes);
+    // Subset keeps glyph widths tight; full embed picks Bickham swash
+    // alternates that split words into syllables.
+    const bickham = await output.embedFont(fontBytes, { subset: true });
     const helvetica = await output.embedFont(StandardFonts.Helvetica);
 
     const patientName = capitalizeWords(patient.name);
