@@ -230,16 +230,13 @@
       const page = output.addPage(copied);
 
       if (pageIdx === 0) {
-        // Fake-bold by drawing twice with a half-pt offset — Bickham only ships Regular.
-        const nameOpts = {
+        page.drawText(patientName, {
           x: ZONE.left,
           y: LAYOUT.patientNameY,
           size: LAYOUT.patientNameSize,
           font: bickham,
           color: rgb(0, 0, 0),
-        };
-        page.drawText(patientName, nameOpts);
-        page.drawText(patientName, { ...nameOpts, x: nameOpts.x + 0.5, y: nameOpts.y + 0.5 });
+        });
       }
 
       for (const op of pageLayouts[pageIdx].ops) {
