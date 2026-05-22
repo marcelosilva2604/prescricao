@@ -22,6 +22,18 @@
           "concentration_mg_per_ml": 80,
           "unit_type": "ml",
           "mg_per_unit": 80
+        },
+        {
+          "label": "500mg cápsula",
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 500
+        },
+        {
+          "label": "875mg comprimido (BD)",
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 875
         }
       ],
       "dose_mg_per_kg_per_day": 50,
@@ -49,6 +61,18 @@
           "concentration_mg_per_ml": 80,
           "unit_type": "ml",
           "mg_per_unit": 80
+        },
+        {
+          "label": "500mg+125mg comprimido",
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 500
+        },
+        {
+          "label": "875mg+125mg comprimido (BD)",
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 875
         }
       ],
       "dose_mg_per_kg_per_day": 50,
@@ -204,6 +228,12 @@
           "concentration_mg_per_ml": 75,
           "unit_type": "ml",
           "mg_per_unit": 75
+        },
+        {
+          "label": "500mg cápsula LP",
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 500
         }
       ],
       "dose_mg_per_kg_per_day": 40,
@@ -432,6 +462,18 @@
           "concentration_mg_per_ml": 50,
           "unit_type": "ml",
           "mg_per_unit": 50
+        },
+        {
+          "label": "250mg comprimido",
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 250
+        },
+        {
+          "label": "500mg comprimido",
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 500
         }
       ],
       "dose_mg_per_kg_per_day": 40,
@@ -2487,6 +2529,12 @@
           "concentration_mg_per_ml": 0,
           "unit_type": "comprimido",
           "mg_per_unit": 400.0
+        },
+        {
+          "label": "400mg comprimido",
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 400
         }
       ],
       "dose_mg_per_kg_per_day": 10,
