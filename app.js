@@ -7,9 +7,13 @@
 
   const ROUTE_ORDER = ['Oral', 'Inalatório', 'Tópico', 'Outro'];
 
-  // Taketomo handbook PDF — served from repo root (under 100 MB after compression).
-  // The #page=N anchor opens the browser PDF viewer at the right page.
-  const TAKETOMO_URL = './taketomo.pdf';
+  // Taketomo handbook split into 3 chunks to stay under GitHub Pages 100MB limit.
+  // Pages 1-750 -> chunk 1, 751-1500 -> chunk 2, 1501-2260 -> chunk 3.
+  const TAKETOMO_CHUNKS = [
+    { url: './taketomo-1.pdf', startPage: 1, endPage: 750 },
+    { url: './taketomo-2.pdf', startPage: 751, endPage: 1500 },
+    { url: './taketomo-3.pdf', startPage: 1501, endPage: 2260 },
+  ];
   const SEARCH_RESULT_CAP = 50;
 
   const state = {
@@ -141,7 +145,13 @@
 
   function openTaketomo(page) {
     if (!page) return;
-    window.open(`${TAKETOMO_URL}#page=${page}`, '_blank', 'noopener');
+    for (const chunk of TAKETOMO_CHUNKS) {
+      if (page >= chunk.startPage && page <= chunk.endPage) {
+        const localPage = page - chunk.startPage + 1;
+        window.open(`${chunk.url}#page=${localPage}`, '_blank', 'noopener');
+        return;
+      }
+    }
   }
 
   function escapeHtml(s) {
