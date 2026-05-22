@@ -126,7 +126,10 @@
     const newPage = () => {
       pages.push(currentPage);
       currentPage = { ops: [] };
-      currentY = ZONE.top;
+      // Patient name repeats on every page — reserve the same room below it.
+      currentY = hasPatientName
+        ? LAYOUT.patientNameY - LAYOUT.gapAfterPatientName
+        : ZONE.top;
     };
 
     for (const group of grouped) {
@@ -222,15 +225,14 @@
       const [copied] = await output.copyPages(template, [0]);
       const page = output.addPage(copied);
 
-      if (pageIdx === 0) {
-        page.drawText(patientName, {
-          x: ZONE.left,
-          y: LAYOUT.patientNameY,
-          size: LAYOUT.patientNameSize,
-          font: helveticaBold,
-          color: rgb(0, 0, 0),
-        });
-      }
+      // Patient name appears on every page for identification continuity.
+      page.drawText(patientName, {
+        x: ZONE.left,
+        y: LAYOUT.patientNameY,
+        size: LAYOUT.patientNameSize,
+        font: helveticaBold,
+        color: rgb(0, 0, 0),
+      });
 
       for (const op of pageLayouts[pageIdx].ops) {
         if (op.type === 'routeHeader') {

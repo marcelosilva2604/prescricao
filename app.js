@@ -598,7 +598,8 @@
 
       let html = '';
 
-      if (i === 0 && displayName) {
+      // Patient name on every page.
+      if (displayName) {
         const p = pdfToCss(ZONE.left, LAYOUT.patientNameY, LAYOUT.patientNameSize, scale);
         html += `<div class="ov-name" style="left:${p.x}px;top:${p.top}px;font-size:${p.fontSize}px;">${escapeHtml(displayName)}</div>`;
       }
