@@ -214,6 +214,12 @@ html, body {
 .preview-header h2 { margin: 0; }
 .preview-status { font-size: 0.8rem; }
 
+.preview-pages {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
 .preview-stage {
   position: relative;
   width: 100%;
@@ -242,6 +248,7 @@ html, body {
   line-height: 1;
 }
 .ov-name { font-weight: 700; }
+.ov-pagenum { color: #666; }
 .ov-route {
   font-weight: 700;
   text-decoration: underline;

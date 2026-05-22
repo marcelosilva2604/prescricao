@@ -34,9 +34,7 @@
     el.selectedList = document.getElementById('selectedList');
     el.generateBtn = document.getElementById('generateBtn');
     el.newPrescriptionBtn = document.getElementById('newPrescriptionBtn');
-    el.previewStage = document.getElementById('previewStage');
-    el.previewCanvas = document.getElementById('previewCanvas');
-    el.previewOverlay = document.getElementById('previewOverlay');
+    el.previewPages = document.getElementById('previewPages');
     el.previewStatus = document.getElementById('previewStatus');
     el.firstTimeModal = document.getElementById('firstTimeModal');
     el.firstTimeTitle = document.getElementById('firstTimeTitle');
@@ -482,27 +480,15 @@
     });
   }
 
-  // ── Live preview: PDF.js renders template ONCE to canvas, text overlays in DOM ──
-  // PDF gen is reserved for the download. Preview is instant DOM updates.
-  // PDF coord system: 595×842 pt, bottom-left origin.
+  // ── Live preview: PDF.js renders template once, DOM overlays per page ──
+  // Uses pdf-overlay.js's planLayout for identical page-break logic.
   const PDF_W = 595;
   const PDF_H = 842;
+  const PAGE_NUM_X = 460;
+  const PAGE_NUM_Y = 240;
+  const PAGE_NUM_SIZE = 9;
 
-  // Layout constants must mirror pdf-overlay.js LAYOUT for visual fidelity.
-  const PV = {
-    zoneLeft: 60,
-    patientY: 680,
-    patientSize: 22,
-    gapAfterPatient: 32,
-    routeSize: 13,
-    gapAfterRoute: 14,
-    medSize: 11,
-    medLineHeight: 15,
-    medIndentX: 80,
-    gapBetweenMeds: 10,
-  };
-
-  let previewScale = 1; // displayed-px / pdf-pt
+  let templateSourceCanvas = null; // offscreen canvas holding the rendered template
   let previewReady = false;
 
   async function renderTemplateToCanvas() {
@@ -511,99 +497,130 @@
     const data = await fetch('./Consultorio.pdf').then((r) => r.arrayBuffer());
     const pdf = await window.pdfjsLib.getDocument({ data }).promise;
     const page = await pdf.getPage(1);
-    // Render at 2x for retina sharpness; CSS will downscale.
     const dpr = window.devicePixelRatio || 1;
     const renderScale = 2 * dpr;
     const viewport = page.getViewport({ scale: renderScale });
-    el.previewCanvas.width = viewport.width;
-    el.previewCanvas.height = viewport.height;
-    el.previewCanvas.style.width = '100%';
-    el.previewCanvas.style.height = 'auto';
-    const ctx = el.previewCanvas.getContext('2d');
-    await page.render({ canvasContext: ctx, viewport }).promise;
+    const off = document.createElement('canvas');
+    off.width = viewport.width;
+    off.height = viewport.height;
+    await page.render({ canvasContext: off.getContext('2d'), viewport }).promise;
+    templateSourceCanvas = off;
     previewReady = true;
     if (el.previewStatus) el.previewStatus.textContent = '';
-    updateOverlayScale();
     renderOverlay();
   }
 
-  function updateOverlayScale() {
-    // Match overlay size to the displayed canvas size.
-    const w = el.previewCanvas.clientWidth;
-    const h = el.previewCanvas.clientHeight;
-    if (!w || !h) return;
-    previewScale = w / PDF_W;
-    el.previewOverlay.style.width = w + 'px';
-    el.previewOverlay.style.height = h + 'px';
+  function paintTemplateInto(canvas) {
+    canvas.width = templateSourceCanvas.width;
+    canvas.height = templateSourceCanvas.height;
+    canvas.style.width = '100%';
+    canvas.style.height = 'auto';
+    canvas.getContext('2d').drawImage(templateSourceCanvas, 0, 0);
   }
 
-  function pdfToCss(xPt, yPtFromBottom, size) {
-    // Convert PDF point coords (bottom-left origin) to CSS pixels in overlay.
-    const x = xPt * previewScale;
-    const top = (PDF_H - yPtFromBottom) * previewScale;
-    const fontSize = size * previewScale;
-    return { x, top, fontSize };
+  // Ensure exactly `count` page stages exist in the preview container.
+  function ensurePages(count) {
+    const container = el.previewPages;
+    while (container.children.length < count) {
+      const stage = document.createElement('div');
+      stage.className = 'preview-stage';
+      const canvas = document.createElement('canvas');
+      canvas.className = 'preview-canvas';
+      const overlay = document.createElement('div');
+      overlay.className = 'preview-overlay';
+      stage.append(canvas, overlay);
+      container.append(stage);
+      if (templateSourceCanvas) paintTemplateInto(canvas);
+    }
+    while (container.children.length > count) {
+      container.removeChild(container.lastChild);
+    }
+  }
+
+  function pdfToCss(xPt, yPtFromBottom, size, scale) {
+    return {
+      x: xPt * scale,
+      top: (PDF_H - yPtFromBottom) * scale,
+      fontSize: size * scale,
+    };
   }
 
   function schedulePreviewUpdate() {
-    // Overlay updates are cheap (DOM only) — no debounce needed.
+    // Overlay updates are cheap (DOM only) — no debounce.
     renderOverlay();
   }
 
-  function renderOverlay() {
-    if (!el.previewOverlay) return;
-    if (!previewReady) return;
-    updateOverlayScale();
+  function buildMedHTML(item, number, posTop, posBottom, scale) {
+    const med = item.medication;
+    const presShort = window.PdfOverlay.presentationShort(med.presentation);
+    const freq = window.PdfOverlay.frequencyString(item.params.dosesPerDay);
+    const line1Prefix = `${number}) ${med.name} ${presShort}`;
+    let line2;
+    if (med.fixed_dose) {
+      line2 = `Ofertar ${med.fixed_dose_string} via ${med.route} ${freq} por ${item.params.durationDays} dias`;
+    } else {
+      const v = item.calc && item.calc.volumePerDoseMl;
+      const vol = v != null && !isNaN(v) ? v.toFixed(1).replace('.', ',') : '—';
+      line2 = `Ofertar ${vol}ml via ${med.route} ${freq} por ${item.params.durationDays} dias`;
+    }
+    const m1 = posTop;
+    const m2 = posBottom;
+    return (
+      `<div class="ov-med1" style="left:${m1.x}px;top:${m1.top}px;font-size:${m1.fontSize}px;">` +
+        `<span>${escapeHtml(line1Prefix)}</span><span class="ov-dashes" aria-hidden="true"></span>` +
+      `</div>` +
+      `<div class="ov-med2" style="left:${m2.x}px;top:${m2.top}px;font-size:${m2.fontSize}px;">${escapeHtml(line2)}</div>`
+    );
+  }
 
-    const name = state.patient.name.trim();
-    const displayName = name
-      ? window.PdfOverlay.capitalizeWords(name)
+  function renderOverlay() {
+    if (!el.previewPages) return;
+    if (!previewReady) return;
+
+    const LAYOUT = window.PdfOverlay.LAYOUT;
+    const ZONE = window.PdfOverlay.ZONE;
+
+    // Plan pages identically to the PDF generator.
+    const pages = window.PdfOverlay.planLayout(state.selected, true);
+    const totalPages = pages.length;
+    ensurePages(totalPages);
+
+    const stages = el.previewPages.children;
+    const displayName = state.patient.name.trim()
+      ? window.PdfOverlay.capitalizeWords(state.patient.name)
       : '';
 
-    let html = '';
+    for (let i = 0; i < totalPages; i += 1) {
+      const stage = stages[i];
+      const overlay = stage.querySelector('.preview-overlay');
+      const stageWidth = stage.clientWidth || 600;
+      const scale = stageWidth / PDF_W;
 
-    // Patient name
-    if (displayName) {
-      const p = pdfToCss(PV.zoneLeft, PV.patientY, PV.patientSize);
-      html += `<div class="ov-name" style="left:${p.x}px;top:${p.top}px;font-size:${p.fontSize}px;">${escapeHtml(displayName)}</div>`;
-    }
+      let html = '';
 
-    // Plan items mirroring pdf-overlay.js planLayout (single-page approximation).
-    const grouped = groupSelectedByRoute(state.selected);
-    let currentY = displayName
-      ? PV.patientY - PV.gapAfterPatient
-      : PV.patientY + (PV.patientSize - PV.routeSize);
-    let medNumber = 1;
-
-    for (const group of grouped) {
-      const r = pdfToCss(PV.zoneLeft, currentY, PV.routeSize);
-      const label = `Uso ${group.route}`;
-      html += `<div class="ov-route" style="left:${r.x}px;top:${r.top}px;font-size:${r.fontSize}px;">${escapeHtml(label)}</div>`;
-      currentY -= PV.routeSize + PV.gapAfterRoute;
-
-      for (const item of group.items) {
-        const m = pdfToCss(PV.zoneLeft, currentY, PV.medSize);
-        const m2 = pdfToCss(PV.medIndentX, currentY - PV.medLineHeight, PV.medSize);
-        const med = item.medication;
-        const presShort = window.PdfOverlay.presentationShort(med.presentation);
-        const freq = window.PdfOverlay.frequencyString(item.params.dosesPerDay);
-        const line1Prefix = `${medNumber}) ${med.name} ${presShort}`;
-        let line2;
-        if (med.fixed_dose) {
-          line2 = `Ofertar ${med.fixed_dose_string} via ${med.route} ${freq} por ${item.params.durationDays} dias`;
-        } else {
-          const v = item.calc.volumePerDoseMl;
-          const vol = v != null && !isNaN(v) ? v.toFixed(1).replace('.', ',') : '—';
-          line2 = `Ofertar ${vol}ml via ${med.route} ${freq} por ${item.params.durationDays} dias`;
-        }
-        html += `<div class="ov-med1" style="left:${m.x}px;top:${m.top}px;font-size:${m.fontSize}px;"><span>${escapeHtml(line1Prefix)}</span><span class="ov-dashes" aria-hidden="true"></span></div>`;
-        html += `<div class="ov-med2" style="left:${m2.x}px;top:${m2.top}px;font-size:${m2.fontSize}px;">${escapeHtml(line2)}</div>`;
-        currentY -= 2 * PV.medLineHeight + PV.gapBetweenMeds;
-        medNumber += 1;
+      if (i === 0 && displayName) {
+        const p = pdfToCss(ZONE.left, LAYOUT.patientNameY, LAYOUT.patientNameSize, scale);
+        html += `<div class="ov-name" style="left:${p.x}px;top:${p.top}px;font-size:${p.fontSize}px;">${escapeHtml(displayName)}</div>`;
       }
-    }
 
-    el.previewOverlay.innerHTML = html;
+      for (const op of pages[i].ops) {
+        if (op.type === 'routeHeader') {
+          const r = pdfToCss(ZONE.left, op.y, LAYOUT.routeHeaderSize, scale);
+          html += `<div class="ov-route" style="left:${r.x}px;top:${r.top}px;font-size:${r.fontSize}px;">${escapeHtml(op.label)}</div>`;
+        } else if (op.type === 'med') {
+          const top = pdfToCss(ZONE.left, op.y, LAYOUT.medSize, scale);
+          const bottom = pdfToCss(LAYOUT.medIndentX, op.y - LAYOUT.medLineHeight, LAYOUT.medSize, scale);
+          html += buildMedHTML(op.item, op.number, top, bottom, scale);
+        }
+      }
+
+      // Page number bottom-right.
+      const pn = pdfToCss(PAGE_NUM_X, PAGE_NUM_Y, PAGE_NUM_SIZE, scale);
+      const pageLabel = `Página ${i + 1} de ${totalPages}`;
+      html += `<div class="ov-pagenum" style="left:${pn.x}px;top:${pn.top}px;font-size:${pn.fontSize}px;">${escapeHtml(pageLabel)}</div>`;
+
+      overlay.innerHTML = html;
+    }
   }
 
   function groupSelectedByRoute(items) {

@@ -320,6 +320,7 @@
     presentationShort,
     frequencyString,
     capitalizeWords,
+    planLayout,
     LAYOUT,
     ZONE,
   };
