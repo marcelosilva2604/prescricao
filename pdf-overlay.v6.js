@@ -1,12 +1,11 @@
-// PDF overlay logic: loads Consultorio.pdf template, embeds Bickham Script Pro 3,
-// renders patient name and medication content into the empty middle area,
-// triggers download of the final document. Single public entry: generatePrescriptionPDF.
+// PDF overlay logic: loads Consultorio.pdf template, renders patient name and
+// medication content into the empty middle area using built-in Helvetica,
+// triggers download of the final document.
 
 (function (global) {
   'use strict';
 
   const TEMPLATE_URL = './Consultorio.pdf';
-  const FONT_URL = './BickhamScriptPro3-Regular.otf';
 
   // Overlay zone (A4 portrait, bottom-left origin).
   const ZONE = {
@@ -19,16 +18,16 @@
   };
 
   const LAYOUT = {
-    patientNameY: 668,
-    patientNameSize: 32,
-    gapAfterPatientName: 50,
-    routeHeaderSize: 18,
-    routeHeaderLineHeight: 18,
-    gapAfterRouteHeader: 20,
-    medSize: 16,
-    medLineHeight: 24,
+    patientNameY: 680,
+    patientNameSize: 22,
+    gapAfterPatientName: 32,
+    routeHeaderSize: 13,
+    routeHeaderLineHeight: 13,
+    gapAfterRouteHeader: 14,
+    medSize: 11,
+    medLineHeight: 15,
     medIndentX: 80,
-    gapBetweenMeds: 16,
+    gapBetweenMeds: 10,
     pageNumberX: 460,
     pageNumberY: 240,
     pageNumberSize: 9,
@@ -42,9 +41,8 @@
     6: '4/4h',
   };
 
-  // Cached template and font bytes — loaded once per session.
+  // Cached template bytes — loaded once per session.
   let templateBytesPromise = null;
-  let fontBytesPromise = null;
 
   function loadTemplateBytes() {
     if (!templateBytesPromise) {
@@ -54,16 +52,6 @@
       });
     }
     return templateBytesPromise;
-  }
-
-  function loadFontBytes() {
-    if (!fontBytesPromise) {
-      fontBytesPromise = fetch(FONT_URL).then((r) => {
-        if (!r.ok) throw new Error('Failed to load BickhamScriptPro3-Regular.otf');
-        return r.arrayBuffer();
-      });
-    }
-    return fontBytesPromise;
   }
 
   // Extract "250mg/5ml" or "100mcg/jato" from a longer presentation string.
@@ -207,21 +195,15 @@
 
   async function generatePrescriptionPDF(patient, items) {
     const { PDFDocument, rgb, StandardFonts } = global.PDFLib;
-    const fontkit = global.fontkit;
 
-    const [templateBytes, fontBytes] = await Promise.all([
-      loadTemplateBytes(),
-      loadFontBytes(),
-    ]);
+    const templateBytes = await loadTemplateBytes();
 
     const template = await PDFDocument.load(templateBytes);
     const output = await PDFDocument.create();
-    output.registerFontkit(fontkit);
 
-    // Subset keeps glyph widths tight; full embed picks Bickham swash
-    // alternates that split words into syllables.
-    const bickham = await output.embedFont(fontBytes, { subset: true });
+    // Built-in Standard14 fonts — no embedding, no viewer substitution risk.
     const helvetica = await output.embedFont(StandardFonts.Helvetica);
+    const helveticaBold = await output.embedFont(StandardFonts.HelveticaBold);
 
     const patientName = capitalizeWords(patient.name);
     const pageLayouts = planLayout(items, true);
@@ -236,7 +218,7 @@
           x: ZONE.left,
           y: LAYOUT.patientNameY,
           size: LAYOUT.patientNameSize,
-          font: bickham,
+          font: helveticaBold,
           color: rgb(0, 0, 0),
         });
       }
@@ -247,33 +229,33 @@
             x: ZONE.left,
             y: op.y,
             size: LAYOUT.routeHeaderSize,
-            font: bickham,
+            font: helveticaBold,
             color: rgb(0, 0, 0),
           });
-          const headerWidth = bickham.widthOfTextAtSize(
+          const headerWidth = helveticaBold.widthOfTextAtSize(
             op.label,
             LAYOUT.routeHeaderSize
           );
           page.drawLine({
-            start: { x: ZONE.left, y: op.y - 4 },
-            end: { x: ZONE.left + headerWidth, y: op.y - 4 },
+            start: { x: ZONE.left, y: op.y - 3 },
+            end: { x: ZONE.left + headerWidth, y: op.y - 3 },
             thickness: 0.75,
             color: rgb(0, 0, 0),
           });
         } else if (op.type === 'med') {
-          const { line1, line2 } = buildMedLines(op.item, op.number, bickham);
+          const { line1, line2 } = buildMedLines(op.item, op.number, helvetica);
           page.drawText(line1, {
             x: ZONE.left,
             y: op.y,
             size: LAYOUT.medSize,
-            font: bickham,
+            font: helvetica,
             color: rgb(0, 0, 0),
           });
           page.drawText(line2, {
             x: LAYOUT.medIndentX,
             y: op.y - LAYOUT.medLineHeight,
             size: LAYOUT.medSize,
-            font: bickham,
+            font: helvetica,
             color: rgb(0, 0, 0),
           });
         }

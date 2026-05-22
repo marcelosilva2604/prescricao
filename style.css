@@ -211,29 +211,29 @@ html, body {
   border-radius: 4px;
   padding: 2rem 1.75rem;
   min-height: 500px;
-  font-family: 'Bickham Script Pro 3', 'Segoe Script', cursive;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #15171a;
   position: relative;
 }
 .prev-name {
-  font-size: 2.3rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  text-shadow: 0.5px 0.5px 0 currentColor;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 .prev-name.placeholder { color: #bcc1c9; font-style: italic; }
 .prev-group { margin-bottom: 1.25rem; }
 .prev-route {
-  font-size: 1.25rem;
+  font-size: 1rem;
+  font-weight: 700;
   text-decoration: underline;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
-.prev-med { margin-bottom: 0.8rem; }
+.prev-med { margin-bottom: 0.55rem; }
 .prev-med-line1 {
   display: flex;
   align-items: baseline;
   gap: 0.4rem;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -245,9 +245,9 @@ html, body {
   letter-spacing: -0.05em;
 }
 .prev-med-line2 {
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   margin-left: 1.25rem;
-  margin-top: 0.15rem;
+  margin-top: 0.1rem;
 }
 .prev-empty {
   text-align: center;
