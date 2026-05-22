@@ -41,8 +41,10 @@
     6: '4/4h',
   };
 
-  // Cached template bytes — loaded once per session.
+  // Cached template — fetched and parsed once per session.
+  // Re-parsing the 1.7MB Consultorio.pdf on every preview update costs ~50-100ms.
   let templateBytesPromise = null;
+  let templateDocPromise = null;
 
   function loadTemplateBytes() {
     if (!templateBytesPromise) {
@@ -52,6 +54,15 @@
       });
     }
     return templateBytesPromise;
+  }
+
+  function loadTemplateDoc() {
+    if (!templateDocPromise) {
+      templateDocPromise = loadTemplateBytes().then((bytes) =>
+        global.PDFLib.PDFDocument.load(bytes)
+      );
+    }
+    return templateDocPromise;
   }
 
   // Extract "250mg/5ml" or "100mcg/jato" from a longer presentation string.
@@ -196,9 +207,7 @@
   async function generatePrescriptionPDF(patient, items) {
     const { PDFDocument, rgb, StandardFonts } = global.PDFLib;
 
-    const templateBytes = await loadTemplateBytes();
-
-    const template = await PDFDocument.load(templateBytes);
+    const template = await loadTemplateDoc();
     const output = await PDFDocument.create();
 
     // Built-in Standard14 fonts — no embedding, no viewer substitution risk.

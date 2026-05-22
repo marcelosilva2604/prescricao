@@ -490,7 +490,7 @@
 
   function schedulePreviewUpdate() {
     clearTimeout(previewDebounceTimer);
-    previewDebounceTimer = setTimeout(triggerPreviewUpdate, 300);
+    previewDebounceTimer = setTimeout(triggerPreviewUpdate, 80);
   }
 
   function triggerPreviewUpdate() {
