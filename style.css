@@ -203,8 +203,28 @@ html, body {
 .sel-summary { font-size: 0.85rem; color: var(--text-muted); margin-top: 0.15rem; }
 .sel-actions { display: flex; gap: 0.4rem; flex-shrink: 0; }
 
-/* ── Live preview ──────────────────────────────────────────────────── */
-.preview-wrap { padding: 0; }
+/* ── Live PDF preview ──────────────────────────────────────────────── */
+.preview-wrap { padding: 1rem; }
+.preview-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.preview-header h2 { margin: 0; }
+.preview-status { font-size: 0.8rem; }
+.preview-frame {
+  width: 100%;
+  height: calc(100vh - 200px);
+  min-height: 600px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #f0f1f3;
+  display: block;
+}
+@media (max-width: 900px) {
+  .preview-frame { height: 70vh; }
+}
 .prev-page {
   background: #fff;
   border: 1px solid var(--border);

@@ -34,7 +34,8 @@
     el.selectedList = document.getElementById('selectedList');
     el.generateBtn = document.getElementById('generateBtn');
     el.newPrescriptionBtn = document.getElementById('newPrescriptionBtn');
-    el.preview = document.getElementById('preview');
+    el.previewFrame = document.getElementById('previewFrame');
+    el.previewStatus = document.getElementById('previewStatus');
     el.firstTimeModal = document.getElementById('firstTimeModal');
     el.firstTimeTitle = document.getElementById('firstTimeTitle');
     el.ftDose = document.getElementById('ftDose');
@@ -111,13 +112,13 @@
     el.patientName.addEventListener('input', (e) => {
       state.patient.name = e.target.value;
       validate();
-      renderPreview();
+      schedulePreviewUpdate();
     });
     el.patientWeight.addEventListener('input', (e) => {
       state.patient.weight = e.target.value;
       validate();
       recalculateAll();
-      renderPreview();
+      schedulePreviewUpdate();
       renderSelected();
     });
     el.patientDob.addEventListener('input', (e) => {
@@ -479,62 +480,60 @@
     });
   }
 
-  // ── Live preview ──────────────────────────────────────────────────────
-  function renderPreview() {
-    const name = state.patient.name.trim();
-    const grouped = groupSelectedByRoute(state.selected);
-    let medNumber = 1;
+  // ── Live PDF preview ──────────────────────────────────────────────────
+  // Regenerates the actual PDF in the iframe on every change (debounced).
+  // True WYSIWYG: what you see is what the download will produce.
+  let previewBlobUrl = null;
+  let previewDebounceTimer = null;
+  let previewInFlight = false;
+  let previewRetry = false;
 
-    const namePart = name
-      ? `<div class="prev-name">${escapeHtml(window.PdfOverlay.capitalizeWords(name))}</div>`
-      : `<div class="prev-name placeholder">Nome do Paciente</div>`;
+  function schedulePreviewUpdate() {
+    clearTimeout(previewDebounceTimer);
+    previewDebounceTimer = setTimeout(triggerPreviewUpdate, 300);
+  }
 
-    const groupsHtml = grouped
-      .map((group) => {
-        const itemsHtml = group.items
-          .map((item) => {
-            const n = medNumber++;
-            const med = item.medication;
-            const presShort = window.PdfOverlay.presentationShort(med.presentation);
-            const freq = window.PdfOverlay.frequencyString(item.params.dosesPerDay);
-            const line1 = `${n}) ${med.name} ${presShort}`;
-            const dashes = '—'.repeat(40);
-            let line2;
-            if (med.fixed_dose) {
-              line2 = `Ofertar ${med.fixed_dose_string} via ${med.route} ${freq} por ${item.params.durationDays} dias`;
-            } else {
-              const v = item.calc.volumePerDoseMl;
-              const vol = v != null ? v.toFixed(1).replace('.', ',') : '—';
-              line2 = `Ofertar ${vol}ml via ${med.route} ${freq} por ${item.params.durationDays} dias`;
-            }
-            return `
-              <div class="prev-med">
-                <div class="prev-med-line1">
-                  <span>${escapeHtml(line1)}</span>
-                  <span class="prev-dashes" aria-hidden="true">${dashes}</span>
-                </div>
-                <div class="prev-med-line2">${escapeHtml(line2)}</div>
-              </div>`;
-          })
-          .join('');
-        return `
-          <div class="prev-group">
-            <div class="prev-route">Uso ${escapeHtml(group.route)}</div>
-            ${itemsHtml}
-          </div>`;
-      })
-      .join('');
+  function triggerPreviewUpdate() {
+    if (previewInFlight) {
+      previewRetry = true;
+      return;
+    }
+    previewInFlight = true;
+    if (el.previewStatus) el.previewStatus.textContent = 'atualizando…';
+    updatePreviewPDF().finally(() => {
+      previewInFlight = false;
+      if (el.previewStatus) el.previewStatus.textContent = '';
+      if (previewRetry) {
+        previewRetry = false;
+        triggerPreviewUpdate();
+      }
+    });
+  }
 
-    const emptyState = state.selected.length
-      ? ''
-      : `<div class="prev-empty">Selecione medicações para visualizar a prescrição.</div>`;
-
-    el.preview.innerHTML = `
-      <div class="prev-page" aria-label="Pré-visualização da prescrição">
-        ${namePart}
-        ${groupsHtml}
-        ${emptyState}
-      </div>`;
+  async function updatePreviewPDF() {
+    try {
+      const patient = {
+        name: state.patient.name || ' ',
+        weight: parseFloat(state.patient.weight) || 0,
+      };
+      const bytes = await window.PdfOverlay.generatePrescriptionPDF(
+        patient,
+        state.selected
+      );
+      const blob = new Blob([bytes], { type: 'application/pdf' });
+      const url = URL.createObjectURL(blob);
+      const previousUrl = previewBlobUrl;
+      previewBlobUrl = url;
+      // #toolbar=0 hides the viewer chrome in Chrome; #view=FitH fits horizontally.
+      el.previewFrame.src = url + '#toolbar=0&view=FitH';
+      if (previousUrl) {
+        // Revoke after a short delay so the iframe has time to load the new URL.
+        setTimeout(() => URL.revokeObjectURL(previousUrl), 500);
+      }
+    } catch (e) {
+      console.error('Preview generation failed', e);
+      if (el.previewStatus) el.previewStatus.textContent = 'erro ao gerar preview';
+    }
   }
 
   function groupSelectedByRoute(items) {
@@ -607,7 +606,7 @@
   function render() {
     validate();
     renderSelected();
-    renderPreview();
+    schedulePreviewUpdate();
   }
 
   async function init() {
