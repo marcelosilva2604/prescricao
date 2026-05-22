@@ -191,7 +191,6 @@ Quando terminar, eu leio o taketomo para cada `[x]` e atualizo o catálogo.
 - [ ] **Solução salina nasal hipertônica 3%** _(spray/gotas)_ — Sodium Chloride
 - [ ] **Cromoglicato dissódico (nasal)** _(2%, 4% spray)_ — Cromolyn (nasal)
 - [ ] **Acetilcisteína oral** _(20mg/ml xarope; comp/sachê 100, 200, 600mg)_ — Acetylcysteine
-- [ ] **Ambroxol** _(15mg/5ml, 30mg/5ml xarope)_ — [não está no taketomo]
 
 ## 20. Antiacne (adolescentes) (4)
 - [ ] **Peróxido de Benzoíla 5%, 10%** _(gel)_ — Benzoyl Peroxide

@@ -1,0 +1,4641 @@
+{
+  "_meta": {
+    "description": "Per-drug pediatric ambulatory dose data extracted from taketomo + BR conventions.",
+    "version": "1.0"
+  },
+  "drugs": {
+    "amoxicilina": {
+      "drug_pt": "Amoxicilina",
+      "drug_en": "Amoxicillin",
+      "category": "Antibiótico",
+      "route": "Oral",
+      "taketomo_page": 131,
+      "presentations": [
+        {
+          "label": "250mg/5ml suspensão oral",
+          "concentration_mg_per_ml": 50
+        },
+        {
+          "label": "400mg/5ml suspensão oral (BD)",
+          "concentration_mg_per_ml": 80
+        }
+      ],
+      "dose_mg_per_kg_per_day": 50,
+      "doses_per_day": 3,
+      "max_mg_per_day": 4000,
+      "max_mg_per_dose": 500,
+      "default_duration_days": 10,
+      "notes": "Mild/mod 25-50 mg/kg/d q8h; high-dose OMA/pneumonia 80-90 mg/kg/d q12h. Max 4000 mg/d per IDSA."
+    },
+    "amoxicilina_clavulanato": {
+      "drug_pt": "Amoxicilina + Clavulanato",
+      "drug_en": "Amoxicillin and Clavulanate",
+      "category": "Antibiótico",
+      "route": "Oral",
+      "taketomo_page": 133,
+      "presentations": [
+        {
+          "label": "250mg/62,5mg per 5ml suspensão oral",
+          "concentration_mg_per_ml": 50
+        },
+        {
+          "label": "400mg/57mg per 5ml suspensão oral",
+          "concentration_mg_per_ml": 80
+        }
+      ],
+      "dose_mg_per_kg_per_day": 50,
+      "doses_per_day": 2,
+      "max_mg_per_day": 4000,
+      "max_mg_per_dose": 875,
+      "default_duration_days": 10,
+      "notes": "Dose baseada em amoxicilina. Alta dose 80-90 mg/kg/d q12h para OMA/PNA. Limite de clavulanato: ≤6.4 mg/kg/d para evitar diarreia."
+    },
+    "ampicilina": {
+      "drug_pt": "Ampicilina",
+      "drug_en": "Ampicillin",
+      "category": "Antibiótico",
+      "route": "Oral",
+      "taketomo_page": 149,
+      "presentations": [
+        {
+          "label": "250mg/5ml suspensão oral",
+          "concentration_mg_per_ml": 50
+        }
+      ],
+      "dose_mg_per_kg_per_day": 50,
+      "doses_per_day": 4,
+      "max_mg_per_day": 2000,
+      "max_mg_per_dose": 500,
+      "default_duration_days": 10,
+      "notes": "Taketomo lista apenas IV/IM (uso predominante). Oral pediátrico: 50-100 mg/kg/d q6h, max 2-4 g/d. Em BR uso oral é raro vs Amoxicilina."
+    },
+    "penicilina_v": {
+      "drug_pt": "Penicilina V",
+      "drug_en": "Penicillin V Potassium",
+      "category": "Antibiótico",
+      "route": "Oral",
+      "taketomo_page": 1593,
+      "presentations": [
+        {
+          "label": "80.000UI/ml suspensão oral",
+          "concentration_mg_per_ml": 50
+        },
+        {
+          "label": "500.000UI comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 50,
+      "doses_per_day": 4,
+      "max_mg_per_day": 2000,
+      "max_mg_per_dose": 500,
+      "default_duration_days": 10,
+      "notes": "Faringoamigdalite estreptocócica: <27kg=250mg 2-3x/d, >27kg=500mg 2-3x/d, por 10 dias. Geral: 25-75 mg/kg/d q6-8h."
+    },
+    "penicilina_g_benzatina": {
+      "drug_pt": "Penicilina G Benzatina",
+      "drug_en": null,
+      "category": "Antibiótico",
+      "route": "IM",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "600.000UI ampola IM (<27kg)",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "1.200.000UI ampola IM (≥27kg)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "fixed_dose": true,
+      "fixed_dose_string": "<27kg: 600.000UI; ≥27kg: 1.200.000UI dose única",
+      "doses_per_day": 1,
+      "default_duration_days": 1,
+      "notes": "Profilaxia febre reumática secundária: mesma dose a cada 21 dias. Sífilis: dose conforme estágio."
+    },
+    "cefadroxila": {
+      "drug_pt": "Cefadroxila",
+      "drug_en": "Cefadroxil",
+      "category": "Antibiótico",
+      "route": "Oral",
+      "taketomo_page": 385,
+      "presentations": [
+        {
+          "label": "250mg/5ml suspensão oral",
+          "concentration_mg_per_ml": 50
+        },
+        {
+          "label": "500mg cápsula",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 30,
+      "doses_per_day": 2,
+      "max_mg_per_day": 2000,
+      "max_mg_per_dose": 1000,
+      "default_duration_days": 10,
+      "notes": "Faringoamigdalite, piodermites: 30 mg/kg/d q12h. ITU: 30 mg/kg/d q12-24h. Taketomo: 30 mg/kg/d até max 2 g/d."
+    },
+    "cefalexina": {
+      "drug_pt": "Cefalexina",
+      "drug_en": "Cephalexin",
+      "category": "Antibiótico",
+      "route": "Oral",
+      "taketomo_page": 415,
+      "presentations": [
+        {
+          "label": "250mg/5ml suspensão oral",
+          "concentration_mg_per_ml": 50
+        },
+        {
+          "label": "500mg cápsula",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 50,
+      "doses_per_day": 4,
+      "max_mg_per_day": 4000,
+      "max_mg_per_dose": 1000,
+      "default_duration_days": 10,
+      "notes": "Mild/mod: 25-50 mg/kg/d q6-12h, max 2 g/d. Severo (pele, AOM): 75-100 mg/kg/d q6-8h, max 4 g/d. Faringite GAS: 25-50 mg/kg/d q12h."
+    },
+    "cefaclor": {
+      "drug_pt": "Cefaclor",
+      "drug_en": null,
+      "category": "Antibiótico",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "250mg/5ml suspensão oral",
+          "concentration_mg_per_ml": 50
+        },
+        {
+          "label": "375mg/5ml suspensão oral",
+          "concentration_mg_per_ml": 75
+        }
+      ],
+      "dose_mg_per_kg_per_day": 40,
+      "doses_per_day": 3,
+      "max_mg_per_day": 1500,
+      "max_mg_per_dose": 500,
+      "default_duration_days": 10,
+      "notes": "Não está no Taketomo US (retirada do mercado). BR ainda usa. Padrão: 20-40 mg/kg/d q8h, max 1.5 g/d."
+    },
+    "cefuroxima_axetil": {
+      "drug_pt": "Cefuroxima axetil",
+      "drug_en": "Cefuroxime",
+      "category": "Antibiótico",
+      "route": "Oral",
+      "taketomo_page": 409,
+      "presentations": [
+        {
+          "label": "250mg/5ml suspensão oral",
+          "concentration_mg_per_ml": 50
+        },
+        {
+          "label": "250mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "500mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 30,
+      "doses_per_day": 2,
+      "max_mg_per_day": 1000,
+      "max_mg_per_dose": 500,
+      "default_duration_days": 10,
+      "notes": "Mild/mod oral: 20-30 mg/kg/d q12h, max 500 mg/dose. Suspensão e comprimido NÃO são bioequivalentes."
+    },
+    "cefprozil": {
+      "drug_pt": "Cefprozil",
+      "drug_en": "Cefprozil",
+      "category": "Antibiótico",
+      "route": "Oral",
+      "taketomo_page": 399,
+      "presentations": [
+        {
+          "label": "250mg/5ml suspensão oral",
+          "concentration_mg_per_ml": 50
+        },
+        {
+          "label": "500mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 30,
+      "doses_per_day": 2,
+      "max_mg_per_day": 1000,
+      "max_mg_per_dose": 500,
+      "default_duration_days": 10,
+      "notes": "Mild/mod: 5 mg/kg/dose q12h (max 200 mg/dose); >12 anos: 400 mg/dose. Pediatra geralmente usa 30 mg/kg/d para OMA/PNA."
+    },
+    "cefixima": {
+      "drug_pt": "Cefixima",
+      "drug_en": "Cefixime",
+      "category": "Antibiótico",
+      "route": "Oral",
+      "taketomo_page": 393,
+      "presentations": [
+        {
+          "label": "100mg/5ml suspensão oral",
+          "concentration_mg_per_ml": 20
+        },
+        {
+          "label": "400mg cápsula",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 8,
+      "doses_per_day": 1,
+      "max_mg_per_day": 400,
+      "max_mg_per_dose": 400,
+      "default_duration_days": 7,
+      "notes": "Geral: 8 mg/kg/d q12-24h, max 400 mg/d. Gonorreia uncomplicada ≥45kg: 400mg dose única (com azitromicina)."
+    },
+    "cefpodoxima": {
+      "drug_pt": "Cefpodoxima proxetil",
+      "drug_en": null,
+      "category": "Antibiótico",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "40mg/5ml suspensão oral",
+          "concentration_mg_per_ml": 8
+        },
+        {
+          "label": "80mg/5ml suspensão oral",
+          "concentration_mg_per_ml": 16
+        }
+      ],
+      "dose_mg_per_kg_per_day": 10,
+      "doses_per_day": 2,
+      "max_mg_per_day": 400,
+      "max_mg_per_dose": 200,
+      "default_duration_days": 10,
+      "notes": "Não no Taketomo US. Padrão: 10 mg/kg/d q12h, max 400 mg/d. AOM: 5 mg/kg/dose q12h × 5 dias."
+    },
+    "ceftriaxona": {
+      "drug_pt": "Ceftriaxona",
+      "drug_en": "Ceftriaxone",
+      "category": "Antibiótico",
+      "route": "IM",
+      "taketomo_page": 405,
+      "presentations": [
+        {
+          "label": "500mg pó IM/IV",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "1g pó IM/IV",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 50,
+      "doses_per_day": 1,
+      "max_mg_per_day": 1000,
+      "max_mg_per_dose": 1000,
+      "default_duration_days": 1,
+      "notes": "Mild/mod: 50-75 mg/kg 1x/d, max 1 g/d. Severo (meningite/PNA grave): 100 mg/kg/d q12-24h, max 4 g/d. Outpatient comum: dose única IM 50 mg/kg."
+    },
+    "azitromicina": {
+      "drug_pt": "Azitromicina",
+      "drug_en": "Azithromycin (systemic)",
+      "category": "Antibiótico",
+      "route": "Oral",
+      "taketomo_page": 235,
+      "presentations": [
+        {
+          "label": "200mg/5ml suspensão oral",
+          "concentration_mg_per_ml": 40
+        },
+        {
+          "label": "600mg pó para susp (5ml)",
+          "concentration_mg_per_ml": 120
+        },
+        {
+          "label": "500mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 10,
+      "doses_per_day": 1,
+      "max_mg_per_day": 500,
+      "max_mg_per_dose": 500,
+      "default_duration_days": 5,
+      "notes": "AOM: 30 mg/kg dose única OU 10 mg/kg/d × 3d. PNA atípica/faringoamigdalite: 10 mg/kg/d × 5 dias (dia 1 dose dobrada em algumas indicações). Max 500 mg/d."
+    },
+    "claritromicina": {
+      "drug_pt": "Claritromicina",
+      "drug_en": "Clarithromycin",
+      "category": "Antibiótico",
+      "route": "Oral",
+      "taketomo_page": 473,
+      "presentations": [
+        {
+          "label": "250mg/5ml suspensão oral",
+          "concentration_mg_per_ml": 50
+        },
+        {
+          "label": "500mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 15,
+      "doses_per_day": 2,
+      "max_mg_per_day": 1000,
+      "max_mg_per_dose": 500,
+      "default_duration_days": 10,
+      "notes": "Geral mild/mod: 15 mg/kg/d q12h, max 500 mg/dose. Faringite GAS: 15 mg/kg/d × 10 dias, max 250 mg/dose."
+    },
+    "eritromicina_estolato": {
+      "drug_pt": "Eritromicina estolato",
+      "drug_en": "Erythromycin (systemic)",
+      "category": "Antibiótico",
+      "route": "Oral",
+      "taketomo_page": 771,
+      "presentations": [
+        {
+          "label": "125mg/5ml suspensão oral",
+          "concentration_mg_per_ml": 25
+        },
+        {
+          "label": "250mg/5ml suspensão oral",
+          "concentration_mg_per_ml": 50
+        }
+      ],
+      "dose_mg_per_kg_per_day": 40,
+      "doses_per_day": 4,
+      "max_mg_per_day": 2000,
+      "max_mg_per_dose": 500,
+      "default_duration_days": 10,
+      "notes": "Coqueluche: 40 mg/kg/d q6h × 14d. Impetigo: 40 mg/kg/d q6h. ATENÇÃO: <1 mês associado a estenose pilórica — preferir azitromicina."
+    },
+    "clindamicina": {
+      "drug_pt": "Clindamicina",
+      "drug_en": "Clindamycin (systemic)",
+      "category": "Antibiótico",
+      "route": "Oral",
+      "taketomo_page": 477,
+      "presentations": [
+        {
+          "label": "75mg/5ml solução oral",
+          "concentration_mg_per_ml": 15
+        },
+        {
+          "label": "150mg cápsula",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "300mg cápsula",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 25,
+      "doses_per_day": 3,
+      "max_mg_per_day": 1800,
+      "max_mg_per_dose": 600,
+      "default_duration_days": 10,
+      "notes": "Oral: 8-25 mg/kg/d q6-8h. MRSA pele/partes moles: 30-40 mg/kg/d. Max 1800 mg/d oral. IV: 25-40 mg/kg/d q6-8h."
+    },
+    "doxiciclina": {
+      "drug_pt": "Doxiciclina",
+      "drug_en": "Doxycycline",
+      "category": "Antibiótico",
+      "route": "Oral",
+      "taketomo_page": 701,
+      "presentations": [
+        {
+          "label": "100mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "100mg cápsula",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 4,
+      "doses_per_day": 2,
+      "max_mg_per_day": 200,
+      "max_mg_per_dose": 100,
+      "default_duration_days": 10,
+      "notes": "≥8 anos. Geral: 2.2 mg/kg/dose q12h, max 200 mg/d. Lyme/Riquetsiose ≤45kg: 2.2 mg/kg q12h, >45kg: 100 mg q12h. Pode ser usado curto curso em <8a em situações específicas (ex: riquetsiose)."
+    },
+    "ciprofloxacino": {
+      "drug_pt": "Ciprofloxacino",
+      "drug_en": "Ciprofloxacin (systemic)",
+      "category": "Antibiótico",
+      "route": "Oral",
+      "taketomo_page": 455,
+      "presentations": [
+        {
+          "label": "250mg/5ml suspensão oral (50mg/ml)",
+          "concentration_mg_per_ml": 50
+        },
+        {
+          "label": "500mg/5ml suspensão oral (100mg/ml)",
+          "concentration_mg_per_ml": 100
+        },
+        {
+          "label": "250mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "500mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 30,
+      "doses_per_day": 2,
+      "max_mg_per_day": 1500,
+      "max_mg_per_dose": 750,
+      "default_duration_days": 7,
+      "notes": "Não é 1ª linha em pediatria por concerns de artropatia. Usar quando alternativas mais seguras não disponíveis. Pielonefrite/ITU: 20-40 mg/kg/d q12h."
+    },
+    "levofloxacino": {
+      "drug_pt": "Levofloxacino",
+      "drug_en": "Levofloxacin (systemic)",
+      "category": "Antibiótico",
+      "route": "Oral",
+      "taketomo_page": 1209,
+      "presentations": [
+        {
+          "label": "250mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "500mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "750mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 10,
+      "doses_per_day": 1,
+      "max_mg_per_day": 750,
+      "max_mg_per_dose": 750,
+      "default_duration_days": 7,
+      "notes": "6 meses-<5 anos: 10 mg/kg q12h (=20 mg/kg/d). ≥5 anos: 10 mg/kg 1x/d. Max 750 mg/d. Não 1ª linha em pediatria."
+    },
+    "sulfa_trimetoprima": {
+      "drug_pt": "Sulfametoxazol + Trimetoprima",
+      "drug_en": "Sulfamethoxazole and Trimethoprim",
+      "category": "Antibiótico",
+      "route": "Oral",
+      "taketomo_page": 1885,
+      "presentations": [
+        {
+          "label": "200mg/40mg per 5ml suspensão oral (TMP 8mg/ml)",
+          "concentration_mg_per_ml": 8
+        },
+        {
+          "label": "400mg/80mg comprimido (Bactrim)",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "800mg/160mg comprimido (Bactrim F)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 8,
+      "doses_per_day": 2,
+      "max_mg_per_day": 320,
+      "max_mg_per_dose": 160,
+      "default_duration_days": 10,
+      "notes": "Dose pela COMPONENTE TMP. Geral/UTI/AOM: 6-12 mg TMP/kg/d q12h, max 160 mg TMP/dose, max 320 mg TMP/d. MRSA pele/partes moles: 8-12 mg TMP/kg/d q12h. PCP tratamento: 15-20 mg TMP/kg/d q6-8h."
+    },
+    "nitrofurantoina": {
+      "drug_pt": "Nitrofurantoína",
+      "drug_en": "Nitrofurantoin",
+      "category": "Antibiótico (ITU)",
+      "route": "Oral",
+      "taketomo_page": 1465,
+      "presentations": [
+        {
+          "label": "25mg/5ml suspensão oral",
+          "concentration_mg_per_ml": 5
+        },
+        {
+          "label": "100mg cápsula (Macrodantina)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 6,
+      "doses_per_day": 4,
+      "max_mg_per_day": 400,
+      "max_mg_per_dose": 100,
+      "default_duration_days": 7,
+      "notes": "ITU tratamento: 5-7 mg/kg/d q6h × 7 dias, max 100 mg/dose. Profilaxia ITU: 1-2 mg/kg/d 1x/d ao deitar, max 100 mg/d. CONTRAINDICADO em CrCl <60. NÃO usar em pielonefrite (sem concentração tecidual)."
+    },
+    "metronidazol": {
+      "drug_pt": "Metronidazol",
+      "drug_en": "Metronidazole (systemic)",
+      "category": "Antibiótico/Antiparasitário",
+      "route": "Oral",
+      "taketomo_page": 1369,
+      "presentations": [
+        {
+          "label": "200mg/5ml suspensão oral (40mg/ml)",
+          "concentration_mg_per_ml": 40
+        },
+        {
+          "label": "250mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "400mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 30,
+      "doses_per_day": 3,
+      "max_mg_per_day": 2250,
+      "max_mg_per_dose": 750,
+      "default_duration_days": 7,
+      "notes": "Giardíase/Amebíase: 15-30 mg/kg/d q8h × 5-10 dias. Vaginose bacteriana adolescentes: 500 mg 2x/d × 7d. Anaerobes/H.pylori: 30 mg/kg/d q8h."
+    },
+    "tinidazol": {
+      "drug_pt": "Tinidazol",
+      "drug_en": null,
+      "category": "Antiparasitário",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "500mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 50,
+      "doses_per_day": 1,
+      "max_mg_per_day": 2000,
+      "max_mg_per_dose": 2000,
+      "default_duration_days": 1,
+      "notes": "Não no Taketomo US. Giardíase ≥3 anos: 50 mg/kg dose única (max 2g). Amebíase intestinal: 50 mg/kg/d × 3 dias."
+    },
+    "secnidazol": {
+      "drug_pt": "Secnidazol",
+      "drug_en": null,
+      "category": "Antiparasitário",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "1g comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "30mg/ml suspensão oral",
+          "concentration_mg_per_ml": 30
+        }
+      ],
+      "dose_mg_per_kg_per_day": 30,
+      "doses_per_day": 1,
+      "max_mg_per_day": 2000,
+      "max_mg_per_dose": 2000,
+      "default_duration_days": 1,
+      "notes": "Não no Taketomo US (BR-specific). Giardíase: 30 mg/kg dose única, max 2g. Amebíase: 30 mg/kg/d × 5 dias."
+    },
+    "linezolida": {
+      "drug_pt": "Linezolida",
+      "drug_en": "Linezolid",
+      "category": "Antibiótico",
+      "route": "Oral",
+      "taketomo_page": 1231,
+      "presentations": [
+        {
+          "label": "100mg/5ml suspensão oral",
+          "concentration_mg_per_ml": 20
+        },
+        {
+          "label": "600mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 30,
+      "doses_per_day": 3,
+      "max_mg_per_day": 1800,
+      "max_mg_per_dose": 600,
+      "default_duration_days": 10,
+      "notes": "<12 anos: 30 mg/kg/d q8h. ≥12 anos: 600 mg q12h (1200 mg/d). Max 600 mg/dose. Reservado para MRSA, VRE. Toxicidade hematológica >2 semanas."
+    },
+    "vancomicina_oral": {
+      "drug_pt": "Vancomicina oral",
+      "drug_en": "Vancomycin",
+      "category": "Antibiótico",
+      "route": "Oral",
+      "taketomo_page": 2041,
+      "presentations": [
+        {
+          "label": "250mg/5ml suspensão oral",
+          "concentration_mg_per_ml": 50
+        },
+        {
+          "label": "500mg cápsula",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 40,
+      "doses_per_day": 4,
+      "max_mg_per_day": 2000,
+      "max_mg_per_dose": 500,
+      "default_duration_days": 10,
+      "notes": "INDICAÇÃO EXCLUSIVA: C. difficile (não absorvida). 40 mg/kg/d q6h, max 500 mg/dose. Para infecções sistêmicas usar IV (40-60 mg/kg/d divididos q6-8h)."
+    },
+    "rifampicina": {
+      "drug_pt": "Rifampicina",
+      "drug_en": "Rifampin",
+      "category": "Antibiótico",
+      "route": "Oral",
+      "taketomo_page": 1767,
+      "presentations": [
+        {
+          "label": "20mg/ml suspensão oral",
+          "concentration_mg_per_ml": 20
+        },
+        {
+          "label": "300mg cápsula",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 15,
+      "doses_per_day": 1,
+      "max_mg_per_day": 600,
+      "max_mg_per_dose": 600,
+      "default_duration_days": 180,
+      "notes": "TB ativa: 10-20 mg/kg/d 1x/d, max 600 mg/d × 6 meses (parte de esquema). Profilaxia H. influenzae: 20 mg/kg/d × 4 dias. Profilaxia meningococo: 20 mg/kg/d q12h × 2 dias. Cor laranja-vermelha de urina/secreções."
+    },
+    "tianfenicol": {
+      "drug_pt": "Tianfenicol",
+      "drug_en": "Chloramphenicol (systemic)",
+      "category": "Antibiótico",
+      "route": "Oral",
+      "taketomo_page": 425,
+      "presentations": [
+        {
+          "label": "125mg/5ml granulado para susp",
+          "concentration_mg_per_ml": 25
+        },
+        {
+          "label": "500mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 50,
+      "doses_per_day": 3,
+      "max_mg_per_day": 1500,
+      "max_mg_per_dose": 500,
+      "default_duration_days": 7,
+      "notes": "Análogo do cloranfenicol, menos tóxico. ITU complicada, cervicite, infecções diversas: 50 mg/kg/d q8h, max 1.5 g/d. Taketomo lista o cloranfenicol que tem toxicidade maior (síndrome cinza, anemia aplástica)."
+    },
+    "norfloxacino": {
+      "drug_pt": "Norfloxacino",
+      "drug_en": "Norfloxacin",
+      "category": "Antibiótico (ITU)",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "400mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 800,
+      "max_mg_per_dose": 400,
+      "default_duration_days": 7,
+      "fixed_dose": true,
+      "fixed_dose_string": "Adulto/adolescente: 400 mg 2x/d",
+      "notes": "Não recomendado em pediatria <18 anos (artropatia). Uso adolescente/adulto ITU não-complicada: 400 mg 2x/d × 7-10 dias."
+    },
+    "paracetamol": {
+      "drug_pt": "Paracetamol",
+      "drug_en": "Acetaminophen",
+      "category": "Analgésico/Antitérmico",
+      "route": "Oral",
+      "taketomo_page": 43,
+      "presentations": [
+        {
+          "label": "200mg/ml solução oral (gotas)",
+          "concentration_mg_per_ml": 200
+        },
+        {
+          "label": "100mg/ml solução oral (gotas - infantil)",
+          "concentration_mg_per_ml": 100
+        },
+        {
+          "label": "160mg/5ml suspensão (Tylenol)",
+          "concentration_mg_per_ml": 32
+        },
+        {
+          "label": "500mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "750mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 60,
+      "doses_per_day": 4,
+      "max_mg_per_day": 4000,
+      "max_mg_per_dose": 1000,
+      "default_duration_days": 5,
+      "notes": "10-15 mg/kg/dose q4-6h, max 75 mg/kg/d (não exceder 4 g/d adultos, 2.6 g/d crianças). Limite hepatotóxico. Em uso sustentado ≥48h reduzir para max 60 mg/kg/d."
+    },
+    "dipirona": {
+      "drug_pt": "Dipirona",
+      "drug_en": null,
+      "category": "Analgésico/Antitérmico",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "500mg/ml solução oral (gotas)",
+          "concentration_mg_per_ml": 500
+        },
+        {
+          "label": "50mg/ml suspensão oral",
+          "concentration_mg_per_ml": 50
+        },
+        {
+          "label": "500mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 30,
+      "doses_per_day": 4,
+      "max_mg_per_day": 4000,
+      "max_mg_per_dose": 1000,
+      "default_duration_days": 3,
+      "notes": "Não no Taketomo US (proibido nos EUA). BR/EU uso comum. 10-25 mg/kg/dose q6h, max 1 g/dose. CONTRAINDICADO <3 meses no Brasil. Risco raro de agranulocitose."
+    },
+    "ibuprofeno": {
+      "drug_pt": "Ibuprofeno",
+      "drug_en": "Ibuprofen",
+      "category": "Anti-inflamatório",
+      "route": "Oral",
+      "taketomo_page": 1041,
+      "presentations": [
+        {
+          "label": "50mg/ml solução oral (gotas)",
+          "concentration_mg_per_ml": 50
+        },
+        {
+          "label": "100mg/5ml suspensão oral (20mg/ml)",
+          "concentration_mg_per_ml": 20
+        },
+        {
+          "label": "200mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "300mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "400mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "600mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 30,
+      "doses_per_day": 3,
+      "max_mg_per_day": 2400,
+      "max_mg_per_dose": 800,
+      "default_duration_days": 3,
+      "notes": "Antitérmico/analgésico: 5-10 mg/kg/dose q6-8h. Anti-inflamatório (artrite): 30-50 mg/kg/d q6-8h, max 2.4 g/d. AVOID em <6 meses (relativa). Evitar com desidratação."
+    },
+    "naproxeno": {
+      "drug_pt": "Naproxeno",
+      "drug_en": "Naproxen",
+      "category": "Anti-inflamatório",
+      "route": "Oral",
+      "taketomo_page": 1433,
+      "presentations": [
+        {
+          "label": "125mg/5ml suspensão oral",
+          "concentration_mg_per_ml": 25
+        },
+        {
+          "label": "250mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "500mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 10,
+      "doses_per_day": 2,
+      "max_mg_per_day": 1000,
+      "max_mg_per_dose": 500,
+      "default_duration_days": 5,
+      "notes": "Analgésico/Antitérmico: 5-7 mg/kg/dose q8-12h. Artrite/Anti-inflamatório: 10-20 mg/kg/d q12h, max 1000 mg/d. ≥2 anos."
+    },
+    "ketoprofeno": {
+      "drug_pt": "Ketoprofeno",
+      "drug_en": null,
+      "category": "Anti-inflamatório",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "20mg/ml solução oral (gotas)",
+          "concentration_mg_per_ml": 20
+        },
+        {
+          "label": "50mg cápsula",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "100mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 2,
+      "doses_per_day": 3,
+      "max_mg_per_day": 200,
+      "max_mg_per_dose": 100,
+      "default_duration_days": 5,
+      "notes": "Não no Taketomo US. BR pediátrico: 0.5-1 mg/kg/dose q8h (1 gota/kg/dose), max 100 mg/dose. ≥7 anos preferencialmente."
+    },
+    "cetirizina": {
+      "drug_pt": "Cetirizina",
+      "drug_en": "Cetirizine (systemic)",
+      "category": "Antihistamínico",
+      "route": "Oral",
+      "taketomo_page": 417,
+      "presentations": [
+        {
+          "label": "1mg/ml solução oral (gotas/xarope)",
+          "concentration_mg_per_ml": 1
+        },
+        {
+          "label": "10mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0.25,
+      "doses_per_day": 1,
+      "max_mg_per_day": 10,
+      "max_mg_per_dose": 10,
+      "default_duration_days": 14,
+      "fixed_dose": true,
+      "fixed_dose_string": "6m-2a: 2.5mg 1x/d. 2-6a: 2.5-5mg 1x/d. ≥6a: 5-10mg 1x/d",
+      "notes": "Dose fixa por faixa etária. Max 10 mg/d. Pode dividir em 2 doses se 5+5 mg."
+    },
+    "loratadina": {
+      "drug_pt": "Loratadina",
+      "drug_en": "Loratadine",
+      "category": "Antihistamínico",
+      "route": "Oral",
+      "taketomo_page": 1253,
+      "presentations": [
+        {
+          "label": "1mg/ml xarope",
+          "concentration_mg_per_ml": 1
+        },
+        {
+          "label": "10mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0.2,
+      "doses_per_day": 1,
+      "max_mg_per_day": 10,
+      "max_mg_per_dose": 10,
+      "default_duration_days": 14,
+      "fixed_dose": true,
+      "fixed_dose_string": "2-5a: 5mg 1x/d. ≥6a: 10mg 1x/d",
+      "notes": "Não recomendado <2 anos (limited data). ≥6 anos: 10 mg 1x/d."
+    },
+    "desloratadina": {
+      "drug_pt": "Desloratadina",
+      "drug_en": "Desloratadine",
+      "category": "Antihistamínico",
+      "route": "Oral",
+      "taketomo_page": 599,
+      "presentations": [
+        {
+          "label": "0,5mg/ml xarope",
+          "concentration_mg_per_ml": 0.5
+        },
+        {
+          "label": "5mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0.1,
+      "doses_per_day": 1,
+      "max_mg_per_day": 5,
+      "max_mg_per_dose": 5,
+      "default_duration_days": 14,
+      "fixed_dose": true,
+      "fixed_dose_string": "6-11m: 1mg 1x/d. 1-5a: 1.25mg 1x/d. 6-11a: 2.5mg 1x/d. ≥12a: 5mg 1x/d",
+      "notes": "Metabólito ativo da loratadina, aprovado ≥6 meses. Doses fixas por faixa etária."
+    },
+    "levocetirizina": {
+      "drug_pt": "Levocetirizina",
+      "drug_en": "Levocetirizine",
+      "category": "Antihistamínico",
+      "route": "Oral",
+      "taketomo_page": 1207,
+      "presentations": [
+        {
+          "label": "0,5mg/ml solução oral",
+          "concentration_mg_per_ml": 0.5
+        },
+        {
+          "label": "5mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0.1,
+      "doses_per_day": 1,
+      "max_mg_per_day": 5,
+      "max_mg_per_dose": 5,
+      "default_duration_days": 14,
+      "fixed_dose": true,
+      "fixed_dose_string": "6m-5a: 1.25mg 1x/d. 6-11a: 2.5mg 1x/d. ≥12a: 5mg 1x/d",
+      "notes": "Enantiômero ativo da cetirizina. Aprovado ≥6 meses. Doses fixas por idade."
+    },
+    "hidroxizina": {
+      "drug_pt": "Hidroxizina",
+      "drug_en": "Hydroxyzine",
+      "category": "Antihistamínico",
+      "route": "Oral",
+      "taketomo_page": 1035,
+      "presentations": [
+        {
+          "label": "2mg/ml xarope",
+          "concentration_mg_per_ml": 2
+        },
+        {
+          "label": "10mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "25mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 2,
+      "doses_per_day": 4,
+      "max_mg_per_day": 100,
+      "max_mg_per_dose": 50,
+      "default_duration_days": 7,
+      "notes": "Urticária/prurido: 0.5-1 mg/kg/dose q6h, max 50 mg/dose. Total max 50-100 mg/d crianças. Sedativo (cuidado escola). FDA black box: prolongamento QT em altas doses."
+    },
+    "difenidramina": {
+      "drug_pt": "Difenidramina",
+      "drug_en": "Diphenhydramine (systemic)",
+      "category": "Antihistamínico",
+      "route": "Oral",
+      "taketomo_page": 659,
+      "presentations": [
+        {
+          "label": "2,5mg/ml elixir",
+          "concentration_mg_per_ml": 2.5
+        },
+        {
+          "label": "25mg cápsula",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "50mg cápsula",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 5,
+      "doses_per_day": 4,
+      "max_mg_per_day": 300,
+      "max_mg_per_dose": 50,
+      "default_duration_days": 5,
+      "notes": "1.25 mg/kg/dose q6h, max 50 mg/dose, max 300 mg/d. Muito sedativo. Anticolinérgico. Não usar <2 anos (apneia)."
+    },
+    "dexclorfeniramina": {
+      "drug_pt": "Dexclorfeniramina",
+      "drug_en": "Dexchlorpheniramine",
+      "category": "Antihistamínico",
+      "route": "Oral",
+      "taketomo_page": 609,
+      "presentations": [
+        {
+          "label": "0,4mg/ml xarope (Polaramine)",
+          "concentration_mg_per_ml": 0.4
+        },
+        {
+          "label": "2mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "6mg comprimido repetabs",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0.15,
+      "doses_per_day": 3,
+      "max_mg_per_day": 12,
+      "max_mg_per_dose": 4,
+      "default_duration_days": 7,
+      "fixed_dose": true,
+      "fixed_dose_string": "2-5a: 0.5mg 3x/d. 6-11a: 1mg 3x/d. ≥12a: 2mg 3x/d",
+      "notes": "Antihistamínico 1ª geração — sedativo. Comum em rinite e urticária BR. Max 12 mg/d adolescentes."
+    },
+    "fexofenadina": {
+      "drug_pt": "Fexofenadina",
+      "drug_en": "Fexofenadine",
+      "category": "Antihistamínico",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "6mg/ml suspensão oral",
+          "concentration_mg_per_ml": 6
+        },
+        {
+          "label": "30mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "60mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "120mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "180mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 4,
+      "doses_per_day": 2,
+      "max_mg_per_day": 180,
+      "max_mg_per_dose": 90,
+      "default_duration_days": 14,
+      "fixed_dose": true,
+      "fixed_dose_string": "6m-2a: 15mg 2x/d. 2-11a: 30mg 2x/d. ≥12a: 60mg 2x/d ou 180mg 1x/d",
+      "notes": "Não sedativo. Aprovado ≥6 meses. Urticária crônica adolescentes pode usar 180mg 1x/d."
+    },
+    "ebastina": {
+      "drug_pt": "Ebastina",
+      "drug_en": null,
+      "category": "Antihistamínico",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "1mg/ml xarope",
+          "concentration_mg_per_ml": 1
+        },
+        {
+          "label": "10mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0.2,
+      "doses_per_day": 1,
+      "max_mg_per_day": 20,
+      "max_mg_per_dose": 20,
+      "default_duration_days": 14,
+      "fixed_dose": true,
+      "fixed_dose_string": "2-5a: 2.5mg 1x/d. 6-11a: 5mg 1x/d. ≥12a: 10-20mg 1x/d",
+      "notes": "Não no Taketomo US. Antihistamínico não sedativo. Aprovado ≥2 anos."
+    },
+    "prometazina": {
+      "drug_pt": "Prometazina",
+      "drug_en": "Promethazine",
+      "category": "Antihistamínico",
+      "route": "Oral",
+      "taketomo_page": 1695,
+      "presentations": [
+        {
+          "label": "25mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "50mg/2ml ampola IM/IV",
+          "concentration_mg_per_ml": 25
+        }
+      ],
+      "dose_mg_per_kg_per_day": 1,
+      "doses_per_day": 4,
+      "max_mg_per_day": 50,
+      "max_mg_per_dose": 25,
+      "default_duration_days": 3,
+      "notes": "**CONTRAINDICADA <2 ANOS (FDA black box - depressão respiratória fatal)**. ≥2 anos: 0.25-0.5 mg/kg/dose q6h. Sedativo, anticolinérgico. Preferir alternativas."
+    },
+    "aciclovir": {
+      "drug_pt": "Aciclovir",
+      "drug_en": "Acyclovir (systemic)",
+      "category": "Antiviral",
+      "route": "Oral",
+      "taketomo_page": 60,
+      "presentations": [
+        {
+          "label": "200mg/5ml suspensão oral",
+          "concentration_mg_per_ml": 40
+        },
+        {
+          "label": "200mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "400mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 80,
+      "doses_per_day": 4,
+      "max_mg_per_day": 3200,
+      "max_mg_per_dose": 800,
+      "default_duration_days": 7,
+      "notes": "Varicela: 20 mg/kg/dose q6h × 5 dias, max 800 mg/dose. Herpes simples (gengivoestomatite): 15 mg/kg/dose 5x/d × 7d. HSV genital primário adolescentes: 200 mg 5x/d × 7-10d."
+    },
+    "valaciclovir": {
+      "drug_pt": "Valaciclovir",
+      "drug_en": "Valacyclovir",
+      "category": "Antiviral",
+      "route": "Oral",
+      "taketomo_page": 2029,
+      "presentations": [
+        {
+          "label": "500mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "1g comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 60,
+      "doses_per_day": 3,
+      "max_mg_per_day": 3000,
+      "max_mg_per_dose": 1000,
+      "default_duration_days": 7,
+      "notes": "Pró-droga do aciclovir, melhor biodisponibilidade. Herpes labial ≥12a: 2g q12h × 1 dia. Varicela ≥2 anos: 20 mg/kg q8h × 5d, max 1g/dose."
+    },
+    "famciclovir": {
+      "drug_pt": "Famciclovir",
+      "drug_en": "Famciclovir",
+      "category": "Antiviral",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "125mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "250mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "500mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 3,
+      "max_mg_per_day": 1500,
+      "max_mg_per_dose": 500,
+      "default_duration_days": 7,
+      "fixed_dose": true,
+      "fixed_dose_string": "Adolescentes: 500mg 3x/d (herpes zoster) ou 1g 2x/d × 1d (herpes labial)",
+      "notes": "Pediátrico limitado. Pró-droga do penciclovir. Indicações principalmente adolescentes/adultos."
+    },
+    "oseltamivir": {
+      "drug_pt": "Oseltamivir",
+      "drug_en": "Oseltamivir",
+      "category": "Antiviral",
+      "route": "Oral",
+      "taketomo_page": 1513,
+      "presentations": [
+        {
+          "label": "6mg/ml suspensão oral",
+          "concentration_mg_per_ml": 6
+        },
+        {
+          "label": "30mg cápsula",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "45mg cápsula",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "75mg cápsula",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 6,
+      "doses_per_day": 2,
+      "max_mg_per_day": 150,
+      "max_mg_per_dose": 75,
+      "default_duration_days": 5,
+      "fixed_dose": true,
+      "fixed_dose_string": "≤15kg: 30mg 2x/d. 15-23kg: 45mg 2x/d. 23-40kg: 60mg 2x/d. >40kg: 75mg 2x/d",
+      "notes": "Influenza tratamento ≥2 semanas: dose por peso 2x/d × 5 dias. Idealmente nas primeiras 48h. Profilaxia: mesma dose 1x/d × 10 dias."
+    },
+    "prednisolona": {
+      "drug_pt": "Prednisolona",
+      "drug_en": "Prednisolone (systemic)",
+      "category": "Corticosteroide",
+      "route": "Oral",
+      "taketomo_page": 1675,
+      "presentations": [
+        {
+          "label": "3mg/ml solução oral (Prelone)",
+          "concentration_mg_per_ml": 3
+        },
+        {
+          "label": "1mg/ml solução oral",
+          "concentration_mg_per_ml": 1
+        }
+      ],
+      "dose_mg_per_kg_per_day": 1,
+      "doses_per_day": 1,
+      "max_mg_per_day": 60,
+      "max_mg_per_dose": 60,
+      "default_duration_days": 5,
+      "notes": "Asma exacerbação: 1-2 mg/kg/d 1x/d × 3-5d, max 60 mg/d. Crupe: 1 mg/kg dose única. Anti-inflamatório: 0.5-2 mg/kg/d divididos."
+    },
+    "prednisona": {
+      "drug_pt": "Prednisona",
+      "drug_en": "Prednisone",
+      "category": "Corticosteroide",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "5mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "20mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 1,
+      "doses_per_day": 1,
+      "max_mg_per_day": 60,
+      "max_mg_per_dose": 60,
+      "default_duration_days": 5,
+      "notes": "Pró-droga ativada hepaticamente em prednisolona. Mesma indicação/dose. Útil quando há boa metabolização hepática."
+    },
+    "dexametasona": {
+      "drug_pt": "Dexametasona",
+      "drug_en": "Dexamethasone (systemic)",
+      "category": "Corticosteroide",
+      "route": "Oral",
+      "taketomo_page": 605,
+      "presentations": [
+        {
+          "label": "0,1mg/ml elixir",
+          "concentration_mg_per_ml": 0.1
+        },
+        {
+          "label": "0,5mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "0,75mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "4mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0.15,
+      "doses_per_day": 1,
+      "max_mg_per_day": 16,
+      "max_mg_per_dose": 16,
+      "default_duration_days": 1,
+      "notes": "Crupe: 0.15-0.6 mg/kg dose única (max 16 mg), preferencialmente oral. Asma exacerbação: 0.6 mg/kg/d × 2 dias (alternativa à prednisolona). Anti-edema cerebral: doses mais altas."
+    },
+    "betametasona": {
+      "drug_pt": "Betametasona",
+      "drug_en": "Betamethasone (systemic)",
+      "category": "Corticosteroide",
+      "route": "Oral",
+      "taketomo_page": 273,
+      "presentations": [
+        {
+          "label": "0,1mg/ml elixir (Celestamine)",
+          "concentration_mg_per_ml": 0.1
+        },
+        {
+          "label": "0,5mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0.1,
+      "doses_per_day": 2,
+      "max_mg_per_day": 6,
+      "max_mg_per_dose": 6,
+      "default_duration_days": 5,
+      "notes": "Pediatria: similar a dexametasona em potência. Celestamine (betametasona + dexclorfeniramina) comum em alergia BR."
+    },
+    "metilprednisolona": {
+      "drug_pt": "Metilprednisolona",
+      "drug_en": "Methylprednisolone",
+      "category": "Corticosteroide",
+      "route": "IV",
+      "taketomo_page": 1356,
+      "presentations": [
+        {
+          "label": "40mg pó IV",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "125mg pó IV",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "500mg pó IV",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "1g pó IV",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 2,
+      "doses_per_day": 1,
+      "max_mg_per_day": 1000,
+      "max_mg_per_dose": 1000,
+      "default_duration_days": 3,
+      "notes": "Status asmático/pulso: 1-2 mg/kg/dose IV q6h ou 10-30 mg/kg/d (pulso). Equivalência: 5 mg met = 4 mg prednisolona = 0.75 mg dexa."
+    },
+    "deflazacorte": {
+      "drug_pt": "Deflazacorte",
+      "drug_en": "Deflazacort",
+      "category": "Corticosteroide",
+      "route": "Oral",
+      "taketomo_page": 591,
+      "presentations": [
+        {
+          "label": "6mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "30mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 1.2,
+      "doses_per_day": 1,
+      "max_mg_per_day": 72,
+      "max_mg_per_dose": 72,
+      "default_duration_days": 5,
+      "notes": "Pró-droga. 6 mg deflazacorte ≈ 5 mg prednisolona. Menor efeito Cushing (menos ganho de peso). Asma: 1-2 mg/kg/d × 3-5 dias."
+    },
+    "hidrocortisona_topica": {
+      "drug_pt": "Hidrocortisona (tópica)",
+      "drug_en": "Hydrocortisone (topical)",
+      "category": "Corticoide tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "10mg/g creme 1%",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "25mg/g pomada 2.5%",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar fina camada 2-3x/d",
+      "default_duration_days": 7,
+      "notes": "Potência baixa (Classe VII). Seguro em face/dobras de crianças. Dermatite atópica leve, picadas. Tratamento curto."
+    },
+    "mometasona_topica": {
+      "drug_pt": "Mometasona (tópica)",
+      "drug_en": null,
+      "category": "Corticoide tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "1mg/g creme 0.1%",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "1mg/g pomada 0.1%",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "1mg/g loção 0.1%",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar fina camada 1x/d",
+      "default_duration_days": 14,
+      "notes": "Potência média-alta (Classe IV). Dermatite atópica corpo. Evitar face/dobras prolongadas. ≥2 anos. Aplicação 1x/d só."
+    },
+    "betametasona_topica": {
+      "drug_pt": "Betametasona (tópica)",
+      "drug_en": "Betamethasone (topical)",
+      "category": "Corticoide tópico",
+      "route": "Tópico",
+      "taketomo_page": 275,
+      "presentations": [
+        {
+          "label": "0,5mg/g creme 0.05% (dipropionato)",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "1mg/g creme 0.1% (valerato)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar fina camada 1-2x/d",
+      "default_duration_days": 14,
+      "notes": "Potência alta (Classe II-III). Eczemas crônicos. Evitar uso prolongado em crianças (atrofia, supressão eixo HHA)."
+    },
+    "dexametasona_topica": {
+      "drug_pt": "Dexametasona (tópica)",
+      "drug_en": null,
+      "category": "Corticoide tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "1mg/g creme 0.1%",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar fina camada 2x/d",
+      "default_duration_days": 7,
+      "notes": "Potência média. Pouca evidência tópica isolada; mais comum em combinações."
+    },
+    "desonida": {
+      "drug_pt": "Desonida",
+      "drug_en": "Desonide",
+      "category": "Corticoide tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "0,5mg/g creme 0.05%",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "0,5mg/g loção 0.05%",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar fina camada 2-3x/d",
+      "default_duration_days": 7,
+      "notes": "Potência baixa-média (Classe VI). Bem tolerada em face e crianças. Aprovada ≥3 meses. Atópica."
+    },
+    "triamcinolona_topica": {
+      "drug_pt": "Triamcinolona (tópica)",
+      "drug_en": "Triamcinolone (topical)",
+      "category": "Corticoide tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "1mg/g pomada 0.1%",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "0,25mg/g pomada 0.025%",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar fina camada 2-3x/d",
+      "default_duration_days": 7,
+      "notes": "Potência média (Classe IV-V). Comum em estomatite aftosa (Orabase). Eczemas extremidades."
+    },
+    "clobetasol": {
+      "drug_pt": "Clobetasol (tópico)",
+      "drug_en": "Clobetasol",
+      "category": "Corticoide tópico",
+      "route": "Tópico",
+      "taketomo_page": 485,
+      "presentations": [
+        {
+          "label": "0,5mg/g creme 0.05%",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "0,5mg/g pomada 0.05%",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar fina camada 1-2x/d, max 50g/semana",
+      "default_duration_days": 14,
+      "notes": "Potência ULTRA-ALTA (Classe I). USO RESTRITO em pediatria. Não usar em face/dobras. Curso ≤2 semanas. Não recomendado <12 anos exceto situações especialista."
+    },
+    "hidrocort_miconazol": {
+      "drug_pt": "Hidrocortisona + Miconazol (assadura)",
+      "drug_en": null,
+      "category": "Corticoide+Antifúngico tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "creme combinado (Daktacort, Vodol H)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar fina camada 2x/d × 7 dias",
+      "default_duration_days": 7,
+      "notes": "Dermatite de fralda inflamada + candida. Combinação BR comum. Curso curto."
+    },
+    "budesonida_inalatoria": {
+      "drug_pt": "Budesonida (inalatória)",
+      "drug_en": "Budesonide (oral Inhalation)",
+      "category": "Corticoide inalatório",
+      "route": "Inalatório",
+      "taketomo_page": 305,
+      "presentations": [
+        {
+          "label": "0,25mg/2ml solução para nebulização (Pulmicort)",
+          "concentration_mg_per_ml": 0.125
+        },
+        {
+          "label": "0,5mg/2ml solução para nebulização",
+          "concentration_mg_per_ml": 0.25
+        },
+        {
+          "label": "Turbuhaler 200mcg/dose",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Neb: 0.25-0.5mg 2x/d (até 1mg/d). Turbuhaler 6-11a: 200-400mcg/d. ≥12a: 200-800mcg/d",
+      "default_duration_days": 30,
+      "notes": "Único ICS aprovado <4 anos (nebulização). Aprovado ≥12 meses. Asma persistente. Após uso lavar a boca."
+    },
+    "fluticasona_inalatoria": {
+      "drug_pt": "Fluticasona (inalatória)",
+      "drug_en": "Fluticasone (oral Inhalation)",
+      "category": "Corticoide inalatório",
+      "route": "Inalatório",
+      "taketomo_page": 907,
+      "presentations": [
+        {
+          "label": "spray 50mcg/jato (Flixotide)",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "spray 125mcg/jato",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "spray 250mcg/jato",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "diskus 50mcg/dose",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "≥4a: 50-100mcg 2x/d (baixa). Médio: 100-200mcg 2x/d. Alta: ≥250mcg 2x/d",
+      "default_duration_days": 30,
+      "notes": "Aprovado ≥4 anos. Asma persistente. Equivalência: 100mcg fluticasona ≈ 200mcg budesonida ≈ 200mcg beclometasona."
+    },
+    "beclometasona_inalatoria": {
+      "drug_pt": "Beclometasona (inalatória)",
+      "drug_en": "Beclomethasone (oral Inhalation)",
+      "category": "Corticoide inalatório",
+      "route": "Inalatório",
+      "taketomo_page": 257,
+      "presentations": [
+        {
+          "label": "spray 50mcg/jato (Clenil)",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "spray 250mcg/jato",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "5-11a: 50-100mcg 2x/d. ≥12a: 100-400mcg 2x/d",
+      "default_duration_days": 30,
+      "notes": "Aprovado ≥5 anos. Asma persistente. Disponível com espaçador."
+    },
+    "formoterol_budesonida": {
+      "drug_pt": "Formoterol + Budesonida",
+      "drug_en": null,
+      "category": "Broncodilatador + Corticoide",
+      "route": "Inalatório",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "Turbuhaler 6/100mcg/dose (Symbicort)",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "Turbuhaler 6/200mcg/dose",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "Turbuhaler 12/400mcg/dose",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "6-11a: 6/100 ou 6/200, 2 inalações 2x/d. ≥12a: 6/100 ou 6/200 2 inal 2x/d",
+      "default_duration_days": 30,
+      "notes": "Aprovado ≥6 anos. Asma persistente moderada/grave. SMART: pode usar como manutenção + alívio (mesma medicação)."
+    },
+    "mometasona_nasal": {
+      "drug_pt": "Mometasona spray nasal",
+      "drug_en": "Mometasone (nasal)",
+      "category": "Corticoide nasal",
+      "route": "Nasal",
+      "taketomo_page": 1400,
+      "presentations": [
+        {
+          "label": "50mcg/jato spray nasal (Nasonex)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "2-11a: 1 jato/narina 1x/d (100mcg/d). ≥12a: 2 jatos/narina 1x/d (200mcg/d)",
+      "default_duration_days": 30,
+      "notes": "Aprovado ≥2 anos para rinite. ≥12 anos para sinusite. Pico de efeito em 1-2 semanas."
+    },
+    "fluticasona_nasal": {
+      "drug_pt": "Fluticasona spray nasal",
+      "drug_en": "Fluticasone (nasal)",
+      "category": "Corticoide nasal",
+      "route": "Nasal",
+      "taketomo_page": 905,
+      "presentations": [
+        {
+          "label": "50mcg/jato spray nasal (Avamys)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "2-11a: 1 jato/narina 1x/d. ≥12a: 2 jatos/narina 1x/d",
+      "default_duration_days": 30,
+      "notes": "Aprovado ≥2 anos. Rinite alérgica. Fluticasona furoato (Avamys) e propionato (Flixonase) — doses diferentes."
+    },
+    "budesonida_nasal": {
+      "drug_pt": "Budesonida spray nasal",
+      "drug_en": "Budesonide (nasal)",
+      "category": "Corticoide nasal",
+      "route": "Nasal",
+      "taketomo_page": 307,
+      "presentations": [
+        {
+          "label": "32mcg/jato (Rhinocort)",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "64mcg/jato",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "≥6a: 1-2 jatos/narina 1x/d. Max 256mcg/d (6-11a) / 256mcg (≥12a)",
+      "default_duration_days": 30,
+      "notes": "Aprovado ≥6 anos. Rinite alérgica."
+    },
+    "fluconazol": {
+      "drug_pt": "Fluconazol",
+      "drug_en": "Fluconazole",
+      "category": "Antifúngico",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "10mg/ml suspensão oral",
+          "concentration_mg_per_ml": 10
+        },
+        {
+          "label": "150mg cápsula",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 6,
+      "doses_per_day": 1,
+      "max_mg_per_day": 400,
+      "max_mg_per_dose": 400,
+      "default_duration_days": 14,
+      "notes": "Candidíase oral: 6 mg/kg D1, depois 3 mg/kg/d × 7-14 dias. Candidíase invasiva: 6-12 mg/kg/d. Max 600 mg/d. Tinea: 6 mg/kg 1x/sem × 2-4 sem."
+    },
+    "itraconazol": {
+      "drug_pt": "Itraconazol",
+      "drug_en": "Itraconazole",
+      "category": "Antifúngico",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "10mg/ml solução oral",
+          "concentration_mg_per_ml": 10
+        },
+        {
+          "label": "100mg cápsula",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 5,
+      "doses_per_day": 1,
+      "max_mg_per_day": 200,
+      "max_mg_per_dose": 200,
+      "default_duration_days": 14,
+      "notes": "Tinea/onicomicose/dermatofitoses: 3-5 mg/kg/d × 2-4 semanas. Candidíase oroesofágica: 2.5 mg/kg 2x/d. Cápsula tomar com alimentação; solução em jejum."
+    },
+    "voriconazol": {
+      "drug_pt": "Voriconazol",
+      "drug_en": "Voriconazole (systemic)",
+      "category": "Antifúngico",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "40mg/ml suspensão oral",
+          "concentration_mg_per_ml": 40
+        },
+        {
+          "label": "50mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "200mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 18,
+      "doses_per_day": 2,
+      "max_mg_per_day": 800,
+      "max_mg_per_dose": 400,
+      "default_duration_days": 14,
+      "notes": "Especialista. Aspergilose invasiva, candidíase grave. 2-12a: 9 mg/kg/dose q12h × 1d, depois 8 mg/kg q12h. ≥15a: 400mg q12h × 1d, depois 200-300 mg q12h."
+    },
+    "terbinafina_oral": {
+      "drug_pt": "Terbinafina oral",
+      "drug_en": "Terbinafine (systemic)",
+      "category": "Antifúngico",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "250mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 5,
+      "doses_per_day": 1,
+      "max_mg_per_day": 250,
+      "max_mg_per_dose": 250,
+      "default_duration_days": 42,
+      "fixed_dose": true,
+      "fixed_dose_string": "<25kg: 125mg 1x/d. 25-35kg: 187.5mg 1x/d. >35kg: 250mg 1x/d",
+      "notes": "Onicomicose/tinea capitis: 6 semanas a 3 meses. Doses fixas por peso. Monitorar função hepática se uso prolongado."
+    },
+    "griseofulvina": {
+      "drug_pt": "Griseofulvina",
+      "drug_en": "Griseofulvin",
+      "category": "Antifúngico",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "125mg/5ml suspensão oral (microsize)",
+          "concentration_mg_per_ml": 25
+        },
+        {
+          "label": "500mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 20,
+      "doses_per_day": 1,
+      "max_mg_per_day": 1000,
+      "max_mg_per_dose": 1000,
+      "default_duration_days": 42,
+      "notes": "Tinea capitis ≥2 anos: 20-25 mg/kg/d (microsize) × 6-8 semanas. Tomar com refeição gordurosa. Hepatotóxica — monitorar."
+    },
+    "nistatina_oral": {
+      "drug_pt": "Nistatina oral",
+      "drug_en": "Nystatin (oral)",
+      "category": "Antifúngico",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "100.000UI/ml suspensão oral",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 4,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Lactente: 1ml 4x/d. Criança/adolescente: 4-6ml 4x/d",
+      "default_duration_days": 14,
+      "notes": "Candidíase oral. Manter na boca pelo maior tempo possível antes de engolir. Continuar 48h após resolução."
+    },
+    "nistatina_topica": {
+      "drug_pt": "Nistatina (tópica)",
+      "drug_en": "Nystatin (topical)",
+      "category": "Antifúngico tópico",
+      "route": "Tópico",
+      "taketomo_page": 1483,
+      "presentations": [
+        {
+          "label": "100.000UI/g creme",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "100.000UI/g pomada",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 3,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar fina camada 2-3x/d",
+      "default_duration_days": 14,
+      "notes": "Candidíase cutânea/perineal/dermatite de fralda fúngica. Aplicar por 14 dias ou 48-72h após resolução."
+    },
+    "miconazol_topico": {
+      "drug_pt": "Miconazol (tópico)",
+      "drug_en": "Miconazole (topical)",
+      "category": "Antifúngico tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "20mg/g creme 2%",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "20mg/g pó 2%",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "20mg/g loção 2%",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar 2x/d",
+      "default_duration_days": 21,
+      "notes": "Tinea (corporis, pedis, cruris), candidíase, pitiríase. ≥2 anos. Continuar 2 sem após cura clínica."
+    },
+    "clotrimazol_topico": {
+      "drug_pt": "Clotrimazol (tópico)",
+      "drug_en": "Clotrimazole (topical)",
+      "category": "Antifúngico tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "10mg/g creme 1%",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "10mg/g loção 1%",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar 2x/d",
+      "default_duration_days": 28,
+      "notes": "Tinea/candidíase. Tratar até 1-2 sem após cura. Seguro em crianças."
+    },
+    "cetoconazol_topico": {
+      "drug_pt": "Cetoconazol (tópico)",
+      "drug_en": "Ketoconazole (topical)",
+      "category": "Antifúngico tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "20mg/g creme 2%",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "20mg/ml xampu 2%",
+          "concentration_mg_per_ml": 20
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Creme: 1x/d. Xampu: 1-2x/sem deixar 3-5 min",
+      "default_duration_days": 28,
+      "notes": "Dermatite seborreica, pitiríase versicolor, tinea. Xampu para couro cabeludo (seborreia)."
+    },
+    "isoconazol": {
+      "drug_pt": "Isoconazol (tópico)",
+      "drug_en": "Isoconazole (topical)",
+      "category": "Antifúngico tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "10mg/g creme 1%",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar 1-2x/d",
+      "default_duration_days": 21,
+      "notes": "Tinea/candidíase. Similar a miconazol. Comum em BR."
+    },
+    "terbinafina_topica": {
+      "drug_pt": "Terbinafina (tópica)",
+      "drug_en": "Terbinafine (topical)",
+      "category": "Antifúngico tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "10mg/g creme 1%",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "10mg/g gel 1%",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar 1-2x/d",
+      "default_duration_days": 14,
+      "notes": "Fungicida. Tinea pedis: 1-2 sem. Tinea corporis/cruris: 1 sem. ≥12 anos preferencialmente."
+    },
+    "ciclopirox": {
+      "drug_pt": "Ciclopirox (tópico)",
+      "drug_en": "Ciclopirox (topical)",
+      "category": "Antifúngico tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "10mg/g creme 1%",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "10mg/ml xampu",
+          "concentration_mg_per_ml": 10
+        },
+        {
+          "label": "esmalte 8% (Loceryl)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Creme: 2x/d. Esmalte: 1x/d na unha afetada",
+      "default_duration_days": 28,
+      "notes": "Tinea, candidíase, onicomicose (esmalte). Pediatria limitada. Esmalte ≥12 anos."
+    },
+    "albendazol": {
+      "drug_pt": "Albendazol",
+      "drug_en": "Albendazole",
+      "category": "Antiparasitário",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "40mg/ml suspensão oral",
+          "concentration_mg_per_ml": 40
+        },
+        {
+          "label": "400mg comprimido mastigável",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 10,
+      "doses_per_day": 1,
+      "max_mg_per_day": 400,
+      "max_mg_per_dose": 400,
+      "default_duration_days": 3,
+      "fixed_dose": true,
+      "fixed_dose_string": "≥2a: 400mg dose única (ancilostomíase, ascaridíase). Estrongiloidíase/teníase: 400mg/d × 3d. Giardíase: 400mg/d × 5d",
+      "notes": "Múltiplas indicações. Larva migrans: 400 mg/d × 3 dias. Neurocisticercose: 15 mg/kg/d × 8-30d (max 800/d)."
+    },
+    "mebendazol": {
+      "drug_pt": "Mebendazol",
+      "drug_en": "Mebendazole",
+      "category": "Antiparasitário",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "20mg/ml suspensão oral",
+          "concentration_mg_per_ml": 20
+        },
+        {
+          "label": "100mg comprimido mastigável",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 200,
+      "max_mg_per_dose": 100,
+      "default_duration_days": 3,
+      "fixed_dose": true,
+      "fixed_dose_string": "≥2a: 100mg 2x/d × 3d (ascaridíase, ancilostomíase, tricuríase). Enterobíase: 100mg dose única, repetir em 14d",
+      "notes": "Múltiplos helmintos. Enterobíase (oxiúros): dose única + repetir em 2 semanas. Tratar família junto."
+    },
+    "nitazoxanida": {
+      "drug_pt": "Nitazoxanida",
+      "drug_en": "Nitazoxanide",
+      "category": "Antiparasitário",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "20mg/ml suspensão oral",
+          "concentration_mg_per_ml": 20
+        },
+        {
+          "label": "500mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 15,
+      "doses_per_day": 2,
+      "max_mg_per_day": 1000,
+      "max_mg_per_dose": 500,
+      "default_duration_days": 3,
+      "fixed_dose": true,
+      "fixed_dose_string": "1-3a: 100mg 2x/d. 4-11a: 200mg 2x/d. ≥12a: 500mg 2x/d × 3 dias",
+      "notes": "Giardíase, criptosporidíase, ascaridíase, amebíase. Aprovado ≥1 ano. 3 dias com refeição."
+    },
+    "praziquantel": {
+      "drug_pt": "Praziquantel",
+      "drug_en": "Praziquantel",
+      "category": "Antiparasitário",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "600mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 40,
+      "doses_per_day": 1,
+      "max_mg_per_day": 2400,
+      "max_mg_per_dose": 1200,
+      "default_duration_days": 1,
+      "notes": "Teníase: 5-10 mg/kg dose única. Cisticercose: 50 mg/kg/d × 14 dias. Esquistossomose: 40 mg/kg dose única (BR). ≥4 anos."
+    },
+    "ivermectina": {
+      "drug_pt": "Ivermectina (oral)",
+      "drug_en": "Ivermectin (systemic)",
+      "category": "Antiparasitário",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "6mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0.2,
+      "doses_per_day": 1,
+      "max_mg_per_day": 12,
+      "max_mg_per_dose": 12,
+      "default_duration_days": 1,
+      "fixed_dose": true,
+      "fixed_dose_string": "≥15kg ou ≥5a: 200 mcg/kg dose única; repetir em 7 dias (escabiose)",
+      "notes": "Escabiose, pediculose, estrongiloidíase. ≥15kg. Tomar em jejum (água). Não recomendado <15kg ou <5 anos. Escabiose: 2 doses (D1 e D8)."
+    },
+    "permetrina_topica": {
+      "drug_pt": "Permetrina (tópica)",
+      "drug_en": "Permethrin",
+      "category": "Antiparasitário tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "10mg/ml loção 1% (pediculose)",
+          "concentration_mg_per_ml": 10
+        },
+        {
+          "label": "50mg/g creme 5% (escabiose)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Pediculose: 1% loção no couro cabeludo, deixar 10min, enxaguar; repetir 7d. Escabiose: 5% creme pescoço aos pés, deixar 8-14h, repetir 7d",
+      "default_duration_days": 1,
+      "notes": "Aprovado ≥2 meses. 1ª linha pediculose e escabiose. Aplicar com cabelo limpo seco. Reaplicar em 7 dias para garantir."
+    },
+    "deltametrina": {
+      "drug_pt": "Deltametrina",
+      "drug_en": null,
+      "category": "Antiparasitário tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "0,2mg/ml loção 0.02% (Deltacid)",
+          "concentration_mg_per_ml": 0.2
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar no couro cabeludo molhado, deixar 5 min, enxaguar. Repetir 7d",
+      "default_duration_days": 1,
+      "notes": "Pediculose. ≥2 anos. BR-specific. Não eficaz para escabiose."
+    },
+    "benzoato_benzila": {
+      "drug_pt": "Benzoato de Benzila",
+      "drug_en": null,
+      "category": "Antiparasitário tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "250mg/ml loção 25%",
+          "concentration_mg_per_ml": 250
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Adultos: 25% direto. Crianças >2a: diluir 1:1. Lactentes: diluir 1:2. Aplicar pescoço aos pés, deixar 24h, repetir 7d",
+      "default_duration_days": 1,
+      "notes": "Escabiose. Cuidado em <2 anos (neurotóxico). Diluir conforme idade. Permetrina é preferível."
+    },
+    "salbutamol_spray": {
+      "drug_pt": "Salbutamol Spray",
+      "drug_en": "Albuterol",
+      "category": "Broncodilatador",
+      "route": "Inalatório",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "100mcg/jato aerossol (Aerolin)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 4,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Resgate: 2-4 jatos com espaçador q4-6h. Crise: 4-8 jatos q20min × 1h. Profilaxia exercício: 2 jatos 15min antes",
+      "default_duration_days": 5,
+      "notes": "Beta-2 agonista curta. SEMPRE com espaçador em crianças. Pode repetir até 4-8 jatos em crise."
+    },
+    "salbutamol_nebulizacao": {
+      "drug_pt": "Salbutamol nebulização",
+      "drug_en": "Albuterol",
+      "category": "Broncodilatador",
+      "route": "Inalatório",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "5mg/ml solução para nebulização (gotas)",
+          "concentration_mg_per_ml": 5
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 4,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "0.15 mg/kg/dose (min 2.5mg, max 5mg) = 1 gota/2-3kg diluído em 3ml SF 0.9%",
+      "default_duration_days": 5,
+      "notes": "Crise asmática: pode repetir q20min × 3 doses. 1 gota = 0.25 mg. Diluir em 3-5ml de SF."
+    },
+    "fenoterol_gotas": {
+      "drug_pt": "Fenoterol gotas",
+      "drug_en": null,
+      "category": "Broncodilatador",
+      "route": "Inalatório",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "5mg/ml solução para nebulização (Berotec)",
+          "concentration_mg_per_ml": 5
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 4,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "1 gota/3kg (max 10 gotas) diluído em 3ml SF",
+      "default_duration_days": 5,
+      "notes": "Beta-2 mais cardiotrópico que salbutamol. Tendência a substituição por salbutamol. Comum em BR."
+    },
+    "ipratropio_neb": {
+      "drug_pt": "Brometo de Ipratrópio",
+      "drug_en": "Ipratropium (oral inhalation)",
+      "category": "Broncodilatador anticolinérgico",
+      "route": "Inalatório",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "0,25mg/ml solução para nebulização (Atrovent)",
+          "concentration_mg_per_ml": 0.25
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 4,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "<6a: 0.25mg (20 gotas). ≥6a: 0.5mg (40 gotas). Crise asmática: associar ao salbutamol q20min × 3",
+      "default_duration_days": 5,
+      "notes": "Anticolinérgico. Adjuvante na crise asmática (sinergia com beta-2). Diluir em 3ml SF."
+    },
+    "montelucaste": {
+      "drug_pt": "Montelucaste",
+      "drug_en": "Montelukast",
+      "category": "Anti-leucotrieno",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "4mg comprimido mastigável",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "5mg comprimido mastigável",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "10mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "4mg sachê granulado",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 10,
+      "max_mg_per_dose": 10,
+      "default_duration_days": 30,
+      "fixed_dose": true,
+      "fixed_dose_string": "6m-5a: 4mg 1x/d à noite. 6-14a: 5mg 1x/d à noite. ≥15a: 10mg 1x/d à noite",
+      "notes": "Asma persistente, rinite alérgica, broncoespasmo exercício. Black box FDA 2020: monitorar sintomas neuropsiquiátricos."
+    },
+    "ondansetrona": {
+      "drug_pt": "Ondansetrona",
+      "drug_en": "Ondansetron",
+      "category": "Antiemético",
+      "route": "Oral",
+      "taketomo_page": 1509,
+      "presentations": [
+        {
+          "label": "4mg/5ml solução oral",
+          "concentration_mg_per_ml": 0.8
+        },
+        {
+          "label": "4mg comprimido orodispersível",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "8mg comprimido orodispersível",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0.4,
+      "doses_per_day": 3,
+      "max_mg_per_day": 24,
+      "max_mg_per_dose": 8,
+      "default_duration_days": 2,
+      "fixed_dose": true,
+      "fixed_dose_string": "8-15kg: 2mg dose única (gastroenterite). 15-30kg: 4mg. >30kg: 8mg. Pode repetir q8h se necessário",
+      "notes": "Gastroenterite com vômitos refratários: dose única VO geralmente suficiente. Quimioterapia: 0.15 mg/kg q4-8h. Risco prolongamento QT em altas doses."
+    },
+    "bromoprida": {
+      "drug_pt": "Bromoprida",
+      "drug_en": null,
+      "category": "Antiemético/Pró-cinético",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "4mg/ml solução oral (gotas - Digesan)",
+          "concentration_mg_per_ml": 4
+        },
+        {
+          "label": "10mg cápsula",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0.5,
+      "doses_per_day": 3,
+      "max_mg_per_day": 30,
+      "max_mg_per_dose": 10,
+      "default_duration_days": 5,
+      "fixed_dose": true,
+      "fixed_dose_string": "Lactentes: 1 gota/kg/dose 3x/d. >2a: 3-5 gotas/dose 3x/d. Max 10mg/dose",
+      "notes": "Antiemético BR. Risco distonia/extrapiramidal (raro). Curta duração. Tomar 30 min antes refeições."
+    },
+    "metoclopramida": {
+      "drug_pt": "Metoclopramida",
+      "drug_en": "Metoclopramide",
+      "category": "Antiemético/Pró-cinético",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "4mg/ml solução oral (gotas - Plasil)",
+          "concentration_mg_per_ml": 4
+        },
+        {
+          "label": "10mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0.5,
+      "doses_per_day": 3,
+      "max_mg_per_day": 30,
+      "max_mg_per_dose": 10,
+      "default_duration_days": 5,
+      "notes": "0.1-0.2 mg/kg/dose q6-8h, max 10 mg/dose. FDA black box: discinesia tardia em uso >12 sem. Risco distonia aguda em jovens — evitar. Não usar <1 ano."
+    },
+    "dimenidrinato": {
+      "drug_pt": "Dimenidrinato",
+      "drug_en": "Dimenhydrinate",
+      "category": "Antiemético/Anti-cinetose",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "1,5mg/ml xarope (Dramin)",
+          "concentration_mg_per_ml": 1.5
+        },
+        {
+          "label": "50mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "100mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 5,
+      "doses_per_day": 4,
+      "max_mg_per_day": 300,
+      "max_mg_per_dose": 75,
+      "default_duration_days": 3,
+      "fixed_dose": true,
+      "fixed_dose_string": "2-6a: 12.5-25mg q6-8h. 6-12a: 25-50mg q6-8h. ≥12a: 50-100mg q4-6h",
+      "notes": "Cinetose, vômito leve. Antihistamínico sedativo. Evitar <2 anos. Não confundir com dimenidrinato + piridoxina (Vonau Flash, etc)."
+    },
+    "domperidona": {
+      "drug_pt": "Domperidona",
+      "drug_en": null,
+      "category": "Pró-cinético",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "1mg/ml suspensão oral (Motilium)",
+          "concentration_mg_per_ml": 1
+        },
+        {
+          "label": "10mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0.75,
+      "doses_per_day": 3,
+      "max_mg_per_day": 30,
+      "max_mg_per_dose": 10,
+      "default_duration_days": 7,
+      "notes": "Refluxo/náuseas. 0.25 mg/kg/dose q8h, max 10 mg/dose. Não passa BHE (menos efeitos centrais que metoclopramida). Alerta de prolongamento QT — usar dose efetiva mais baixa pelo menor tempo."
+    },
+    "omeprazol": {
+      "drug_pt": "Omeprazol",
+      "drug_en": "Omeprazole",
+      "category": "IBP",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "10mg cápsula",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "20mg cápsula",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "40mg cápsula",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "Suspensão extemporânea 2mg/ml",
+          "concentration_mg_per_ml": 2
+        }
+      ],
+      "dose_mg_per_kg_per_day": 1,
+      "doses_per_day": 1,
+      "max_mg_per_day": 40,
+      "max_mg_per_dose": 40,
+      "default_duration_days": 30,
+      "fixed_dose": true,
+      "fixed_dose_string": "5-<10kg: 5mg/d. 10-<20kg: 10mg/d. ≥20kg: 20mg/d. 1x/d 30min antes café",
+      "notes": "DRGE: 0.7-3.5 mg/kg/d 1x/d, max 40 mg/d. H. pylori: 1 mg/kg/dose 2x/d. Cápsula pode abrir em suco (não mastigar)."
+    },
+    "esomeprazol": {
+      "drug_pt": "Esomeprazol",
+      "drug_en": "Esomeprazole",
+      "category": "IBP",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "20mg comprimido (Nexium)",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "40mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0.5,
+      "doses_per_day": 1,
+      "max_mg_per_day": 40,
+      "max_mg_per_dose": 40,
+      "default_duration_days": 30,
+      "fixed_dose": true,
+      "fixed_dose_string": "1-11a, <20kg: 10mg/d. ≥20kg: 10-20mg/d. ≥12a: 20-40mg/d",
+      "notes": "Isômero S do omeprazol. DRGE/esofagite erosiva."
+    },
+    "lansoprazol": {
+      "drug_pt": "Lansoprazol",
+      "drug_en": "Lansoprazole",
+      "category": "IBP",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "15mg cápsula",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "30mg cápsula",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 1,
+      "doses_per_day": 1,
+      "max_mg_per_day": 30,
+      "max_mg_per_dose": 30,
+      "default_duration_days": 30,
+      "fixed_dose": true,
+      "fixed_dose_string": "1-11a, ≤30kg: 15mg/d. >30kg: 30mg/d. ≥12a: 15-30mg/d",
+      "notes": "DRGE/esofagite erosiva. Cápsula pode abrir em alimento mole."
+    },
+    "pantoprazol": {
+      "drug_pt": "Pantoprazol",
+      "drug_en": "Pantoprazole",
+      "category": "IBP",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "20mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "40mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 1,
+      "doses_per_day": 1,
+      "max_mg_per_day": 40,
+      "max_mg_per_dose": 40,
+      "default_duration_days": 30,
+      "fixed_dose": true,
+      "fixed_dose_string": "5-15kg: 20mg/d. >15kg: 40mg/d",
+      "notes": "DRGE crianças ≥5 anos. Aprovado para ≥5 anos para esofagite erosiva."
+    },
+    "famotidina": {
+      "drug_pt": "Famotidina",
+      "drug_en": "Famotidine",
+      "category": "Anti-H2",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "8mg/ml suspensão oral",
+          "concentration_mg_per_ml": 8
+        },
+        {
+          "label": "20mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "40mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 1,
+      "doses_per_day": 2,
+      "max_mg_per_day": 80,
+      "max_mg_per_dose": 40,
+      "default_duration_days": 30,
+      "notes": "DRGE: 0.5-1 mg/kg/dose q12h, max 40 mg/dose. Úlcera péptica: similar. Substituiu a ranitidina (retirada)."
+    },
+    "lactulose": {
+      "drug_pt": "Lactulose",
+      "drug_en": "Lactulose",
+      "category": "Laxativo",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "667mg/ml xarope (Lactulona, Farlac)",
+          "concentration_mg_per_ml": 667
+        }
+      ],
+      "dose_mg_per_kg_per_day": 1500,
+      "doses_per_day": 2,
+      "max_mg_per_day": 60000,
+      "max_mg_per_dose": 30000,
+      "default_duration_days": 30,
+      "fixed_dose": true,
+      "fixed_dose_string": "Lactente: 2.5-10ml/d divididos. Criança: 7.5-15ml/d. Adolescente: 15-30ml 1-2x/d. Titular pelo efeito (1-3 evacuações/d)",
+      "notes": "Constipação crônica funcional. Titular dose pelo efeito. Encefalopatia hepática: 40-90 ml/d divididos 3-4x/d."
+    },
+    "peg_macrogol": {
+      "drug_pt": "Polietilenoglicol (PEG)",
+      "drug_en": "Polyethylene Glycol-Electrolyte Solution",
+      "category": "Laxativo",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "sachê 105g pó (Nulytely - limpeza)",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "sachê 17g pó (Muvinlax)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 400,
+      "doses_per_day": 1,
+      "max_mg_per_day": 17000,
+      "max_mg_per_dose": 17000,
+      "default_duration_days": 30,
+      "fixed_dose": true,
+      "fixed_dose_string": "Manutenção constipação: 0.4-0.8 g/kg/d 1x/d (sachê 17g em 120ml água). Desimpactação: 1-1.5 g/kg/d × 3-6 dias",
+      "notes": "1ª linha constipação funcional crônica (NASPGHAN). PEG sem eletrólitos para manutenção. Bem tolerado. Aprovado ≥2 anos (uso fora bula menor)."
+    },
+    "bisacodil": {
+      "drug_pt": "Bisacodil",
+      "drug_en": "Bisacodyl",
+      "category": "Laxativo",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "5mg comprimido (Dulcolax)",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "10mg supositório",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 10,
+      "max_mg_per_dose": 10,
+      "default_duration_days": 3,
+      "fixed_dose": true,
+      "fixed_dose_string": "3-11a: 5mg/d VO ou 5mg supos. ≥12a: 5-15mg/d VO ou 10mg supos",
+      "notes": "Estimulante. Uso pontual/agudo. Não usar cronicamente. Supositório age em 15-60min."
+    },
+    "picossulfato": {
+      "drug_pt": "Picossulfato de Sódio",
+      "drug_en": null,
+      "category": "Laxativo",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "7,5mg/ml gotas (Guttalax)",
+          "concentration_mg_per_ml": 7.5
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 10,
+      "max_mg_per_dose": 10,
+      "default_duration_days": 7,
+      "fixed_dose": true,
+      "fixed_dose_string": "1m-3a: 2.5-5mg (3-7 gotas)/d à noite. 4-9a: 5-10mg (7-14 gotas)/d. ≥10a: 10mg/d",
+      "notes": "Estimulante. Atua em 6-12h. Uso pontual. 1 gota = ~0.75 mg."
+    },
+    "glicerina_supositorio": {
+      "drug_pt": "Supositório de Glicerina",
+      "drug_en": "Glycerin (oral and rectal)",
+      "category": "Laxativo",
+      "route": "Retal",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "supositório infantil",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "supositório adulto",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Lactente/criança: 1 supositório infantil quando necessário. Adolescente: 1 adulto",
+      "default_duration_days": 1,
+      "notes": "Atua em 15-30 min. Uso esporádico. Não para uso crônico (irrita mucosa retal)."
+    },
+    "oleo_mineral": {
+      "drug_pt": "Óleo Mineral",
+      "drug_en": "Mineral Oil",
+      "category": "Laxativo",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "emulsão oral 100% (Nujol)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "5-11a: 5-15ml/d. ≥12a: 15-45ml/d. Tomar entre refeições",
+      "default_duration_days": 14,
+      "notes": "Lubrificante. NÃO usar <1 ano (risco aspiração/pneumonia lipoídica). Cuidado com vitaminas lipossolúveis (reduz absorção)."
+    },
+    "racecadotrila": {
+      "drug_pt": "Racecadotrila",
+      "drug_en": null,
+      "category": "Antidiarréico",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "10mg sachê (lactente)",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "30mg sachê (criança)",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "100mg cápsula",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 4.5,
+      "doses_per_day": 3,
+      "max_mg_per_day": 300,
+      "max_mg_per_dose": 100,
+      "default_duration_days": 5,
+      "fixed_dose": true,
+      "fixed_dose_string": "1.5 mg/kg/dose 3x/d. <9kg: 10mg 3x/d. 9-13kg: 20mg 3x/d. 13-27kg: 30mg 3x/d. >27kg: 60mg 3x/d",
+      "notes": "Antisecretor (inibidor encefalinase). Diarreia aguda lactente ≥3m e criança. Junto com TRO. Max 7 dias."
+    },
+    "saccharomyces_boulardii": {
+      "drug_pt": "Saccharomyces boulardii",
+      "drug_en": null,
+      "category": "Probiótico",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "100mg sachê (Floratil)",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "200mg sachê",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 1000,
+      "max_mg_per_dose": 500,
+      "default_duration_days": 5,
+      "fixed_dose": true,
+      "fixed_dose_string": "Lactente/criança: 200-400mg/d divididos. Adolescente: 500-1000mg/d",
+      "notes": "Diarreia aguda e antibiótico-associada. CONTRAINDICADO em imunossuprimidos/cateter central (risco fungemia)."
+    },
+    "lactobacillus_rhamnosus": {
+      "drug_pt": "Lactobacillus rhamnosus GG",
+      "drug_en": null,
+      "category": "Probiótico",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "sachê/cápsula (concentração varia)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "10^9 a 10^10 UFC/d divididos 1-2x/d",
+      "default_duration_days": 5,
+      "notes": "Cepa mais estudada em pediatria. Reduz duração de diarreia aguda em ~1 dia. Antibiótico-associada."
+    },
+    "diosmectita": {
+      "drug_pt": "Diosmectita (Smecta)",
+      "drug_en": null,
+      "category": "Antidiarréico",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "sachê 3g pó",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 3,
+      "max_mg_per_day": 9000,
+      "max_mg_per_dose": 3000,
+      "default_duration_days": 5,
+      "fixed_dose": true,
+      "fixed_dose_string": "<1a: 1 sachê/d divididos. 1-2a: 1-2 sachês/d. >2a: 2-3 sachês/d divididos",
+      "notes": "Argila silicato. Adsorvente. ANSM/EMA alertou risco baixo de chumbo em <2 anos (2019) — restringir uso <2 anos. Junto com TRO."
+    },
+    "sro": {
+      "drug_pt": "Soro de Reidratação Oral (SRO)",
+      "drug_en": null,
+      "category": "Hidratação",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "sachê pó para preparo (OMS hipotônico)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Plano A (sem desidratação): 50-100ml/kg/d livre demanda + 10ml/kg pós cada evacuação. Plano B: 75ml/kg em 4h",
+      "default_duration_days": 5,
+      "notes": "SRO hipotônico OMS: Na 75, K 20, Cl 65, citrato 10, glicose 75 mmol/L. Não substituir por soro caseiro/refrigerantes."
+    },
+    "vitamina_d": {
+      "drug_pt": "Vitamina D (Colecalciferol)",
+      "drug_en": "Cholecalciferol",
+      "category": "Vitamina",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "200UI/gota solução oral (Addera D3)",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "400UI/gota solução oral",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "7000UI/ml solução oral",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "50000UI cápsula",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "0-12m: 400 UI/d. 1-18a: 600 UI/d (SBP recomenda). Deficiência: 1000-2000 UI/d × 6-8 sem",
+      "default_duration_days": 365,
+      "notes": "Profilaxia rotineira: 400 UI/d até 1 ano, 600 UI/d 1-18a. Aleitamento materno exclusivo: iniciar 1ª semana. Deficiência (25(OH)D<20): 50 UI/kg/d × 6 sem ou doses semanais."
+    },
+    "vitamina_k": {
+      "drug_pt": "Vitamina K (Fitomenadiona)",
+      "drug_en": "Phytonadione",
+      "category": "Vitamina",
+      "route": "IM",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "10mg/ml ampola IM",
+          "concentration_mg_per_ml": 10
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 1,
+      "fixed_dose": true,
+      "fixed_dose_string": "Recém-nascido: 1mg IM dose única ao nascer (0.5mg se <1500g)",
+      "default_duration_days": 1,
+      "notes": "Profilaxia doença hemorrágica RN. IM ao nascimento. Não usar VO para profilaxia rotineira (eficácia inferior)."
+    },
+    "sulfato_ferroso": {
+      "drug_pt": "Sulfato Ferroso",
+      "drug_en": "Ferrous Sulfate",
+      "category": "Suplemento (ferro)",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "25mg Fe elementar/ml solução oral (gotas)",
+          "concentration_mg_per_ml": 25
+        },
+        {
+          "label": "40mg Fe comprimido (300mg sulfato)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 3,
+      "doses_per_day": 1,
+      "max_mg_per_day": 60,
+      "max_mg_per_dose": 60,
+      "default_duration_days": 90,
+      "notes": "Profilaxia: 1-2 mg Fe elementar/kg/d. Tratamento anemia ferropriva: 3-6 mg/kg/d divididos 1-2x/d. Dose por Fe ELEMENTAR. 1 ml gotas = 25 mg Fe. Tomar entre refeições com vit C."
+    },
+    "ferro_polimaltose": {
+      "drug_pt": "Ferro polimaltose",
+      "drug_en": null,
+      "category": "Suplemento (ferro)",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "50mg Fe elementar/ml gotas (Noripurum)",
+          "concentration_mg_per_ml": 50
+        }
+      ],
+      "dose_mg_per_kg_per_day": 3,
+      "doses_per_day": 1,
+      "max_mg_per_day": 100,
+      "max_mg_per_dose": 100,
+      "default_duration_days": 90,
+      "notes": "Hidróxido férrico polimaltosado. Melhor tolerância GI vs sulfato. 1 gota = 2.5 mg Fe (verificar marca). Pode tomar com refeições. Eficácia comparável quando adesão é boa."
+    },
+    "acido_folico": {
+      "drug_pt": "Ácido Fólico",
+      "drug_en": "Folic Acid",
+      "category": "Vitamina",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "0,2mg/ml solução oral",
+          "concentration_mg_per_ml": 0.2
+        },
+        {
+          "label": "5mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 5,
+      "fixed_dose": true,
+      "fixed_dose_string": "Recém-nascido/lactente: 50 mcg/d. Criança: 100-400 mcg/d. Anemia megaloblástica: 1-5 mg/d × 1 mês",
+      "default_duration_days": 30,
+      "notes": "Profilaxia em anemia hemolítica crônica. Tratamento anemia megaloblástica."
+    },
+    "vitamina_a": {
+      "drug_pt": "Vitamina A",
+      "drug_en": "Vitamin A",
+      "category": "Vitamina",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "200.000UI cápsula",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "100.000UI cápsula (lactente)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Megadose profilaxia (MS): 6-11m: 100.000UI dose única. 12-59m: 200.000UI a cada 6 meses",
+      "default_duration_days": 1,
+      "notes": "Programa MS de suplementação para crianças <5 anos em áreas vulneráveis. Sarampo: 200.000 UI/d × 2 dias."
+    },
+    "sulfato_zinco": {
+      "drug_pt": "Sulfato de Zinco",
+      "drug_en": "Zinc Sulfate",
+      "category": "Suplemento (zinco)",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "10mg Zn elementar/ml solução oral",
+          "concentration_mg_per_ml": 10
+        },
+        {
+          "label": "20mg comprimido dispersível",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 20,
+      "fixed_dose": true,
+      "fixed_dose_string": "Diarreia aguda (OMS): <6m: 10mg/d × 10-14d. ≥6m: 20mg/d × 10-14d",
+      "default_duration_days": 14,
+      "notes": "Reduz duração e gravidade de diarreia aguda. OMS recomenda em todos os casos. Dose por zinco elementar."
+    },
+    "polivitaminico": {
+      "drug_pt": "Polivitamínico pediátrico",
+      "drug_en": null,
+      "category": "Suplemento",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "solução oral (gotas - Protovit, Centrum, etc)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Conforme bula do produto: lactente 0.6ml, criança 1ml, adolescente 1.5ml 1x/d",
+      "default_duration_days": 30,
+      "notes": "Suplementação. Composição varia por produto."
+    },
+    "mupirocina_topica": {
+      "drug_pt": "Mupirocina (tópica)",
+      "drug_en": "Mupirocin (topical)",
+      "category": "Antibiótico tópico",
+      "route": "Tópico",
+      "taketomo_page": 1418,
+      "presentations": [
+        {
+          "label": "20mg/g pomada 2% (Bactroban)",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "20mg/g creme 2%",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 3,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar 3x/d × 5-10 dias",
+      "default_duration_days": 7,
+      "notes": "Impetigo, foliculite, descolonização nasal de S. aureus. Pomada para pele, creme nasal (Bactroban Nasal). Eficaz contra S. aureus inclusive MRSA cutâneo."
+    },
+    "neomicina_topica": {
+      "drug_pt": "Neomicina (tópica)",
+      "drug_en": "Neomycin (topical)",
+      "category": "Antibiótico tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "5mg/g pomada (Nebacetin)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 3,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar 2-3x/d em pequena área. Não usar em queimadura extensa",
+      "default_duration_days": 7,
+      "notes": "Risco de sensibilização cutânea e ototoxicidade em áreas extensas. Frequentemente combinada com bacitracina (Nebacetin)."
+    },
+    "bacitracina_neomicina": {
+      "drug_pt": "Bacitracina + Neomicina (tópica)",
+      "drug_en": "Bacitracin (topical)",
+      "category": "Antibiótico tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "250UI+5mg/g pomada (Nebacetin)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 3,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar 2-3x/d em ferimentos superficiais limpos",
+      "default_duration_days": 7,
+      "notes": "Combinação clássica BR. Para escoriações, queimaduras superficiais. Não usar em áreas extensas (ototoxicidade da neomicina)."
+    },
+    "acido_fusidico": {
+      "drug_pt": "Ácido Fusídico (tópico)",
+      "drug_en": "Fusidic Acid (topical)",
+      "category": "Antibiótico tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "20mg/g creme 2% (Verutex)",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "20mg/g pomada 2%",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 3,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar 2-3x/d × 7-14 dias",
+      "default_duration_days": 10,
+      "notes": "Eficaz contra S. aureus. Alternativa à mupirocina. Curso curto para evitar resistência. Comum em BR/EU."
+    },
+    "retapamulina": {
+      "drug_pt": "Retapamulina",
+      "drug_en": "Retapamulin",
+      "category": "Antibiótico tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "10mg/g pomada 1% (Altargo)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "≥9m: aplicar 2x/d × 5 dias",
+      "default_duration_days": 5,
+      "notes": "Impetigo. Aprovado ≥9 meses. Curso curto eficaz. Alternativa à mupirocina (resistente)."
+    },
+    "soro_fisiologico_neb": {
+      "drug_pt": "Soro Fisiológico 0,9% (inalatório)",
+      "drug_en": null,
+      "category": "Higienização nasal/respiratória",
+      "route": "Inalatório",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "ampola 5ml ou 10ml",
+          "concentration_mg_per_ml": 9
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 4,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "3-5ml por nebulização, 3-6x/d ou conforme necessidade",
+      "default_duration_days": 7,
+      "notes": "Fluidificação secreções, higienização vias aéreas, diluição broncodilatadores. Sem efeito farmacológico."
+    },
+    "solucao_salina_hipertonica": {
+      "drug_pt": "Solução salina nasal hipertônica 3%",
+      "drug_en": null,
+      "category": "Higienização nasal",
+      "route": "Nasal",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "spray ou ampola 3% (Salsep)",
+          "concentration_mg_per_ml": 30
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 4,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "1-2 jatos/nebulizações por narina 3-6x/d",
+      "default_duration_days": 14,
+      "notes": "Bronquiolite (alguma evidência), rinossinusite. Reduz edema mucoso. Maior eficácia que 0.9% em algumas condições."
+    },
+    "cromoglicato_nasal": {
+      "drug_pt": "Cromoglicato dissódico (nasal)",
+      "drug_en": "Cromolyn (nasal)",
+      "category": "Estabilizador mastócitos",
+      "route": "Nasal",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "20mg/ml spray nasal 2% (Rilan)",
+          "concentration_mg_per_ml": 20
+        },
+        {
+          "label": "40mg/ml spray nasal 4%",
+          "concentration_mg_per_ml": 40
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 4,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "≥2a: 1 jato/narina 3-4x/d",
+      "default_duration_days": 30,
+      "notes": "Rinite alérgica. Profilaxia (não trata sintomas agudos). Início de efeito em 2-4 semanas. Bem tolerado em crianças."
+    },
+    "acetilcisteina_oral": {
+      "drug_pt": "Acetilcisteína (oral)",
+      "drug_en": "Acetylcysteine",
+      "category": "Mucolítico",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "20mg/ml xarope (Fluimucil)",
+          "concentration_mg_per_ml": 20
+        },
+        {
+          "label": "100mg sachê",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "200mg sachê",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "600mg comprimido efervescente",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 3,
+      "max_mg_per_day": 600,
+      "max_mg_per_dose": 600,
+      "default_duration_days": 7,
+      "fixed_dose": true,
+      "fixed_dose_string": "2-6a: 100mg 2-3x/d. 7-13a: 200mg 2x/d. ≥14a: 200-600mg 2-3x/d",
+      "notes": "Mucolítico em hipersecreção. Eficácia clínica modesta em IVAS comum. Para intoxicação por paracetamol use protocolo separado IV."
+    },
+    "carbocisteina": {
+      "drug_pt": "Carbocisteína",
+      "drug_en": null,
+      "category": "Mucolítico",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "20mg/ml xarope infantil (Mucofan)",
+          "concentration_mg_per_ml": 20
+        },
+        {
+          "label": "50mg/ml xarope adulto",
+          "concentration_mg_per_ml": 50
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 3,
+      "max_mg_per_day": 750,
+      "max_mg_per_dose": 250,
+      "default_duration_days": 7,
+      "fixed_dose": true,
+      "fixed_dose_string": "2-5a: 100mg (5ml 2%) 3x/d. 6-12a: 250mg 3x/d. ≥12a: 750mg/d divididos",
+      "notes": "Mucolítico, mucoregulador. Restrições FR francesa ANSM/EMA 2010 — não usar <2 anos."
+    },
+    "peroxido_benzoila": {
+      "drug_pt": "Peróxido de Benzoíla",
+      "drug_en": "Benzoyl Peroxide",
+      "category": "Antiacne tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "25mg/g gel 2.5%",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "50mg/g gel 5%",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "100mg/g gel 10%",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar 1x/d à noite (iniciar) → 2x/d se tolerar",
+      "default_duration_days": 60,
+      "notes": "Acne. Iniciar 2.5% (menor irritação, mesma eficácia). Pode descorar tecidos/cabelos. Combinação com clindamicina ou adapaleno aumenta eficácia."
+    },
+    "adapaleno": {
+      "drug_pt": "Adapaleno",
+      "drug_en": "Adapalene",
+      "category": "Antiacne tópico (retinoide)",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "1mg/g gel 0.1% (Differin)",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "3mg/g gel 0.3%",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar 1x/d à noite (fina camada)",
+      "default_duration_days": 90,
+      "notes": "Retinoide 3ª geração. Acne comedoniana e inflamatória. Aprovado ≥9 anos. Fotossensível — usar à noite, FPS de dia. Irritação inicial."
+    },
+    "clindamicina_topica": {
+      "drug_pt": "Clindamicina (tópica)",
+      "drug_en": "Clindamycin (topical)",
+      "category": "Antiacne tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "10mg/g gel 1% (Clindoxyl)",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "10mg/ml solução tópica",
+          "concentration_mg_per_ml": 10
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar 2x/d em pele limpa",
+      "default_duration_days": 60,
+      "notes": "Acne inflamatória. SEMPRE em combinação (peróxido de benzoíla ou retinoide) para reduzir resistência."
+    },
+    "eritromicina_topica": {
+      "drug_pt": "Eritromicina (tópica)",
+      "drug_en": "Erythromycin (topical)",
+      "category": "Antiacne tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "20mg/g gel 2% (Eryacne)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar 2x/d",
+      "default_duration_days": 60,
+      "notes": "Acne inflamatória. Combinar com peróxido de benzoíla para reduzir resistência."
+    },
+    "calamina": {
+      "drug_pt": "Calamina + Óxido de Zinco",
+      "drug_en": "Calamine",
+      "category": "Dermatológico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "loção (Caladryl)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 4,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar 3-4x/d na área pruriginosa",
+      "default_duration_days": 7,
+      "notes": "Adstringente, antipruriginoso. Varicela, dermatite, picadas. Caladryl associa difenidramina (pode ser sistêmica em áreas grandes — cuidado)."
+    },
+    "oxido_zinco": {
+      "drug_pt": "Óxido de Zinco",
+      "drug_en": "Zinc Oxide",
+      "category": "Dermatológico (assadura)",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "pasta d'água (Hipoglós, etc)",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "pomada 10-40% concentrações variadas",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 4,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar generosamente em cada troca de fralda",
+      "default_duration_days": 7,
+      "notes": "Dermatite de fralda. Barreira protetora. Aplicar camada espessa, não esfregar."
+    },
+    "dexpantenol": {
+      "drug_pt": "Dexpantenol",
+      "drug_en": "Dexpanthenol",
+      "category": "Dermatológico (cicatrizante)",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "50mg/g creme 5% (Bepantol)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 3,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar 2-3x/d",
+      "default_duration_days": 14,
+      "notes": "Pró-vitamina B5. Assaduras, escoriações superficiais, ressecamento. Boa tolerância."
+    },
+    "lidocaina_gel": {
+      "drug_pt": "Lidocaína gel 2%",
+      "drug_en": "Lidocaine (topical)",
+      "category": "Anestésico tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "20mg/g gel 2% (Xylocaína)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 4,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar pequena quantidade conforme necessidade. Max 4.5 mg/kg/dose (≤200mg total)",
+      "default_duration_days": 7,
+      "notes": "Aftas, mucosa oral, procedimentos. NÃO usar em RN/lactentes para alívio de dentição (FDA black box — toxicidade sistêmica)."
+    },
+    "emla": {
+      "drug_pt": "EMLA (lidocaína+prilocaína)",
+      "drug_en": "Lidocaine and Prilocaine",
+      "category": "Anestésico tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "25mg+25mg/g creme (EMLA)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar 1-2g sob curativo oclusivo 60min antes do procedimento (max conforme idade/peso)",
+      "default_duration_days": 1,
+      "notes": "Procedimentos (punção venosa, lombar). Risco metemoglobinemia em RN/<3 meses — cuidado. Áreas pequenas em lactentes."
+    },
+    "clorexidina_degermante": {
+      "drug_pt": "Clorexidina degermante 2%",
+      "drug_en": "Chlorhexidine Gluconate",
+      "category": "Antisséptico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "20mg/ml solução degermante 2%",
+          "concentration_mg_per_ml": 20
+        },
+        {
+          "label": "5mg/ml solução aquosa 0.5%",
+          "concentration_mg_per_ml": 5
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar e enxaguar (antissepsia pré-procedimento)",
+      "default_duration_days": 1,
+      "notes": "Antissepsia da pele. Eficaz contra Gram+, Gram-, fungos. Curativo de cordão umbilical em ambientes hospitalares."
+    },
+    "iodopovidona": {
+      "drug_pt": "Iodopovidona (PVPI)",
+      "drug_en": "Povidone-Iodine",
+      "category": "Antisséptico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "100mg/ml solução tópica 10%",
+          "concentration_mg_per_ml": 100
+        },
+        {
+          "label": "100mg/ml degermante 10%",
+          "concentration_mg_per_ml": 100
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar em ferimentos e antissepsia",
+      "default_duration_days": 7,
+      "notes": "Antisséptico amplo espectro. Cuidado em RN/lactentes (absorção sistêmica do iodo — disfunção tireoidiana). Não usar em queimadura extensa."
+    },
+    "ureia_topica": {
+      "drug_pt": "Ureia (tópica)",
+      "drug_en": "Urea",
+      "category": "Hidratante/Queratolítico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "100mg/g creme 10% (hidratante)",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "200mg/g creme 20% (queratolítico)",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "400mg/g creme 40% (queratolítico)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "10%: hidratante 2x/d. 20-40%: queratolítico 1-2x/d em áreas espessas",
+      "default_duration_days": 30,
+      "notes": "10% xerose/ictiose leve. 20-40% queratoses, calosidades, descolamento de unhas. Pode irritar peles sensíveis."
+    },
+    "alantoina": {
+      "drug_pt": "Alantoína",
+      "drug_en": null,
+      "category": "Dermatológico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "creme/loção (combinação variada)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar 2-3x/d",
+      "default_duration_days": 14,
+      "notes": "Cicatrizante, queratolítica leve. Frequentemente em combinação (Hipoglós, Bepantol Derma)."
+    },
+    "dimeticona_oral": {
+      "drug_pt": "Dimeticona (Luftal)",
+      "drug_en": "Simethicone",
+      "category": "Antiflatulento",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "75mg/ml gotas (Luftal)",
+          "concentration_mg_per_ml": 75
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 4,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Lactente: 3-6 gotas após cada mamada (até 6x/d). Criança: 6-12 gotas até 4x/d",
+      "default_duration_days": 30,
+      "notes": "Cólica do lactente, distensão abdominal. Não absorvida sistemicamente. Evidência limitada para cólica do lactente."
+    },
+    "tobramicina_colirio": {
+      "drug_pt": "Tobramicina colírio 0,3%",
+      "drug_en": "Tobramycin (ophthalmic)",
+      "category": "Oftálmico antibiótico",
+      "route": "Oftálmica",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "3mg/ml colírio (Tobrex)",
+          "concentration_mg_per_ml": 3
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 6,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Conjuntivite leve/mod: 1-2 gotas q4-6h × 5-7d. Grave: q1h inicialmente",
+      "default_duration_days": 7,
+      "notes": "Conjuntivite bacteriana. Aminoglicosídeo amplo espectro tópico ocular."
+    },
+    "ciprofloxacino_colirio": {
+      "drug_pt": "Ciprofloxacino colírio 0,3%",
+      "drug_en": "Ciprofloxacin (ophthalmic)",
+      "category": "Oftálmico antibiótico",
+      "route": "Oftálmica",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "3mg/ml colírio (Ciloxan)",
+          "concentration_mg_per_ml": 3
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 6,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "1-2 gotas q4-6h (até q2h dia 1-2 em casos graves) × 5-7 dias",
+      "default_duration_days": 7,
+      "notes": "Conjuntivite bacteriana, úlcera de córnea bacteriana. Aprovado ≥1 ano."
+    },
+    "cloranfenicol_colirio": {
+      "drug_pt": "Cloranfenicol colírio 0,5%",
+      "drug_en": "Chloramphenicol (ophthalmic)",
+      "category": "Oftálmico antibiótico",
+      "route": "Oftálmica",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "5mg/ml colírio",
+          "concentration_mg_per_ml": 5
+        },
+        {
+          "label": "10mg/g pomada oftálmica 1%",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 4,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Colírio: 1-2 gotas 3-4x/d. Pomada: 3-4x/d ou antes de dormir",
+      "default_duration_days": 7,
+      "notes": "Conjuntivite bacteriana comum em BR. Aplicação tópica risco sistêmico muito baixo."
+    },
+    "olopatadina_colirio": {
+      "drug_pt": "Olopatadina colírio",
+      "drug_en": "Olopatadine (ophthalmic)",
+      "category": "Oftálmico antialérgico",
+      "route": "Oftálmica",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "1mg/ml colírio 0.1% (Patanol)",
+          "concentration_mg_per_ml": 1
+        },
+        {
+          "label": "2mg/ml colírio 0.2%",
+          "concentration_mg_per_ml": 2
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "0.1%: 1 gota 2x/d. 0.2%: 1 gota 1x/d. ≥3 anos",
+      "default_duration_days": 30,
+      "notes": "Conjuntivite alérgica. Antihistamínico + estabilizador de mastócitos."
+    },
+    "ketotifeno_colirio": {
+      "drug_pt": "Ketotifeno colírio",
+      "drug_en": "Ketotifen (ophthalmic)",
+      "category": "Oftálmico antialérgico",
+      "route": "Oftálmica",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "0,25mg/ml colírio 0.025% (Zaditen)",
+          "concentration_mg_per_ml": 0.25
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "≥3 anos: 1 gota 2x/d",
+      "default_duration_days": 30,
+      "notes": "Conjuntivite alérgica. Antihistamínico + estabilizador de mastócitos."
+    },
+    "lagrima_artificial": {
+      "drug_pt": "Lágrima artificial (Hipromelose)",
+      "drug_en": "Hypromellose",
+      "category": "Oftálmico (lubrificante)",
+      "route": "Oftálmica",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "5mg/ml colírio 0.5% (Lacrima Plus)",
+          "concentration_mg_per_ml": 5
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 6,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "1-2 gotas em cada olho conforme necessidade (geralmente 4-6x/d)",
+      "default_duration_days": 30,
+      "notes": "Lubrificação. Olho seco, irritação. Preferir versões sem conservante para uso prolongado."
+    },
+    "dexa_tobra_colirio": {
+      "drug_pt": "Dexametasona + Tobramicina colírio",
+      "drug_en": null,
+      "category": "Oftálmico (corticoide+antibiótico)",
+      "route": "Oftálmica",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "1mg+3mg/ml colírio (Tobradex)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 6,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "≥2a: 1 gota q4-6h (até q2h grave). Reduzir progressivamente",
+      "default_duration_days": 7,
+      "notes": "Conjuntivite com componente inflamatório. Uso especialista preferencialmente (corticoide ocular requer cuidado — glaucoma, HSV)."
+    },
+    "ciprofloxacino_otol": {
+      "drug_pt": "Ciprofloxacino otológico 0,3%",
+      "drug_en": "Ciprofloxacin (otic)",
+      "category": "Otológico antibiótico",
+      "route": "Otológica",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "3mg/ml solução otológica (Cipro otol)",
+          "concentration_mg_per_ml": 3
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "≥6m: 4 gotas no ouvido afetado 2x/d × 7 dias",
+      "default_duration_days": 7,
+      "notes": "Otite externa, otite média supurada (membrana perfurada). Seguro com perfuração timpânica."
+    },
+    "polimixina_neomicina_otol": {
+      "drug_pt": "Polimixina B + Neomicina otológico (Otosporin)",
+      "drug_en": null,
+      "category": "Otológico antibiótico+corticoide",
+      "route": "Otológica",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "Polimixina+Neomicina+Hidrocortisona solução (Otosporin)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 3,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "3-4 gotas no ouvido afetado 3-4x/d × 7-10 dias",
+      "default_duration_days": 7,
+      "notes": "Otite externa. CONTRAINDICADO com perfuração timpânica (ototoxicidade neomicina). Hidrocortisona reduz inflamação."
+    },
+    "otalgan": {
+      "drug_pt": "Otalgan (Fenazona + Lidocaína)",
+      "drug_en": null,
+      "category": "Otológico analgésico",
+      "route": "Otológica",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "solução otológica (Otalgan)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 4,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "3-4 gotas no ouvido afetado q1-2h conforme dor",
+      "default_duration_days": 3,
+      "notes": "Analgésico tópico em otite média/externa. NÃO usar com membrana perfurada. Adjuvante ao tratamento principal."
+    },
+    "cerumenoliticos": {
+      "drug_pt": "Cerumenolítico",
+      "drug_en": null,
+      "category": "Otológico (cerume)",
+      "route": "Otológica",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "óleo mineral",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "trietanolamina 5% (Cerumin)",
+          "concentration_mg_per_ml": 50
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Instilar 3-5 gotas 2x/d × 3-5 dias antes da lavagem",
+      "default_duration_days": 5,
+      "notes": "Amolecimento de cerume. Não usar com perfuração timpânica."
+    },
+    "metilfenidato": {
+      "drug_pt": "Metilfenidato (TDAH)",
+      "drug_en": "Methylphenidate",
+      "category": "Estimulante CNS (TDAH)",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "10mg comprimido (Ritalina)",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "20mg cápsula LA",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "30mg, 40mg, 60mg Concerta",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0.5,
+      "doses_per_day": 2,
+      "max_mg_per_day": 60,
+      "max_mg_per_dose": 30,
+      "default_duration_days": 30,
+      "fixed_dose": true,
+      "fixed_dose_string": "≥6 anos: iniciar 5mg 2x/d, titular semanalmente até dose efetiva. Max 2 mg/kg/d ou 60 mg/d",
+      "notes": "TDAH ≥6 anos. Iniciar dose baixa, titular. Especialista preferencialmente. Monitorar peso, altura, PA, FC."
+    },
+    "acido_valproico": {
+      "drug_pt": "Ácido Valproico",
+      "drug_en": "Valproic Acid (systemic)",
+      "category": "Anticonvulsivante",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "50mg/ml xarope (Depakene)",
+          "concentration_mg_per_ml": 50
+        },
+        {
+          "label": "250mg cápsula",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "500mg comprimido LA",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 20,
+      "doses_per_day": 2,
+      "max_mg_per_day": 3000,
+      "max_mg_per_dose": 1500,
+      "default_duration_days": 30,
+      "notes": "Iniciar 10-15 mg/kg/d, titular até 30-60 mg/kg/d. Dividir 2-3x/d. Especialista. Hepatotóxico — monitorar TGO/TGP. CONTRAINDICADO <2 anos."
+    },
+    "topiramato": {
+      "drug_pt": "Topiramato",
+      "drug_en": "Topiramate",
+      "category": "Anticonvulsivante",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "25mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "50mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "100mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 5,
+      "doses_per_day": 2,
+      "max_mg_per_day": 400,
+      "max_mg_per_dose": 200,
+      "default_duration_days": 30,
+      "notes": "Iniciar 1-3 mg/kg/d, titular até 5-9 mg/kg/d. Epilepsia/profilaxia migrânea. Especialista. Risco litíase, glaucoma agudo."
+    },
+    "carbamazepina": {
+      "drug_pt": "Carbamazepina",
+      "drug_en": "CarBAMazepine",
+      "category": "Anticonvulsivante",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "20mg/ml suspensão oral (Tegretol)",
+          "concentration_mg_per_ml": 20
+        },
+        {
+          "label": "200mg comprimido",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "400mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 20,
+      "doses_per_day": 3,
+      "max_mg_per_day": 1200,
+      "max_mg_per_dose": 600,
+      "default_duration_days": 30,
+      "notes": "Iniciar 5-10 mg/kg/d, titular até 10-20 mg/kg/d (max 35 mg/kg/d). Epilepsia parcial. Especialista. Risco SJS/TEN (alelo HLA-B*1502 em asiáticos). Monitorar hemograma, sódio."
+    },
+    "cromoglicato_colirio": {
+      "drug_pt": "Cromoglicato dissódico colírio",
+      "drug_en": "Cromolyn (ophthalmic)",
+      "category": "Oftálmico antialérgico",
+      "route": "Oftálmica",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "20mg/ml colírio 2% (Cromolerg)",
+          "concentration_mg_per_ml": 20
+        },
+        {
+          "label": "40mg/ml colírio 4%",
+          "concentration_mg_per_ml": 40
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 6,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "≥4a: 1-2 gotas 4-6x/d",
+      "default_duration_days": 30,
+      "notes": "Conjuntivite alérgica. Estabilizador mastócitos. Início lento (1-2 sem). Manutenção, não crise."
+    },
+    "naphazoline_colirio": {
+      "drug_pt": "Nafazolina colírio",
+      "drug_en": null,
+      "category": "Oftálmico descongestionante",
+      "route": "Oftálmica",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "0,12mg/ml colírio 0.012%",
+          "concentration_mg_per_ml": 0.12
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 4,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "≥6a: 1 gota 3-4x/d × max 72h",
+      "default_duration_days": 3,
+      "notes": "Vasoconstritor. Uso curto. Risco rebote/intoxicação sistêmica em <6 anos."
+    },
+    "vaselina_solida": {
+      "drug_pt": "Vaselina sólida",
+      "drug_en": null,
+      "category": "Dermatológico (emoliente)",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "vaselina líquida ou sólida",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 4,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar conforme necessidade",
+      "default_duration_days": 30,
+      "notes": "Emoliente, barreira protetora. Dermatite atópica (após banho), assaduras, dermatites de contato."
+    },
+    "deltametrina_pediculose": {
+      "drug_pt": "Deltametrina loção pediculose",
+      "drug_en": null,
+      "category": "Pediculicida tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "0,2mg/ml loção 0.02% (Deltacid)",
+          "concentration_mg_per_ml": 0.2
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar no couro cabeludo molhado, deixar 10min, enxaguar. Repetir 7-10d",
+      "default_duration_days": 1,
+      "notes": "Pediculose ≥2 anos. Reaplicar em 7-10 dias."
+    },
+    "dimeticona_pediculose": {
+      "drug_pt": "Dimeticona pediculose (loção)",
+      "drug_en": null,
+      "category": "Pediculicida físico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "40-50mg/ml loção (Mediker AP)",
+          "concentration_mg_per_ml": 40
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar no cabelo seco, deixar 8h ou overnight, enxaguar. Repetir 7d",
+      "default_duration_days": 1,
+      "notes": "Pediculose. Ação física (asfixia piolho). Sem absorção/toxicidade. Aprovado todas idades."
+    },
+    "levosalbutamol": {
+      "drug_pt": "Levosalbutamol",
+      "drug_en": "Levalbuterol",
+      "category": "Broncodilatador",
+      "route": "Inalatório",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "spray 45mcg/jato",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "0.31mg/3ml solução nebulização",
+          "concentration_mg_per_ml": 0.1
+        },
+        {
+          "label": "0.63mg/3ml solução nebulização",
+          "concentration_mg_per_ml": 0.21
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 4,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Spray ≥4a: 1-2 inal q4-6h. Neb 6-11a: 0.31mg q6h. ≥12a: 0.63-1.25mg q6h",
+      "default_duration_days": 5,
+      "notes": "Enantiômero R do salbutamol. Teoricamente menos efeito cardíaco. Custo maior, eficácia similar ao salbutamol racêmico em peds."
+    },
+    "salmeterol_fluticasona": {
+      "drug_pt": "Salmeterol + Fluticasona",
+      "drug_en": null,
+      "category": "Broncodilatador + Corticoide",
+      "route": "Inalatório",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "Diskus 50/100, 50/250, 50/500 (Seretide)",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "Spray 25/50, 25/125, 25/250",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "≥4a: 1 inal Diskus 50/100 2x/d. ≥12a: até 50/500 2x/d",
+      "default_duration_days": 30,
+      "notes": "Asma persistente moderada-grave. Aprovado ≥4 anos (Diskus). Não para alívio de crise (salmeterol é LABA)."
+    },
+    "beclometasona_nasal": {
+      "drug_pt": "Beclometasona spray nasal",
+      "drug_en": "Beclomethasone (nasal)",
+      "category": "Corticoide nasal",
+      "route": "Nasal",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "50mcg/jato spray nasal",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "≥6a: 1-2 jatos/narina 1-2x/d",
+      "default_duration_days": 30,
+      "notes": "Rinite alérgica. Aprovado ≥6 anos."
+    },
+    "ciclesonida_inalatoria": {
+      "drug_pt": "Ciclesonida inalatória",
+      "drug_en": "Ciclesonide (oral Inhalation)",
+      "category": "Corticoide inalatório",
+      "route": "Inalatório",
+      "taketomo_page": 447,
+      "presentations": [
+        {
+          "label": "spray 80mcg/jato (Alvesco)",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "spray 160mcg/jato",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "≥12a: 80-160 mcg 1-2x/d",
+      "default_duration_days": 30,
+      "notes": "Pró-droga ativada no pulmão (menor efeito sistêmico). ≥12 anos."
+    },
+    "triamcinolona_nasal": {
+      "drug_pt": "Triancinolona spray nasal",
+      "drug_en": "Triamcinolone (nasal)",
+      "category": "Corticoide nasal",
+      "route": "Nasal",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "55mcg/jato spray nasal (Nasacort)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "2-5a: 1 jato/narina 1x/d. 6-11a: 1-2 jatos/narina 1x/d. ≥12a: 2 jatos/narina 1x/d",
+      "default_duration_days": 30,
+      "notes": "Rinite alérgica. Aprovado ≥2 anos."
+    },
+    "cetoconazol_oral": {
+      "drug_pt": "Cetoconazol oral",
+      "drug_en": null,
+      "category": "Antifúngico",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "200mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 5,
+      "doses_per_day": 1,
+      "max_mg_per_day": 400,
+      "max_mg_per_dose": 400,
+      "default_duration_days": 14,
+      "notes": "RARAMENTE indicado VO em pediatria (hepatotoxicidade — EMA restringiu 2013). Preferir fluconazol/itraconazol. Tópico continua seguro."
+    },
+    "tioconazol_topico": {
+      "drug_pt": "Tioconazol (tópico)",
+      "drug_en": null,
+      "category": "Antifúngico tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "10mg/g creme 1%",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar 2x/d × 14-21d",
+      "default_duration_days": 21,
+      "notes": "Tinea/candidíase. BR comum. Similar a miconazol."
+    },
+    "oxiconazol_topico": {
+      "drug_pt": "Oxiconazol (tópico)",
+      "drug_en": null,
+      "category": "Antifúngico tópico",
+      "route": "Tópico",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "10mg/g creme 1% (Oxistat)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar 1-2x/d × 2-4 sem",
+      "default_duration_days": 21,
+      "notes": "Tinea. Aplicação menos frequente que outros."
+    },
+    "dexa_neomicina_otol": {
+      "drug_pt": "Dexametasona+Neomicina otológico",
+      "drug_en": null,
+      "category": "Otológico",
+      "route": "Otológica",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "solução otológica combinada",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 3,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "3-4 gotas 3x/d × 7-10d",
+      "default_duration_days": 7,
+      "notes": "Otite externa com componente inflamatório. Contraindicado se perfuração."
+    },
+    "lidocaina_otol": {
+      "drug_pt": "Lidocaína otológica",
+      "drug_en": null,
+      "category": "Otológico analgésico",
+      "route": "Otológica",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "20mg/ml solução otológica",
+          "concentration_mg_per_ml": 20
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 4,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "3-4 gotas conforme dor (q1-2h)",
+      "default_duration_days": 3,
+      "notes": "Analgesia tópica em otite. Não usar com perfuração."
+    },
+    "loratadina_pseudoefedrina": {
+      "drug_pt": "Loratadina + Pseudoefedrina",
+      "drug_en": "Loratadine and Pseudoephedrine",
+      "category": "Antihistamínico + descongestionante",
+      "route": "Oral",
+      "taketomo_page": 1255,
+      "presentations": [
+        {
+          "label": "5mg+120mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "≥12a: 1 comp 2x/d. Não recomendado <12 anos",
+      "default_duration_days": 5,
+      "notes": "NÃO recomendado <12 anos (FDA, AAP — risco cardiovascular/neurológico de descongestionantes em crianças). Uso curto se necessário."
+    },
+    "pseudoefedrina": {
+      "drug_pt": "Pseudoefedrina (isolada)",
+      "drug_en": "Pseudoephedrine",
+      "category": "Descongestionante",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "30mg comp; 60mg comp; xarope 6mg/ml",
+          "concentration_mg_per_ml": 6
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 4,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "≥12a: 30-60mg q4-6h",
+      "default_duration_days": 5,
+      "notes": "FDA/AAP NÃO recomenda <4 anos. ≥12 anos preferível. Uso curto. Cuidado em hipertensão/cardiopatia."
+    },
+    "racefedrina_nasal": {
+      "drug_pt": "Oximetazolina nasal",
+      "drug_en": "Oxymetazoline (nasal)",
+      "category": "Descongestionante nasal",
+      "route": "Nasal",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "0.05% spray nasal",
+          "concentration_mg_per_ml": 0.5
+        },
+        {
+          "label": "0.025% spray nasal pediátrico",
+          "concentration_mg_per_ml": 0.25
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "2-5a: 0.025% 1 jato/narina q12h. ≥6a: 0.05% 1-2 jatos/narina q12h. Max 3 dias",
+      "default_duration_days": 3,
+      "notes": "Vasoconstritor tópico. USO MAX 3 DIAS (risco rinite medicamentosa rebote). Não recomendado <2 anos."
+    },
+    "lubrificante_intestinal_supositorio": {
+      "drug_pt": "Glicerina supositório infantil",
+      "drug_en": null,
+      "category": "Laxativo",
+      "route": "Retal",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "supositório infantil 1g",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "1 supositório quando necessário",
+      "default_duration_days": 1,
+      "notes": "Constipação pontual lactentes. Não usar rotineiramente (irritante mucosa)."
+    },
+    "lactulona_pediatrica": {
+      "drug_pt": "Lactulose Pediátrica xarope 10%",
+      "drug_en": null,
+      "category": "Laxativo",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "100mg/ml xarope 10% (apresentações pediátricas)",
+          "concentration_mg_per_ml": 100
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Lactentes: 2.5-5ml/d. Crianças: 5-15ml/d. Titular pelo efeito",
+      "default_duration_days": 30,
+      "notes": "Versão menos concentrada da lactulose. Veja também Lactulose 667mg/ml."
+    },
+    "loratadina_pediatrica_xarope_concentrado": {
+      "drug_pt": "Polivitamínico com ferro (Protovit Plus)",
+      "drug_en": null,
+      "category": "Suplemento",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "solução oral combinada",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Conforme bula (varia por produto)",
+      "default_duration_days": 90,
+      "notes": "Suplementação combinada. Verificar composição específica."
+    },
+    "alfaprodina_proct": {
+      "drug_pt": "Proctyl (lidocaína+hidrocortisona retal)",
+      "drug_en": null,
+      "category": "Anorretal",
+      "route": "Retal",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "pomada anorretal combinada",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Aplicar após evacuações × 5-7 dias",
+      "default_duration_days": 7,
+      "notes": "Fissura anal, hemorroidas em adolescentes. Uso pediátrico limitado."
+    },
+    "bromexina": {
+      "drug_pt": "Bromexina",
+      "drug_en": null,
+      "category": "Mucolítico",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "0,8mg/ml xarope pediátrico (Bisolvon)",
+          "concentration_mg_per_ml": 0.8
+        },
+        {
+          "label": "1,6mg/ml xarope adulto",
+          "concentration_mg_per_ml": 1.6
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 3,
+      "max_mg_per_day": 32,
+      "max_mg_per_dose": 8,
+      "default_duration_days": 7,
+      "fixed_dose": true,
+      "fixed_dose_string": "2-5a: 4mg (5ml) 3x/d. 6-11a: 4-8mg 3x/d. ≥12a: 8mg 3x/d",
+      "notes": "Mucolítico. Evidência limitada. Eficácia clínica modesta em IVAS comuns."
+    },
+    "guaifenesina": {
+      "drug_pt": "Guaifenesina",
+      "drug_en": null,
+      "category": "Expectorante",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "20mg/ml xarope",
+          "concentration_mg_per_ml": 20
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 4,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "2-5a: 50-100mg q4h. 6-11a: 100-200mg q4h. ≥12a: 200-400mg q4h",
+      "default_duration_days": 5,
+      "notes": "Expectorante. Eficácia clínica limitada. AAP/FDA desencoraja antitussígenos/expectorantes <6 anos."
+    },
+    "dextrometorfano": {
+      "drug_pt": "Dextrometorfano (antitussígeno)",
+      "drug_en": null,
+      "category": "Antitussígeno",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "1mg/ml xarope (Vick 44)",
+          "concentration_mg_per_ml": 1
+        },
+        {
+          "label": "15mg comprimido",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 4,
+      "max_mg_per_day": 60,
+      "max_mg_per_dose": 15,
+      "default_duration_days": 5,
+      "fixed_dose": true,
+      "fixed_dose_string": "6-11a: 5-10mg q4h. ≥12a: 10-20mg q4h",
+      "notes": "FDA/AAP DESACONSELHA <6 anos (risco-benefício desfavorável). Para tosse seca pertinaz."
+    },
+    "ipratropio_salbutamol": {
+      "drug_pt": "Brometo de Ipratrópio + Salbutamol",
+      "drug_en": null,
+      "category": "Broncodilatador combinado",
+      "route": "Inalatório",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "solução para nebulização combinada",
+          "concentration_mg_per_ml": 0
+        },
+        {
+          "label": "spray combinado",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 4,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Uso em crise: 1 nebulização ou 4 jatos q20min × 3 (depois q1-4h)",
+      "default_duration_days": 3,
+      "notes": "Crise asmática moderada-grave. Aproveitamento sinérgico beta-2 + anticolinérgico."
+    },
+    "bromexina_combinada_xarope": {
+      "drug_pt": "Saccharomyces cerevisiae",
+      "drug_en": null,
+      "category": "Probiótico",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "100mg sachê",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Mesma dose do S. boulardii (mesma cepa)",
+      "default_duration_days": 5,
+      "notes": "Equivalente ao S. boulardii em algumas referências. CONTRAINDICADO em imunossuprimidos."
+    },
+    "carvao_ativado": {
+      "drug_pt": "Carvão Ativado",
+      "drug_en": null,
+      "category": "Antídoto/Antidiarréico",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "comprimidos / sachê / pó",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 1,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Intoxicação: 1g/kg dose única (max 50g) — primeiras 1-2h pós-ingesta",
+      "default_duration_days": 1,
+      "notes": "PRINCIPALMENTE para descontaminação GI em intoxicações agudas (até 1-2h). Não eficaz para metais pesados, lítio, álcoois."
+    },
+    "smc_dimeticona": {
+      "drug_pt": "Simeticona (oral)",
+      "drug_en": "Simethicone",
+      "category": "Antiflatulento",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "75mg/ml gotas (alternativa a Luftal)",
+          "concentration_mg_per_ml": 75
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 4,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "Mesma dose do Luftal (ver acima)",
+      "default_duration_days": 30,
+      "notes": "Sinonimia: dimeticona = simeticona."
+    },
+    "cromoglicato_oral": {
+      "drug_pt": "Cromoglicato dissódico oral",
+      "drug_en": null,
+      "category": "Estabilizador mastócitos",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "100mg/5ml solução oral (Mastergal)",
+          "concentration_mg_per_ml": 20
+        }
+      ],
+      "dose_mg_per_kg_per_day": 20,
+      "doses_per_day": 4,
+      "max_mg_per_day": 800,
+      "max_mg_per_dose": 200,
+      "default_duration_days": 30,
+      "fixed_dose": true,
+      "fixed_dose_string": "2-12a: 100mg 4x/d. ≥13a: 200mg 4x/d (15-30 min antes refeições)",
+      "notes": "Mastocitose, alergia alimentar. Uso especialista. Pouca absorção sistêmica."
+    },
+    "salbutamol_xarope": {
+      "drug_pt": "Salbutamol xarope (oral)",
+      "drug_en": null,
+      "category": "Broncodilatador",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "2mg/5ml xarope (Aerolin Xarope)",
+          "concentration_mg_per_ml": 0.4
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0.6,
+      "doses_per_day": 3,
+      "max_mg_per_day": 32,
+      "max_mg_per_dose": 8,
+      "default_duration_days": 5,
+      "fixed_dose": true,
+      "fixed_dose_string": "2-5a: 1-2mg q6-8h (2.5-5ml). 6-11a: 2mg q6-8h. ≥12a: 2-4mg q6-8h",
+      "notes": "Via oral menos eficaz que inalatória, mais efeitos sistêmicos (taquicardia, tremor). Preferir spray com espaçador."
+    },
+    "ranitidina_descontinuada": {
+      "drug_pt": "Ranitidina (DESCONTINUADA Brasil)",
+      "drug_en": null,
+      "category": "Anti-H2 (descontinuada)",
+      "route": "Oral",
+      "taketomo_page": null,
+      "presentations": [
+        {
+          "label": "(produto retirado do mercado por contaminação NDMA)",
+          "concentration_mg_per_ml": 0
+        }
+      ],
+      "dose_mg_per_kg_per_day": 0,
+      "doses_per_day": 2,
+      "max_mg_per_day": 0,
+      "fixed_dose": true,
+      "fixed_dose_string": "DESCONTINUADA — usar Famotidina",
+      "default_duration_days": 0,
+      "notes": "ANVISA cancelou registros em 2020 por contaminação com NDMA (carcinogênico). Substituir por Famotidina."
+    }
+  }
+}
