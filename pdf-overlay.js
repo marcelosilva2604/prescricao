@@ -200,11 +200,34 @@
     if (med.fixed_dose) {
       line2 = `Ofertar ${med.fixed_dose_string} via ${med.route} ${freq} por ${duration} dias`;
     } else {
-      const volume = item.calc.volumePerDoseMl.toFixed(1).replace('.', ',');
-      line2 = `Ofertar ${volume}ml via ${med.route} ${freq} por ${duration} dias`;
+      line2 = `Ofertar ${formatDoseUnit(item)} via ${med.route} ${freq} por ${duration} dias`;
     }
 
     return { line1, line2 };
+  }
+
+  // Format the per-dose amount based on the presentation's unit_type.
+  // ml -> "X,Xml". Solid units -> "X comprimido(s)" / "X cápsula(s)" / etc.
+  function formatDoseUnit(item) {
+    const med = item.medication;
+    const calc = item.calc || {};
+    const unitType = med.unit_type || 'ml';
+    if (unitType === 'ml') {
+      const v = calc.volumePerDoseMl;
+      if (v == null || !isFinite(v) || isNaN(v)) return '— ml';
+      return `${v.toFixed(1).replace('.', ',')}ml`;
+    }
+    // Solid form: compute units from dose_per_admin_mg / mg_per_unit.
+    const mgPerUnit = med.mg_per_unit || 0;
+    const dosePerAdmin = calc.dosePerAdminMg || 0;
+    if (mgPerUnit <= 0) {
+      // Can't compute units (e.g., UI-based) — show mg amount
+      return `${dosePerAdmin.toFixed(0)}mg`;
+    }
+    const units = dosePerAdmin / mgPerUnit;
+    const rounded = Math.round(units * 2) / 2; // round to half
+    const pluralS = rounded !== 1 ? 's' : '';
+    return `${rounded.toString().replace('.', ',')} ${unitType}${pluralS}`;
   }
 
   async function generatePrescriptionPDF(patient, items) {

@@ -13,11 +13,15 @@
       "presentations": [
         {
           "label": "250mg/5ml suspensão oral",
-          "concentration_mg_per_ml": 50
+          "concentration_mg_per_ml": 50,
+          "unit_type": "ml",
+          "mg_per_unit": 50
         },
         {
           "label": "400mg/5ml suspensão oral (BD)",
-          "concentration_mg_per_ml": 80
+          "concentration_mg_per_ml": 80,
+          "unit_type": "ml",
+          "mg_per_unit": 80
         }
       ],
       "dose_mg_per_kg_per_day": 50,
@@ -36,11 +40,15 @@
       "presentations": [
         {
           "label": "250mg/62,5mg per 5ml suspensão oral",
-          "concentration_mg_per_ml": 50
+          "concentration_mg_per_ml": 50,
+          "unit_type": "ml",
+          "mg_per_unit": 50
         },
         {
           "label": "400mg/57mg per 5ml suspensão oral",
-          "concentration_mg_per_ml": 80
+          "concentration_mg_per_ml": 80,
+          "unit_type": "ml",
+          "mg_per_unit": 80
         }
       ],
       "dose_mg_per_kg_per_day": 50,
@@ -59,7 +67,9 @@
       "presentations": [
         {
           "label": "250mg/5ml suspensão oral",
-          "concentration_mg_per_ml": 50
+          "concentration_mg_per_ml": 50,
+          "unit_type": "ml",
+          "mg_per_unit": 50
         }
       ],
       "dose_mg_per_kg_per_day": 50,
@@ -78,11 +88,15 @@
       "presentations": [
         {
           "label": "80.000UI/ml suspensão oral",
-          "concentration_mg_per_ml": 50
+          "concentration_mg_per_ml": 50,
+          "unit_type": "ml",
+          "mg_per_unit": 50
         },
         {
           "label": "500.000UI comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 50,
@@ -101,11 +115,15 @@
       "presentations": [
         {
           "label": "600.000UI ampola IM (<27kg)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ampola",
+          "mg_per_unit": 0
         },
         {
           "label": "1.200.000UI ampola IM (≥27kg)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ampola",
+          "mg_per_unit": 0
         }
       ],
       "fixed_dose": true,
@@ -123,11 +141,15 @@
       "presentations": [
         {
           "label": "250mg/5ml suspensão oral",
-          "concentration_mg_per_ml": 50
+          "concentration_mg_per_ml": 50,
+          "unit_type": "ml",
+          "mg_per_unit": 50
         },
         {
           "label": "500mg cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 500.0
         }
       ],
       "dose_mg_per_kg_per_day": 30,
@@ -146,11 +168,15 @@
       "presentations": [
         {
           "label": "250mg/5ml suspensão oral",
-          "concentration_mg_per_ml": 50
+          "concentration_mg_per_ml": 50,
+          "unit_type": "ml",
+          "mg_per_unit": 50
         },
         {
           "label": "500mg cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 500.0
         }
       ],
       "dose_mg_per_kg_per_day": 50,
@@ -169,11 +195,15 @@
       "presentations": [
         {
           "label": "250mg/5ml suspensão oral",
-          "concentration_mg_per_ml": 50
+          "concentration_mg_per_ml": 50,
+          "unit_type": "ml",
+          "mg_per_unit": 50
         },
         {
           "label": "375mg/5ml suspensão oral",
-          "concentration_mg_per_ml": 75
+          "concentration_mg_per_ml": 75,
+          "unit_type": "ml",
+          "mg_per_unit": 75
         }
       ],
       "dose_mg_per_kg_per_day": 40,
@@ -192,15 +222,21 @@
       "presentations": [
         {
           "label": "250mg/5ml suspensão oral",
-          "concentration_mg_per_ml": 50
+          "concentration_mg_per_ml": 50,
+          "unit_type": "ml",
+          "mg_per_unit": 50
         },
         {
           "label": "250mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 250.0
         },
         {
           "label": "500mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 500.0
         }
       ],
       "dose_mg_per_kg_per_day": 30,
@@ -219,11 +255,15 @@
       "presentations": [
         {
           "label": "250mg/5ml suspensão oral",
-          "concentration_mg_per_ml": 50
+          "concentration_mg_per_ml": 50,
+          "unit_type": "ml",
+          "mg_per_unit": 50
         },
         {
           "label": "500mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 500.0
         }
       ],
       "dose_mg_per_kg_per_day": 30,
@@ -242,11 +282,15 @@
       "presentations": [
         {
           "label": "100mg/5ml suspensão oral",
-          "concentration_mg_per_ml": 20
+          "concentration_mg_per_ml": 20,
+          "unit_type": "ml",
+          "mg_per_unit": 20
         },
         {
           "label": "400mg cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 400.0
         }
       ],
       "dose_mg_per_kg_per_day": 8,
@@ -265,11 +309,15 @@
       "presentations": [
         {
           "label": "40mg/5ml suspensão oral",
-          "concentration_mg_per_ml": 8
+          "concentration_mg_per_ml": 8,
+          "unit_type": "ml",
+          "mg_per_unit": 8
         },
         {
           "label": "80mg/5ml suspensão oral",
-          "concentration_mg_per_ml": 16
+          "concentration_mg_per_ml": 16,
+          "unit_type": "ml",
+          "mg_per_unit": 16
         }
       ],
       "dose_mg_per_kg_per_day": 10,
@@ -288,11 +336,15 @@
       "presentations": [
         {
           "label": "500mg pó IM/IV",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "frasco",
+          "mg_per_unit": 500.0
         },
         {
           "label": "1g pó IM/IV",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "frasco",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 50,
@@ -311,15 +363,21 @@
       "presentations": [
         {
           "label": "200mg/5ml suspensão oral",
-          "concentration_mg_per_ml": 40
+          "concentration_mg_per_ml": 40,
+          "unit_type": "ml",
+          "mg_per_unit": 40
         },
         {
           "label": "600mg pó para susp (5ml)",
-          "concentration_mg_per_ml": 120
+          "concentration_mg_per_ml": 120,
+          "unit_type": "ml",
+          "mg_per_unit": 120
         },
         {
           "label": "500mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 500.0
         }
       ],
       "dose_mg_per_kg_per_day": 10,
@@ -338,11 +396,15 @@
       "presentations": [
         {
           "label": "250mg/5ml suspensão oral",
-          "concentration_mg_per_ml": 50
+          "concentration_mg_per_ml": 50,
+          "unit_type": "ml",
+          "mg_per_unit": 50
         },
         {
           "label": "500mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 500.0
         }
       ],
       "dose_mg_per_kg_per_day": 15,
@@ -361,11 +423,15 @@
       "presentations": [
         {
           "label": "125mg/5ml suspensão oral",
-          "concentration_mg_per_ml": 25
+          "concentration_mg_per_ml": 25,
+          "unit_type": "ml",
+          "mg_per_unit": 25
         },
         {
           "label": "250mg/5ml suspensão oral",
-          "concentration_mg_per_ml": 50
+          "concentration_mg_per_ml": 50,
+          "unit_type": "ml",
+          "mg_per_unit": 50
         }
       ],
       "dose_mg_per_kg_per_day": 40,
@@ -384,15 +450,21 @@
       "presentations": [
         {
           "label": "75mg/5ml solução oral",
-          "concentration_mg_per_ml": 15
+          "concentration_mg_per_ml": 15,
+          "unit_type": "ml",
+          "mg_per_unit": 15
         },
         {
           "label": "150mg cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 150.0
         },
         {
           "label": "300mg cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 300.0
         }
       ],
       "dose_mg_per_kg_per_day": 25,
@@ -411,11 +483,15 @@
       "presentations": [
         {
           "label": "100mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 100.0
         },
         {
           "label": "100mg cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 100.0
         }
       ],
       "dose_mg_per_kg_per_day": 4,
@@ -434,19 +510,27 @@
       "presentations": [
         {
           "label": "250mg/5ml suspensão oral (50mg/ml)",
-          "concentration_mg_per_ml": 50
+          "concentration_mg_per_ml": 50,
+          "unit_type": "ml",
+          "mg_per_unit": 50
         },
         {
           "label": "500mg/5ml suspensão oral (100mg/ml)",
-          "concentration_mg_per_ml": 100
+          "concentration_mg_per_ml": 100,
+          "unit_type": "ml",
+          "mg_per_unit": 100
         },
         {
           "label": "250mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 250.0
         },
         {
           "label": "500mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 500.0
         }
       ],
       "dose_mg_per_kg_per_day": 30,
@@ -465,15 +549,21 @@
       "presentations": [
         {
           "label": "250mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 250.0
         },
         {
           "label": "500mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 500.0
         },
         {
           "label": "750mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 750.0
         }
       ],
       "dose_mg_per_kg_per_day": 10,
@@ -492,15 +582,21 @@
       "presentations": [
         {
           "label": "200mg/40mg per 5ml suspensão oral (TMP 8mg/ml)",
-          "concentration_mg_per_ml": 8
+          "concentration_mg_per_ml": 8,
+          "unit_type": "ml",
+          "mg_per_unit": 8
         },
         {
           "label": "400mg/80mg comprimido (Bactrim)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 400.0
         },
         {
           "label": "800mg/160mg comprimido (Bactrim F)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 800.0
         }
       ],
       "dose_mg_per_kg_per_day": 8,
@@ -519,11 +615,15 @@
       "presentations": [
         {
           "label": "25mg/5ml suspensão oral",
-          "concentration_mg_per_ml": 5
+          "concentration_mg_per_ml": 5,
+          "unit_type": "ml",
+          "mg_per_unit": 5
         },
         {
           "label": "100mg cápsula (Macrodantina)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 100.0
         }
       ],
       "dose_mg_per_kg_per_day": 6,
@@ -542,15 +642,21 @@
       "presentations": [
         {
           "label": "200mg/5ml suspensão oral (40mg/ml)",
-          "concentration_mg_per_ml": 40
+          "concentration_mg_per_ml": 40,
+          "unit_type": "ml",
+          "mg_per_unit": 40
         },
         {
           "label": "250mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 250.0
         },
         {
           "label": "400mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 400.0
         }
       ],
       "dose_mg_per_kg_per_day": 30,
@@ -569,7 +675,9 @@
       "presentations": [
         {
           "label": "500mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 500.0
         }
       ],
       "dose_mg_per_kg_per_day": 50,
@@ -588,11 +696,15 @@
       "presentations": [
         {
           "label": "1g comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 0
         },
         {
           "label": "30mg/ml suspensão oral",
-          "concentration_mg_per_ml": 30
+          "concentration_mg_per_ml": 30,
+          "unit_type": "ml",
+          "mg_per_unit": 30
         }
       ],
       "dose_mg_per_kg_per_day": 30,
@@ -611,11 +723,15 @@
       "presentations": [
         {
           "label": "100mg/5ml suspensão oral",
-          "concentration_mg_per_ml": 20
+          "concentration_mg_per_ml": 20,
+          "unit_type": "ml",
+          "mg_per_unit": 20
         },
         {
           "label": "600mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 600.0
         }
       ],
       "dose_mg_per_kg_per_day": 30,
@@ -634,11 +750,15 @@
       "presentations": [
         {
           "label": "250mg/5ml suspensão oral",
-          "concentration_mg_per_ml": 50
+          "concentration_mg_per_ml": 50,
+          "unit_type": "ml",
+          "mg_per_unit": 50
         },
         {
           "label": "500mg cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 500.0
         }
       ],
       "dose_mg_per_kg_per_day": 40,
@@ -657,11 +777,15 @@
       "presentations": [
         {
           "label": "20mg/ml suspensão oral",
-          "concentration_mg_per_ml": 20
+          "concentration_mg_per_ml": 20,
+          "unit_type": "ml",
+          "mg_per_unit": 20
         },
         {
           "label": "300mg cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 300.0
         }
       ],
       "dose_mg_per_kg_per_day": 15,
@@ -680,11 +804,15 @@
       "presentations": [
         {
           "label": "125mg/5ml granulado para susp",
-          "concentration_mg_per_ml": 25
+          "concentration_mg_per_ml": 25,
+          "unit_type": "ml",
+          "mg_per_unit": 25
         },
         {
           "label": "500mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 500.0
         }
       ],
       "dose_mg_per_kg_per_day": 50,
@@ -703,7 +831,9 @@
       "presentations": [
         {
           "label": "400mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 400.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -724,23 +854,33 @@
       "presentations": [
         {
           "label": "200mg/ml solução oral (gotas)",
-          "concentration_mg_per_ml": 200
+          "concentration_mg_per_ml": 200,
+          "unit_type": "ml",
+          "mg_per_unit": 200
         },
         {
           "label": "100mg/ml solução oral (gotas - infantil)",
-          "concentration_mg_per_ml": 100
+          "concentration_mg_per_ml": 100,
+          "unit_type": "ml",
+          "mg_per_unit": 100
         },
         {
           "label": "160mg/5ml suspensão (Tylenol)",
-          "concentration_mg_per_ml": 32
+          "concentration_mg_per_ml": 32,
+          "unit_type": "ml",
+          "mg_per_unit": 32
         },
         {
           "label": "500mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 500.0
         },
         {
           "label": "750mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 750.0
         }
       ],
       "dose_mg_per_kg_per_day": 60,
@@ -759,15 +899,21 @@
       "presentations": [
         {
           "label": "500mg/ml solução oral (gotas)",
-          "concentration_mg_per_ml": 500
+          "concentration_mg_per_ml": 500,
+          "unit_type": "ml",
+          "mg_per_unit": 500
         },
         {
           "label": "50mg/ml suspensão oral",
-          "concentration_mg_per_ml": 50
+          "concentration_mg_per_ml": 50,
+          "unit_type": "ml",
+          "mg_per_unit": 50
         },
         {
           "label": "500mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 500.0
         }
       ],
       "dose_mg_per_kg_per_day": 30,
@@ -786,27 +932,39 @@
       "presentations": [
         {
           "label": "50mg/ml solução oral (gotas)",
-          "concentration_mg_per_ml": 50
+          "concentration_mg_per_ml": 50,
+          "unit_type": "ml",
+          "mg_per_unit": 50
         },
         {
           "label": "100mg/5ml suspensão oral (20mg/ml)",
-          "concentration_mg_per_ml": 20
+          "concentration_mg_per_ml": 20,
+          "unit_type": "ml",
+          "mg_per_unit": 20
         },
         {
           "label": "200mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 200.0
         },
         {
           "label": "300mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 300.0
         },
         {
           "label": "400mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 400.0
         },
         {
           "label": "600mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 600.0
         }
       ],
       "dose_mg_per_kg_per_day": 30,
@@ -825,15 +983,21 @@
       "presentations": [
         {
           "label": "125mg/5ml suspensão oral",
-          "concentration_mg_per_ml": 25
+          "concentration_mg_per_ml": 25,
+          "unit_type": "ml",
+          "mg_per_unit": 25
         },
         {
           "label": "250mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 250.0
         },
         {
           "label": "500mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 500.0
         }
       ],
       "dose_mg_per_kg_per_day": 10,
@@ -852,15 +1016,21 @@
       "presentations": [
         {
           "label": "20mg/ml solução oral (gotas)",
-          "concentration_mg_per_ml": 20
+          "concentration_mg_per_ml": 20,
+          "unit_type": "ml",
+          "mg_per_unit": 20
         },
         {
           "label": "50mg cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 50.0
         },
         {
           "label": "100mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 100.0
         }
       ],
       "dose_mg_per_kg_per_day": 2,
@@ -879,11 +1049,15 @@
       "presentations": [
         {
           "label": "1mg/ml solução oral (gotas/xarope)",
-          "concentration_mg_per_ml": 1
+          "concentration_mg_per_ml": 1,
+          "unit_type": "ml",
+          "mg_per_unit": 1
         },
         {
           "label": "10mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 10.0
         }
       ],
       "dose_mg_per_kg_per_day": 0.25,
@@ -904,11 +1078,15 @@
       "presentations": [
         {
           "label": "1mg/ml xarope",
-          "concentration_mg_per_ml": 1
+          "concentration_mg_per_ml": 1,
+          "unit_type": "ml",
+          "mg_per_unit": 1
         },
         {
           "label": "10mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 10.0
         }
       ],
       "dose_mg_per_kg_per_day": 0.2,
@@ -929,11 +1107,15 @@
       "presentations": [
         {
           "label": "0,5mg/ml xarope",
-          "concentration_mg_per_ml": 0.5
+          "concentration_mg_per_ml": 0.5,
+          "unit_type": "ml",
+          "mg_per_unit": 0.5
         },
         {
           "label": "5mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 5.0
         }
       ],
       "dose_mg_per_kg_per_day": 0.1,
@@ -954,11 +1136,15 @@
       "presentations": [
         {
           "label": "0,5mg/ml solução oral",
-          "concentration_mg_per_ml": 0.5
+          "concentration_mg_per_ml": 0.5,
+          "unit_type": "ml",
+          "mg_per_unit": 0.5
         },
         {
           "label": "5mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 5.0
         }
       ],
       "dose_mg_per_kg_per_day": 0.1,
@@ -979,15 +1165,21 @@
       "presentations": [
         {
           "label": "2mg/ml xarope",
-          "concentration_mg_per_ml": 2
+          "concentration_mg_per_ml": 2,
+          "unit_type": "ml",
+          "mg_per_unit": 2
         },
         {
           "label": "10mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 10.0
         },
         {
           "label": "25mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 25.0
         }
       ],
       "dose_mg_per_kg_per_day": 2,
@@ -1006,15 +1198,21 @@
       "presentations": [
         {
           "label": "2,5mg/ml elixir",
-          "concentration_mg_per_ml": 2.5
+          "concentration_mg_per_ml": 2.5,
+          "unit_type": "ml",
+          "mg_per_unit": 2.5
         },
         {
           "label": "25mg cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 25.0
         },
         {
           "label": "50mg cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 50.0
         }
       ],
       "dose_mg_per_kg_per_day": 5,
@@ -1033,15 +1231,21 @@
       "presentations": [
         {
           "label": "0,4mg/ml xarope (Polaramine)",
-          "concentration_mg_per_ml": 0.4
+          "concentration_mg_per_ml": 0.4,
+          "unit_type": "ml",
+          "mg_per_unit": 0.4
         },
         {
           "label": "2mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 2.0
         },
         {
           "label": "6mg comprimido repetabs",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 6.0
         }
       ],
       "dose_mg_per_kg_per_day": 0.15,
@@ -1062,23 +1266,33 @@
       "presentations": [
         {
           "label": "6mg/ml suspensão oral",
-          "concentration_mg_per_ml": 6
+          "concentration_mg_per_ml": 6,
+          "unit_type": "ml",
+          "mg_per_unit": 6
         },
         {
           "label": "30mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 30.0
         },
         {
           "label": "60mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 60.0
         },
         {
           "label": "120mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 120.0
         },
         {
           "label": "180mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 180.0
         }
       ],
       "dose_mg_per_kg_per_day": 4,
@@ -1099,11 +1313,15 @@
       "presentations": [
         {
           "label": "1mg/ml xarope",
-          "concentration_mg_per_ml": 1
+          "concentration_mg_per_ml": 1,
+          "unit_type": "ml",
+          "mg_per_unit": 1
         },
         {
           "label": "10mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 10.0
         }
       ],
       "dose_mg_per_kg_per_day": 0.2,
@@ -1124,11 +1342,15 @@
       "presentations": [
         {
           "label": "25mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 25.0
         },
         {
           "label": "50mg/2ml ampola IM/IV",
-          "concentration_mg_per_ml": 25
+          "concentration_mg_per_ml": 25,
+          "unit_type": "ml",
+          "mg_per_unit": 25
         }
       ],
       "dose_mg_per_kg_per_day": 1,
@@ -1147,15 +1369,21 @@
       "presentations": [
         {
           "label": "200mg/5ml suspensão oral",
-          "concentration_mg_per_ml": 40
+          "concentration_mg_per_ml": 40,
+          "unit_type": "ml",
+          "mg_per_unit": 40
         },
         {
           "label": "200mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 200.0
         },
         {
           "label": "400mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 400.0
         }
       ],
       "dose_mg_per_kg_per_day": 80,
@@ -1174,11 +1402,15 @@
       "presentations": [
         {
           "label": "500mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 500.0
         },
         {
           "label": "1g comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 60,
@@ -1197,15 +1429,21 @@
       "presentations": [
         {
           "label": "125mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 125.0
         },
         {
           "label": "250mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 250.0
         },
         {
           "label": "500mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 500.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -1226,19 +1464,27 @@
       "presentations": [
         {
           "label": "6mg/ml suspensão oral",
-          "concentration_mg_per_ml": 6
+          "concentration_mg_per_ml": 6,
+          "unit_type": "ml",
+          "mg_per_unit": 6
         },
         {
           "label": "30mg cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 30.0
         },
         {
           "label": "45mg cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 45.0
         },
         {
           "label": "75mg cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 75.0
         }
       ],
       "dose_mg_per_kg_per_day": 6,
@@ -1259,11 +1505,15 @@
       "presentations": [
         {
           "label": "3mg/ml solução oral (Prelone)",
-          "concentration_mg_per_ml": 3
+          "concentration_mg_per_ml": 3,
+          "unit_type": "ml",
+          "mg_per_unit": 3
         },
         {
           "label": "1mg/ml solução oral",
-          "concentration_mg_per_ml": 1
+          "concentration_mg_per_ml": 1,
+          "unit_type": "ml",
+          "mg_per_unit": 1
         }
       ],
       "dose_mg_per_kg_per_day": 1,
@@ -1282,11 +1532,15 @@
       "presentations": [
         {
           "label": "5mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 5.0
         },
         {
           "label": "20mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 20.0
         }
       ],
       "dose_mg_per_kg_per_day": 1,
@@ -1305,19 +1559,27 @@
       "presentations": [
         {
           "label": "0,1mg/ml elixir",
-          "concentration_mg_per_ml": 0.1
+          "concentration_mg_per_ml": 0.1,
+          "unit_type": "ml",
+          "mg_per_unit": 0.1
         },
         {
           "label": "0,5mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 0.5
         },
         {
           "label": "0,75mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 0.75
         },
         {
           "label": "4mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 4.0
         }
       ],
       "dose_mg_per_kg_per_day": 0.15,
@@ -1336,11 +1598,15 @@
       "presentations": [
         {
           "label": "0,1mg/ml elixir (Celestamine)",
-          "concentration_mg_per_ml": 0.1
+          "concentration_mg_per_ml": 0.1,
+          "unit_type": "ml",
+          "mg_per_unit": 0.1
         },
         {
           "label": "0,5mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 0.5
         }
       ],
       "dose_mg_per_kg_per_day": 0.1,
@@ -1359,19 +1625,27 @@
       "presentations": [
         {
           "label": "40mg pó IV",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "frasco",
+          "mg_per_unit": 40.0
         },
         {
           "label": "125mg pó IV",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "frasco",
+          "mg_per_unit": 125.0
         },
         {
           "label": "500mg pó IV",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "frasco",
+          "mg_per_unit": 500.0
         },
         {
           "label": "1g pó IV",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "frasco",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 2,
@@ -1390,11 +1664,15 @@
       "presentations": [
         {
           "label": "6mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 6.0
         },
         {
           "label": "30mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 30.0
         }
       ],
       "dose_mg_per_kg_per_day": 1.2,
@@ -1413,11 +1691,15 @@
       "presentations": [
         {
           "label": "10mg/g creme 1%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 10.0
         },
         {
           "label": "25mg/g pomada 2.5%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 25.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -1437,15 +1719,21 @@
       "presentations": [
         {
           "label": "1mg/g creme 0.1%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 1.0
         },
         {
           "label": "1mg/g pomada 0.1%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 1.0
         },
         {
           "label": "1mg/g loção 0.1%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ml",
+          "mg_per_unit": 1.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -1465,11 +1753,15 @@
       "presentations": [
         {
           "label": "0,5mg/g creme 0.05% (dipropionato)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 0.5
         },
         {
           "label": "1mg/g creme 0.1% (valerato)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 1.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -1489,7 +1781,9 @@
       "presentations": [
         {
           "label": "1mg/g creme 0.1%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 1.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -1509,11 +1803,15 @@
       "presentations": [
         {
           "label": "0,5mg/g creme 0.05%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 0.5
         },
         {
           "label": "0,5mg/g loção 0.05%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ml",
+          "mg_per_unit": 0.5
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -1533,11 +1831,15 @@
       "presentations": [
         {
           "label": "1mg/g pomada 0.1%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 1.0
         },
         {
           "label": "0,25mg/g pomada 0.025%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 0.25
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -1557,11 +1859,15 @@
       "presentations": [
         {
           "label": "0,5mg/g creme 0.05%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 0.5
         },
         {
           "label": "0,5mg/g pomada 0.05%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 0.5
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -1581,7 +1887,9 @@
       "presentations": [
         {
           "label": "creme combinado (Daktacort, Vodol H)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -1601,15 +1909,21 @@
       "presentations": [
         {
           "label": "0,25mg/2ml solução para nebulização (Pulmicort)",
-          "concentration_mg_per_ml": 0.125
+          "concentration_mg_per_ml": 0.125,
+          "unit_type": "ml",
+          "mg_per_unit": 0.125
         },
         {
           "label": "0,5mg/2ml solução para nebulização",
-          "concentration_mg_per_ml": 0.25
+          "concentration_mg_per_ml": 0.25,
+          "unit_type": "ml",
+          "mg_per_unit": 0.25
         },
         {
           "label": "Turbuhaler 200mcg/dose",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ml",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -1629,19 +1943,27 @@
       "presentations": [
         {
           "label": "spray 50mcg/jato (Flixotide)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "jato",
+          "mg_per_unit": 0.05
         },
         {
           "label": "spray 125mcg/jato",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "jato",
+          "mg_per_unit": 0.125
         },
         {
           "label": "spray 250mcg/jato",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "jato",
+          "mg_per_unit": 0.25
         },
         {
           "label": "diskus 50mcg/dose",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ml",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -1661,11 +1983,15 @@
       "presentations": [
         {
           "label": "spray 50mcg/jato (Clenil)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "jato",
+          "mg_per_unit": 0.05
         },
         {
           "label": "spray 250mcg/jato",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "jato",
+          "mg_per_unit": 0.25
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -1685,15 +2011,21 @@
       "presentations": [
         {
           "label": "Turbuhaler 6/100mcg/dose (Symbicort)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ml",
+          "mg_per_unit": 0
         },
         {
           "label": "Turbuhaler 6/200mcg/dose",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ml",
+          "mg_per_unit": 0
         },
         {
           "label": "Turbuhaler 12/400mcg/dose",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ml",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -1713,7 +2045,9 @@
       "presentations": [
         {
           "label": "50mcg/jato spray nasal (Nasonex)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "jato",
+          "mg_per_unit": 0.05
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -1733,7 +2067,9 @@
       "presentations": [
         {
           "label": "50mcg/jato spray nasal (Avamys)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "jato",
+          "mg_per_unit": 0.05
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -1753,11 +2089,15 @@
       "presentations": [
         {
           "label": "32mcg/jato (Rhinocort)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "jato",
+          "mg_per_unit": 0.032
         },
         {
           "label": "64mcg/jato",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "jato",
+          "mg_per_unit": 0.064
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -1777,11 +2117,15 @@
       "presentations": [
         {
           "label": "10mg/ml suspensão oral",
-          "concentration_mg_per_ml": 10
+          "concentration_mg_per_ml": 10,
+          "unit_type": "ml",
+          "mg_per_unit": 10
         },
         {
           "label": "150mg cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 150.0
         }
       ],
       "dose_mg_per_kg_per_day": 6,
@@ -1800,11 +2144,15 @@
       "presentations": [
         {
           "label": "10mg/ml solução oral",
-          "concentration_mg_per_ml": 10
+          "concentration_mg_per_ml": 10,
+          "unit_type": "ml",
+          "mg_per_unit": 10
         },
         {
           "label": "100mg cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 100.0
         }
       ],
       "dose_mg_per_kg_per_day": 5,
@@ -1823,15 +2171,21 @@
       "presentations": [
         {
           "label": "40mg/ml suspensão oral",
-          "concentration_mg_per_ml": 40
+          "concentration_mg_per_ml": 40,
+          "unit_type": "ml",
+          "mg_per_unit": 40
         },
         {
           "label": "50mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 50.0
         },
         {
           "label": "200mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 200.0
         }
       ],
       "dose_mg_per_kg_per_day": 18,
@@ -1850,7 +2204,9 @@
       "presentations": [
         {
           "label": "250mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 250.0
         }
       ],
       "dose_mg_per_kg_per_day": 5,
@@ -1871,11 +2227,15 @@
       "presentations": [
         {
           "label": "125mg/5ml suspensão oral (microsize)",
-          "concentration_mg_per_ml": 25
+          "concentration_mg_per_ml": 25,
+          "unit_type": "ml",
+          "mg_per_unit": 25
         },
         {
           "label": "500mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 500.0
         }
       ],
       "dose_mg_per_kg_per_day": 20,
@@ -1894,7 +2254,9 @@
       "presentations": [
         {
           "label": "100.000UI/ml suspensão oral",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ml",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -1914,11 +2276,15 @@
       "presentations": [
         {
           "label": "100.000UI/g creme",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 0
         },
         {
           "label": "100.000UI/g pomada",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -1938,15 +2304,21 @@
       "presentations": [
         {
           "label": "20mg/g creme 2%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 20.0
         },
         {
           "label": "20mg/g pó 2%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "frasco",
+          "mg_per_unit": 20.0
         },
         {
           "label": "20mg/g loção 2%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ml",
+          "mg_per_unit": 20.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -1966,11 +2338,15 @@
       "presentations": [
         {
           "label": "10mg/g creme 1%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 10.0
         },
         {
           "label": "10mg/g loção 1%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ml",
+          "mg_per_unit": 10.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -1990,11 +2366,15 @@
       "presentations": [
         {
           "label": "20mg/g creme 2%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 20.0
         },
         {
           "label": "20mg/ml xampu 2%",
-          "concentration_mg_per_ml": 20
+          "concentration_mg_per_ml": 20,
+          "unit_type": "ml",
+          "mg_per_unit": 20
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -2014,7 +2394,9 @@
       "presentations": [
         {
           "label": "10mg/g creme 1%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 10.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -2034,11 +2416,15 @@
       "presentations": [
         {
           "label": "10mg/g creme 1%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 10.0
         },
         {
           "label": "10mg/g gel 1%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 10.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -2058,15 +2444,21 @@
       "presentations": [
         {
           "label": "10mg/g creme 1%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 10.0
         },
         {
           "label": "10mg/ml xampu",
-          "concentration_mg_per_ml": 10
+          "concentration_mg_per_ml": 10,
+          "unit_type": "ml",
+          "mg_per_unit": 10
         },
         {
           "label": "esmalte 8% (Loceryl)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ml",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -2086,11 +2478,15 @@
       "presentations": [
         {
           "label": "40mg/ml suspensão oral",
-          "concentration_mg_per_ml": 40
+          "concentration_mg_per_ml": 40,
+          "unit_type": "ml",
+          "mg_per_unit": 40
         },
         {
           "label": "400mg comprimido mastigável",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 400.0
         }
       ],
       "dose_mg_per_kg_per_day": 10,
@@ -2111,11 +2507,15 @@
       "presentations": [
         {
           "label": "20mg/ml suspensão oral",
-          "concentration_mg_per_ml": 20
+          "concentration_mg_per_ml": 20,
+          "unit_type": "ml",
+          "mg_per_unit": 20
         },
         {
           "label": "100mg comprimido mastigável",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 100.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -2136,11 +2536,15 @@
       "presentations": [
         {
           "label": "20mg/ml suspensão oral",
-          "concentration_mg_per_ml": 20
+          "concentration_mg_per_ml": 20,
+          "unit_type": "ml",
+          "mg_per_unit": 20
         },
         {
           "label": "500mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 500.0
         }
       ],
       "dose_mg_per_kg_per_day": 15,
@@ -2161,7 +2565,9 @@
       "presentations": [
         {
           "label": "600mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 600.0
         }
       ],
       "dose_mg_per_kg_per_day": 40,
@@ -2180,7 +2586,9 @@
       "presentations": [
         {
           "label": "6mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 6.0
         }
       ],
       "dose_mg_per_kg_per_day": 0.2,
@@ -2201,11 +2609,15 @@
       "presentations": [
         {
           "label": "10mg/ml loção 1% (pediculose)",
-          "concentration_mg_per_ml": 10
+          "concentration_mg_per_ml": 10,
+          "unit_type": "ml",
+          "mg_per_unit": 10
         },
         {
           "label": "50mg/g creme 5% (escabiose)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 50.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -2225,7 +2637,9 @@
       "presentations": [
         {
           "label": "0,2mg/ml loção 0.02% (Deltacid)",
-          "concentration_mg_per_ml": 0.2
+          "concentration_mg_per_ml": 0.2,
+          "unit_type": "ml",
+          "mg_per_unit": 0.2
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -2245,7 +2659,9 @@
       "presentations": [
         {
           "label": "250mg/ml loção 25%",
-          "concentration_mg_per_ml": 250
+          "concentration_mg_per_ml": 250,
+          "unit_type": "ml",
+          "mg_per_unit": 250
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -2265,7 +2681,9 @@
       "presentations": [
         {
           "label": "100mcg/jato aerossol (Aerolin)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "jato",
+          "mg_per_unit": 0.1
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -2285,7 +2703,9 @@
       "presentations": [
         {
           "label": "5mg/ml solução para nebulização (gotas)",
-          "concentration_mg_per_ml": 5
+          "concentration_mg_per_ml": 5,
+          "unit_type": "ml",
+          "mg_per_unit": 5
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -2305,7 +2725,9 @@
       "presentations": [
         {
           "label": "5mg/ml solução para nebulização (Berotec)",
-          "concentration_mg_per_ml": 5
+          "concentration_mg_per_ml": 5,
+          "unit_type": "ml",
+          "mg_per_unit": 5
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -2325,7 +2747,9 @@
       "presentations": [
         {
           "label": "0,25mg/ml solução para nebulização (Atrovent)",
-          "concentration_mg_per_ml": 0.25
+          "concentration_mg_per_ml": 0.25,
+          "unit_type": "ml",
+          "mg_per_unit": 0.25
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -2345,19 +2769,27 @@
       "presentations": [
         {
           "label": "4mg comprimido mastigável",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 4.0
         },
         {
           "label": "5mg comprimido mastigável",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 5.0
         },
         {
           "label": "10mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 10.0
         },
         {
           "label": "4mg sachê granulado",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "sachê",
+          "mg_per_unit": 4.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -2378,15 +2810,21 @@
       "presentations": [
         {
           "label": "4mg/5ml solução oral",
-          "concentration_mg_per_ml": 0.8
+          "concentration_mg_per_ml": 0.8,
+          "unit_type": "ml",
+          "mg_per_unit": 0.8
         },
         {
           "label": "4mg comprimido orodispersível",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 4.0
         },
         {
           "label": "8mg comprimido orodispersível",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 8.0
         }
       ],
       "dose_mg_per_kg_per_day": 0.4,
@@ -2407,11 +2845,15 @@
       "presentations": [
         {
           "label": "4mg/ml solução oral (gotas - Digesan)",
-          "concentration_mg_per_ml": 4
+          "concentration_mg_per_ml": 4,
+          "unit_type": "ml",
+          "mg_per_unit": 4
         },
         {
           "label": "10mg cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 10.0
         }
       ],
       "dose_mg_per_kg_per_day": 0.5,
@@ -2432,11 +2874,15 @@
       "presentations": [
         {
           "label": "4mg/ml solução oral (gotas - Plasil)",
-          "concentration_mg_per_ml": 4
+          "concentration_mg_per_ml": 4,
+          "unit_type": "ml",
+          "mg_per_unit": 4
         },
         {
           "label": "10mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 10.0
         }
       ],
       "dose_mg_per_kg_per_day": 0.5,
@@ -2455,15 +2901,21 @@
       "presentations": [
         {
           "label": "1,5mg/ml xarope (Dramin)",
-          "concentration_mg_per_ml": 1.5
+          "concentration_mg_per_ml": 1.5,
+          "unit_type": "ml",
+          "mg_per_unit": 1.5
         },
         {
           "label": "50mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 50.0
         },
         {
           "label": "100mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 100.0
         }
       ],
       "dose_mg_per_kg_per_day": 5,
@@ -2484,11 +2936,15 @@
       "presentations": [
         {
           "label": "1mg/ml suspensão oral (Motilium)",
-          "concentration_mg_per_ml": 1
+          "concentration_mg_per_ml": 1,
+          "unit_type": "ml",
+          "mg_per_unit": 1
         },
         {
           "label": "10mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 10.0
         }
       ],
       "dose_mg_per_kg_per_day": 0.75,
@@ -2507,19 +2963,27 @@
       "presentations": [
         {
           "label": "10mg cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 10.0
         },
         {
           "label": "20mg cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 20.0
         },
         {
           "label": "40mg cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 40.0
         },
         {
           "label": "Suspensão extemporânea 2mg/ml",
-          "concentration_mg_per_ml": 2
+          "concentration_mg_per_ml": 2,
+          "unit_type": "ml",
+          "mg_per_unit": 2
         }
       ],
       "dose_mg_per_kg_per_day": 1,
@@ -2540,11 +3004,15 @@
       "presentations": [
         {
           "label": "20mg comprimido (Nexium)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 20.0
         },
         {
           "label": "40mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 40.0
         }
       ],
       "dose_mg_per_kg_per_day": 0.5,
@@ -2565,11 +3033,15 @@
       "presentations": [
         {
           "label": "15mg cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 15.0
         },
         {
           "label": "30mg cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 30.0
         }
       ],
       "dose_mg_per_kg_per_day": 1,
@@ -2590,11 +3062,15 @@
       "presentations": [
         {
           "label": "20mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 20.0
         },
         {
           "label": "40mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 40.0
         }
       ],
       "dose_mg_per_kg_per_day": 1,
@@ -2615,15 +3091,21 @@
       "presentations": [
         {
           "label": "8mg/ml suspensão oral",
-          "concentration_mg_per_ml": 8
+          "concentration_mg_per_ml": 8,
+          "unit_type": "ml",
+          "mg_per_unit": 8
         },
         {
           "label": "20mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 20.0
         },
         {
           "label": "40mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 40.0
         }
       ],
       "dose_mg_per_kg_per_day": 1,
@@ -2642,7 +3124,9 @@
       "presentations": [
         {
           "label": "667mg/ml xarope (Lactulona, Farlac)",
-          "concentration_mg_per_ml": 667
+          "concentration_mg_per_ml": 667,
+          "unit_type": "ml",
+          "mg_per_unit": 667
         }
       ],
       "dose_mg_per_kg_per_day": 1500,
@@ -2663,11 +3147,15 @@
       "presentations": [
         {
           "label": "sachê 105g pó (Nulytely - limpeza)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "sachê",
+          "mg_per_unit": 0
         },
         {
           "label": "sachê 17g pó (Muvinlax)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "sachê",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 400,
@@ -2688,11 +3176,15 @@
       "presentations": [
         {
           "label": "5mg comprimido (Dulcolax)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 5.0
         },
         {
           "label": "10mg supositório",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "supositório",
+          "mg_per_unit": 10.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -2713,7 +3205,9 @@
       "presentations": [
         {
           "label": "7,5mg/ml gotas (Guttalax)",
-          "concentration_mg_per_ml": 7.5
+          "concentration_mg_per_ml": 7.5,
+          "unit_type": "ml",
+          "mg_per_unit": 7.5
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -2734,11 +3228,15 @@
       "presentations": [
         {
           "label": "supositório infantil",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "supositório",
+          "mg_per_unit": 0
         },
         {
           "label": "supositório adulto",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "supositório",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -2758,7 +3256,9 @@
       "presentations": [
         {
           "label": "emulsão oral 100% (Nujol)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ml",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -2778,15 +3278,21 @@
       "presentations": [
         {
           "label": "10mg sachê (lactente)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "sachê",
+          "mg_per_unit": 10.0
         },
         {
           "label": "30mg sachê (criança)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "sachê",
+          "mg_per_unit": 30.0
         },
         {
           "label": "100mg cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 100.0
         }
       ],
       "dose_mg_per_kg_per_day": 4.5,
@@ -2807,11 +3313,15 @@
       "presentations": [
         {
           "label": "100mg sachê (Floratil)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "sachê",
+          "mg_per_unit": 100.0
         },
         {
           "label": "200mg sachê",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "sachê",
+          "mg_per_unit": 200.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -2832,7 +3342,9 @@
       "presentations": [
         {
           "label": "sachê/cápsula (concentração varia)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -2852,7 +3364,9 @@
       "presentations": [
         {
           "label": "sachê 3g pó",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "sachê",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -2873,7 +3387,9 @@
       "presentations": [
         {
           "label": "sachê pó para preparo (OMS hipotônico)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "sachê",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -2893,19 +3409,27 @@
       "presentations": [
         {
           "label": "200UI/gota solução oral (Addera D3)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "gota",
+          "mg_per_unit": 0
         },
         {
           "label": "400UI/gota solução oral",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "gota",
+          "mg_per_unit": 0
         },
         {
           "label": "7000UI/ml solução oral",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ml",
+          "mg_per_unit": 0
         },
         {
           "label": "50000UI cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -2925,7 +3449,9 @@
       "presentations": [
         {
           "label": "10mg/ml ampola IM",
-          "concentration_mg_per_ml": 10
+          "concentration_mg_per_ml": 10,
+          "unit_type": "ml",
+          "mg_per_unit": 10
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -2945,11 +3471,15 @@
       "presentations": [
         {
           "label": "25mg Fe elementar/ml solução oral (gotas)",
-          "concentration_mg_per_ml": 25
+          "concentration_mg_per_ml": 25,
+          "unit_type": "ml",
+          "mg_per_unit": 25
         },
         {
           "label": "40mg Fe comprimido (300mg sulfato)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 40.0
         }
       ],
       "dose_mg_per_kg_per_day": 3,
@@ -2968,7 +3498,9 @@
       "presentations": [
         {
           "label": "50mg Fe elementar/ml gotas (Noripurum)",
-          "concentration_mg_per_ml": 50
+          "concentration_mg_per_ml": 50,
+          "unit_type": "ml",
+          "mg_per_unit": 50
         }
       ],
       "dose_mg_per_kg_per_day": 3,
@@ -2987,11 +3519,15 @@
       "presentations": [
         {
           "label": "0,2mg/ml solução oral",
-          "concentration_mg_per_ml": 0.2
+          "concentration_mg_per_ml": 0.2,
+          "unit_type": "ml",
+          "mg_per_unit": 0.2
         },
         {
           "label": "5mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 5.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3011,11 +3547,15 @@
       "presentations": [
         {
           "label": "200.000UI cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 0
         },
         {
           "label": "100.000UI cápsula (lactente)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3035,11 +3575,15 @@
       "presentations": [
         {
           "label": "10mg Zn elementar/ml solução oral",
-          "concentration_mg_per_ml": 10
+          "concentration_mg_per_ml": 10,
+          "unit_type": "ml",
+          "mg_per_unit": 10
         },
         {
           "label": "20mg comprimido dispersível",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 20.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3059,7 +3603,9 @@
       "presentations": [
         {
           "label": "solução oral (gotas - Protovit, Centrum, etc)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "gota",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3079,11 +3625,15 @@
       "presentations": [
         {
           "label": "20mg/g pomada 2% (Bactroban)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 20.0
         },
         {
           "label": "20mg/g creme 2%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 20.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3103,7 +3653,9 @@
       "presentations": [
         {
           "label": "5mg/g pomada (Nebacetin)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 5.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3123,7 +3675,9 @@
       "presentations": [
         {
           "label": "250UI+5mg/g pomada (Nebacetin)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 5.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3143,11 +3697,15 @@
       "presentations": [
         {
           "label": "20mg/g creme 2% (Verutex)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 20.0
         },
         {
           "label": "20mg/g pomada 2%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 20.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3167,7 +3725,9 @@
       "presentations": [
         {
           "label": "10mg/g pomada 1% (Altargo)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 10.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3187,7 +3747,9 @@
       "presentations": [
         {
           "label": "ampola 5ml ou 10ml",
-          "concentration_mg_per_ml": 9
+          "concentration_mg_per_ml": 9,
+          "unit_type": "ml",
+          "mg_per_unit": 9
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3207,7 +3769,9 @@
       "presentations": [
         {
           "label": "spray ou ampola 3% (Salsep)",
-          "concentration_mg_per_ml": 30
+          "concentration_mg_per_ml": 0,
+          "unit_type": "jato",
+          "mg_per_unit": 30
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3227,11 +3791,15 @@
       "presentations": [
         {
           "label": "20mg/ml spray nasal 2% (Rilan)",
-          "concentration_mg_per_ml": 20
+          "concentration_mg_per_ml": 20,
+          "unit_type": "ml",
+          "mg_per_unit": 20
         },
         {
           "label": "40mg/ml spray nasal 4%",
-          "concentration_mg_per_ml": 40
+          "concentration_mg_per_ml": 40,
+          "unit_type": "ml",
+          "mg_per_unit": 40
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3251,19 +3819,27 @@
       "presentations": [
         {
           "label": "20mg/ml xarope (Fluimucil)",
-          "concentration_mg_per_ml": 20
+          "concentration_mg_per_ml": 20,
+          "unit_type": "ml",
+          "mg_per_unit": 20
         },
         {
           "label": "100mg sachê",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "sachê",
+          "mg_per_unit": 100.0
         },
         {
           "label": "200mg sachê",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "sachê",
+          "mg_per_unit": 200.0
         },
         {
           "label": "600mg comprimido efervescente",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 600.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3284,11 +3860,15 @@
       "presentations": [
         {
           "label": "20mg/ml xarope infantil (Mucofan)",
-          "concentration_mg_per_ml": 20
+          "concentration_mg_per_ml": 20,
+          "unit_type": "ml",
+          "mg_per_unit": 20
         },
         {
           "label": "50mg/ml xarope adulto",
-          "concentration_mg_per_ml": 50
+          "concentration_mg_per_ml": 50,
+          "unit_type": "ml",
+          "mg_per_unit": 50
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3309,15 +3889,21 @@
       "presentations": [
         {
           "label": "25mg/g gel 2.5%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 25.0
         },
         {
           "label": "50mg/g gel 5%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 50.0
         },
         {
           "label": "100mg/g gel 10%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 100.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3337,11 +3923,15 @@
       "presentations": [
         {
           "label": "1mg/g gel 0.1% (Differin)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 1.0
         },
         {
           "label": "3mg/g gel 0.3%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 3.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3361,11 +3951,15 @@
       "presentations": [
         {
           "label": "10mg/g gel 1% (Clindoxyl)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 10.0
         },
         {
           "label": "10mg/ml solução tópica",
-          "concentration_mg_per_ml": 10
+          "concentration_mg_per_ml": 10,
+          "unit_type": "ml",
+          "mg_per_unit": 10
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3385,7 +3979,9 @@
       "presentations": [
         {
           "label": "20mg/g gel 2% (Eryacne)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 20.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3405,7 +4001,9 @@
       "presentations": [
         {
           "label": "loção (Caladryl)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ml",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3425,11 +4023,15 @@
       "presentations": [
         {
           "label": "pasta d'água (Hipoglós, etc)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ml",
+          "mg_per_unit": 0
         },
         {
           "label": "pomada 10-40% concentrações variadas",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3449,7 +4051,9 @@
       "presentations": [
         {
           "label": "50mg/g creme 5% (Bepantol)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 50.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3469,7 +4073,9 @@
       "presentations": [
         {
           "label": "20mg/g gel 2% (Xylocaína)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 20.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3489,7 +4095,9 @@
       "presentations": [
         {
           "label": "25mg+25mg/g creme (EMLA)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 25.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3509,11 +4117,15 @@
       "presentations": [
         {
           "label": "20mg/ml solução degermante 2%",
-          "concentration_mg_per_ml": 20
+          "concentration_mg_per_ml": 20,
+          "unit_type": "ml",
+          "mg_per_unit": 20
         },
         {
           "label": "5mg/ml solução aquosa 0.5%",
-          "concentration_mg_per_ml": 5
+          "concentration_mg_per_ml": 5,
+          "unit_type": "ml",
+          "mg_per_unit": 5
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3533,11 +4145,15 @@
       "presentations": [
         {
           "label": "100mg/ml solução tópica 10%",
-          "concentration_mg_per_ml": 100
+          "concentration_mg_per_ml": 100,
+          "unit_type": "ml",
+          "mg_per_unit": 100
         },
         {
           "label": "100mg/ml degermante 10%",
-          "concentration_mg_per_ml": 100
+          "concentration_mg_per_ml": 100,
+          "unit_type": "ml",
+          "mg_per_unit": 100
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3557,15 +4173,21 @@
       "presentations": [
         {
           "label": "100mg/g creme 10% (hidratante)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 100.0
         },
         {
           "label": "200mg/g creme 20% (queratolítico)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 200.0
         },
         {
           "label": "400mg/g creme 40% (queratolítico)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 400.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3585,7 +4207,9 @@
       "presentations": [
         {
           "label": "creme/loção (combinação variada)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3605,7 +4229,9 @@
       "presentations": [
         {
           "label": "75mg/ml gotas (Luftal)",
-          "concentration_mg_per_ml": 75
+          "concentration_mg_per_ml": 75,
+          "unit_type": "ml",
+          "mg_per_unit": 75
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3625,7 +4251,9 @@
       "presentations": [
         {
           "label": "3mg/ml colírio (Tobrex)",
-          "concentration_mg_per_ml": 3
+          "concentration_mg_per_ml": 3,
+          "unit_type": "ml",
+          "mg_per_unit": 3
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3645,7 +4273,9 @@
       "presentations": [
         {
           "label": "3mg/ml colírio (Ciloxan)",
-          "concentration_mg_per_ml": 3
+          "concentration_mg_per_ml": 3,
+          "unit_type": "ml",
+          "mg_per_unit": 3
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3665,11 +4295,15 @@
       "presentations": [
         {
           "label": "5mg/ml colírio",
-          "concentration_mg_per_ml": 5
+          "concentration_mg_per_ml": 5,
+          "unit_type": "ml",
+          "mg_per_unit": 5
         },
         {
           "label": "10mg/g pomada oftálmica 1%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 10.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3689,11 +4323,15 @@
       "presentations": [
         {
           "label": "1mg/ml colírio 0.1% (Patanol)",
-          "concentration_mg_per_ml": 1
+          "concentration_mg_per_ml": 1,
+          "unit_type": "ml",
+          "mg_per_unit": 1
         },
         {
           "label": "2mg/ml colírio 0.2%",
-          "concentration_mg_per_ml": 2
+          "concentration_mg_per_ml": 2,
+          "unit_type": "ml",
+          "mg_per_unit": 2
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3713,7 +4351,9 @@
       "presentations": [
         {
           "label": "0,25mg/ml colírio 0.025% (Zaditen)",
-          "concentration_mg_per_ml": 0.25
+          "concentration_mg_per_ml": 0.25,
+          "unit_type": "ml",
+          "mg_per_unit": 0.25
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3733,7 +4373,9 @@
       "presentations": [
         {
           "label": "5mg/ml colírio 0.5% (Lacrima Plus)",
-          "concentration_mg_per_ml": 5
+          "concentration_mg_per_ml": 5,
+          "unit_type": "ml",
+          "mg_per_unit": 5
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3753,7 +4395,9 @@
       "presentations": [
         {
           "label": "1mg+3mg/ml colírio (Tobradex)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ml",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3773,7 +4417,9 @@
       "presentations": [
         {
           "label": "3mg/ml solução otológica (Cipro otol)",
-          "concentration_mg_per_ml": 3
+          "concentration_mg_per_ml": 3,
+          "unit_type": "ml",
+          "mg_per_unit": 3
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3793,7 +4439,9 @@
       "presentations": [
         {
           "label": "Polimixina+Neomicina+Hidrocortisona solução (Otosporin)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ml",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3813,7 +4461,9 @@
       "presentations": [
         {
           "label": "solução otológica (Otalgan)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "gota",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3833,11 +4483,15 @@
       "presentations": [
         {
           "label": "óleo mineral",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ml",
+          "mg_per_unit": 0
         },
         {
           "label": "trietanolamina 5% (Cerumin)",
-          "concentration_mg_per_ml": 50
+          "concentration_mg_per_ml": 50,
+          "unit_type": "ml",
+          "mg_per_unit": 50
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3857,15 +4511,21 @@
       "presentations": [
         {
           "label": "10mg comprimido (Ritalina)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 10.0
         },
         {
           "label": "20mg cápsula LA",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 20.0
         },
         {
           "label": "30mg, 40mg, 60mg Concerta",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ml",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0.5,
@@ -3886,15 +4546,21 @@
       "presentations": [
         {
           "label": "50mg/ml xarope (Depakene)",
-          "concentration_mg_per_ml": 50
+          "concentration_mg_per_ml": 50,
+          "unit_type": "ml",
+          "mg_per_unit": 50
         },
         {
           "label": "250mg cápsula",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "cápsula",
+          "mg_per_unit": 250.0
         },
         {
           "label": "500mg comprimido LA",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 500.0
         }
       ],
       "dose_mg_per_kg_per_day": 20,
@@ -3913,15 +4579,21 @@
       "presentations": [
         {
           "label": "25mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 25.0
         },
         {
           "label": "50mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 50.0
         },
         {
           "label": "100mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 100.0
         }
       ],
       "dose_mg_per_kg_per_day": 5,
@@ -3940,15 +4612,21 @@
       "presentations": [
         {
           "label": "20mg/ml suspensão oral (Tegretol)",
-          "concentration_mg_per_ml": 20
+          "concentration_mg_per_ml": 20,
+          "unit_type": "ml",
+          "mg_per_unit": 20
         },
         {
           "label": "200mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 200.0
         },
         {
           "label": "400mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 400.0
         }
       ],
       "dose_mg_per_kg_per_day": 20,
@@ -3967,11 +4645,15 @@
       "presentations": [
         {
           "label": "20mg/ml colírio 2% (Cromolerg)",
-          "concentration_mg_per_ml": 20
+          "concentration_mg_per_ml": 20,
+          "unit_type": "ml",
+          "mg_per_unit": 20
         },
         {
           "label": "40mg/ml colírio 4%",
-          "concentration_mg_per_ml": 40
+          "concentration_mg_per_ml": 40,
+          "unit_type": "ml",
+          "mg_per_unit": 40
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -3991,7 +4673,9 @@
       "presentations": [
         {
           "label": "0,12mg/ml colírio 0.012%",
-          "concentration_mg_per_ml": 0.12
+          "concentration_mg_per_ml": 0.12,
+          "unit_type": "ml",
+          "mg_per_unit": 0.12
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4011,7 +4695,9 @@
       "presentations": [
         {
           "label": "vaselina líquida ou sólida",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ml",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4031,7 +4717,9 @@
       "presentations": [
         {
           "label": "0,2mg/ml loção 0.02% (Deltacid)",
-          "concentration_mg_per_ml": 0.2
+          "concentration_mg_per_ml": 0.2,
+          "unit_type": "ml",
+          "mg_per_unit": 0.2
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4051,7 +4739,9 @@
       "presentations": [
         {
           "label": "40-50mg/ml loção (Mediker AP)",
-          "concentration_mg_per_ml": 40
+          "concentration_mg_per_ml": 40,
+          "unit_type": "ml",
+          "mg_per_unit": 40
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4071,15 +4761,21 @@
       "presentations": [
         {
           "label": "spray 45mcg/jato",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "jato",
+          "mg_per_unit": 0.045
         },
         {
           "label": "0.31mg/3ml solução nebulização",
-          "concentration_mg_per_ml": 0.1
+          "concentration_mg_per_ml": 0.1,
+          "unit_type": "ml",
+          "mg_per_unit": 0.1
         },
         {
           "label": "0.63mg/3ml solução nebulização",
-          "concentration_mg_per_ml": 0.21
+          "concentration_mg_per_ml": 0.21,
+          "unit_type": "ml",
+          "mg_per_unit": 0.21
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4099,11 +4795,15 @@
       "presentations": [
         {
           "label": "Diskus 50/100, 50/250, 50/500 (Seretide)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ml",
+          "mg_per_unit": 0
         },
         {
           "label": "Spray 25/50, 25/125, 25/250",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "jato",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4123,7 +4823,9 @@
       "presentations": [
         {
           "label": "50mcg/jato spray nasal",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "jato",
+          "mg_per_unit": 0.05
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4143,11 +4845,15 @@
       "presentations": [
         {
           "label": "spray 80mcg/jato (Alvesco)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "jato",
+          "mg_per_unit": 0.08
         },
         {
           "label": "spray 160mcg/jato",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "jato",
+          "mg_per_unit": 0.16
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4167,7 +4873,9 @@
       "presentations": [
         {
           "label": "55mcg/jato spray nasal (Nasacort)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "jato",
+          "mg_per_unit": 0.055
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4187,7 +4895,9 @@
       "presentations": [
         {
           "label": "200mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 200.0
         }
       ],
       "dose_mg_per_kg_per_day": 5,
@@ -4206,7 +4916,9 @@
       "presentations": [
         {
           "label": "10mg/g creme 1%",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 10.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4226,7 +4938,9 @@
       "presentations": [
         {
           "label": "10mg/g creme 1% (Oxistat)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 10.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4246,7 +4960,9 @@
       "presentations": [
         {
           "label": "solução otológica combinada",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "gota",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4266,7 +4982,9 @@
       "presentations": [
         {
           "label": "20mg/ml solução otológica",
-          "concentration_mg_per_ml": 20
+          "concentration_mg_per_ml": 20,
+          "unit_type": "ml",
+          "mg_per_unit": 20
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4286,7 +5004,9 @@
       "presentations": [
         {
           "label": "5mg+120mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 5.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4306,7 +5026,9 @@
       "presentations": [
         {
           "label": "30mg comp; 60mg comp; xarope 6mg/ml",
-          "concentration_mg_per_ml": 6
+          "concentration_mg_per_ml": 6,
+          "unit_type": "ml",
+          "mg_per_unit": 6
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4326,11 +5048,15 @@
       "presentations": [
         {
           "label": "0.05% spray nasal",
-          "concentration_mg_per_ml": 0.5
+          "concentration_mg_per_ml": 0,
+          "unit_type": "jato",
+          "mg_per_unit": 0.5
         },
         {
           "label": "0.025% spray nasal pediátrico",
-          "concentration_mg_per_ml": 0.25
+          "concentration_mg_per_ml": 0,
+          "unit_type": "jato",
+          "mg_per_unit": 0.25
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4350,7 +5076,9 @@
       "presentations": [
         {
           "label": "supositório infantil 1g",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "supositório",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4370,7 +5098,9 @@
       "presentations": [
         {
           "label": "100mg/ml xarope 10% (apresentações pediátricas)",
-          "concentration_mg_per_ml": 100
+          "concentration_mg_per_ml": 100,
+          "unit_type": "ml",
+          "mg_per_unit": 100
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4390,7 +5120,9 @@
       "presentations": [
         {
           "label": "solução oral combinada",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ml",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4410,7 +5142,9 @@
       "presentations": [
         {
           "label": "pomada anorretal combinada",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "g",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4430,11 +5164,15 @@
       "presentations": [
         {
           "label": "0,8mg/ml xarope pediátrico (Bisolvon)",
-          "concentration_mg_per_ml": 0.8
+          "concentration_mg_per_ml": 0.8,
+          "unit_type": "ml",
+          "mg_per_unit": 0.8
         },
         {
           "label": "1,6mg/ml xarope adulto",
-          "concentration_mg_per_ml": 1.6
+          "concentration_mg_per_ml": 1.6,
+          "unit_type": "ml",
+          "mg_per_unit": 1.6
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4455,7 +5193,9 @@
       "presentations": [
         {
           "label": "20mg/ml xarope",
-          "concentration_mg_per_ml": 20
+          "concentration_mg_per_ml": 20,
+          "unit_type": "ml",
+          "mg_per_unit": 20
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4475,11 +5215,15 @@
       "presentations": [
         {
           "label": "1mg/ml xarope (Vick 44)",
-          "concentration_mg_per_ml": 1
+          "concentration_mg_per_ml": 1,
+          "unit_type": "ml",
+          "mg_per_unit": 1
         },
         {
           "label": "15mg comprimido",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 15.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4500,11 +5244,15 @@
       "presentations": [
         {
           "label": "solução para nebulização combinada",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ml",
+          "mg_per_unit": 0
         },
         {
           "label": "spray combinado",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "jato",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4524,7 +5272,9 @@
       "presentations": [
         {
           "label": "100mg sachê",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "sachê",
+          "mg_per_unit": 100.0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4544,7 +5294,9 @@
       "presentations": [
         {
           "label": "comprimidos / sachê / pó",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "comprimido",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4564,7 +5316,9 @@
       "presentations": [
         {
           "label": "75mg/ml gotas (alternativa a Luftal)",
-          "concentration_mg_per_ml": 75
+          "concentration_mg_per_ml": 75,
+          "unit_type": "ml",
+          "mg_per_unit": 75
         }
       ],
       "dose_mg_per_kg_per_day": 0,
@@ -4584,7 +5338,9 @@
       "presentations": [
         {
           "label": "100mg/5ml solução oral (Mastergal)",
-          "concentration_mg_per_ml": 20
+          "concentration_mg_per_ml": 20,
+          "unit_type": "ml",
+          "mg_per_unit": 20
         }
       ],
       "dose_mg_per_kg_per_day": 20,
@@ -4605,7 +5361,9 @@
       "presentations": [
         {
           "label": "2mg/5ml xarope (Aerolin Xarope)",
-          "concentration_mg_per_ml": 0.4
+          "concentration_mg_per_ml": 0.4,
+          "unit_type": "ml",
+          "mg_per_unit": 0.4
         }
       ],
       "dose_mg_per_kg_per_day": 0.6,
@@ -4626,7 +5384,9 @@
       "presentations": [
         {
           "label": "(produto retirado do mercado por contaminação NDMA)",
-          "concentration_mg_per_ml": 0
+          "concentration_mg_per_ml": 0,
+          "unit_type": "ml",
+          "mg_per_unit": 0
         }
       ],
       "dose_mg_per_kg_per_day": 0,

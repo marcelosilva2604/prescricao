@@ -552,9 +552,8 @@
     }
     const weight = parseFloat(state.patient.weight) || 0;
     const totalMg = weight * p.doseMgPerKgPerDay;
-    const volume = item.calc.volumePerDoseMl;
-    const volStr = volume != null ? `${volume.toFixed(1).replace('.', ',')}ml/dose` : '—';
-    return `${p.doseMgPerKgPerDay}mg/kg/dia (${totalMg.toFixed(0)}mg/dia) · ${volStr} · ${freq} · ${p.durationDays} dias`;
+    const doseStr = formatDoseUnitPreview(item);
+    return `${p.doseMgPerKgPerDay}mg/kg/dia (${totalMg.toFixed(0)}mg/dia) · ${doseStr}/dose · ${freq} · ${p.durationDays} dias`;
   }
 
   function bindSelectedActions() {
@@ -646,6 +645,24 @@
     renderOverlay();
   }
 
+  function formatDoseUnitPreview(item) {
+    const med = item.medication;
+    const calc = item.calc || {};
+    const unitType = med.unit_type || 'ml';
+    if (unitType === 'ml') {
+      const v = calc.volumePerDoseMl;
+      if (v == null || !isFinite(v) || isNaN(v)) return '— ml';
+      return `${v.toFixed(1).replace('.', ',')}ml`;
+    }
+    const mgPerUnit = med.mg_per_unit || 0;
+    const dosePerAdmin = calc.dosePerAdminMg || 0;
+    if (mgPerUnit <= 0) return `${dosePerAdmin.toFixed(0)}mg`;
+    const units = dosePerAdmin / mgPerUnit;
+    const rounded = Math.round(units * 2) / 2;
+    const pluralS = rounded !== 1 ? 's' : '';
+    return `${rounded.toString().replace('.', ',')} ${unitType}${pluralS}`;
+  }
+
   function buildMedHTML(item, number, posTop, posBottom, scale) {
     const med = item.medication;
     const presShort = window.PdfOverlay.presentationShort(med.presentation);
@@ -655,9 +672,7 @@
     if (med.fixed_dose) {
       line2 = `Ofertar ${med.fixed_dose_string} via ${med.route} ${freq} por ${item.params.durationDays} dias`;
     } else {
-      const v = item.calc && item.calc.volumePerDoseMl;
-      const vol = v != null && !isNaN(v) ? v.toFixed(1).replace('.', ',') : '—';
-      line2 = `Ofertar ${vol}ml via ${med.route} ${freq} por ${item.params.durationDays} dias`;
+      line2 = `Ofertar ${formatDoseUnitPreview(item)} via ${med.route} ${freq} por ${item.params.durationDays} dias`;
     }
     const m1 = posTop;
     const m2 = posBottom;

@@ -18,6 +18,8 @@
       "max_mg_per_dose": 500,
       "id": "amoxicilina_250mg_5ml_suspensao_oral",
       "presentation": "250mg/5ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 50,
       "concentration_mg_per_ml": 50
     },
     {
@@ -36,6 +38,8 @@
       "max_mg_per_dose": 500,
       "id": "amoxicilina_400mg_5ml_suspensao_oral_bd",
       "presentation": "400mg/5ml suspensão oral (BD)",
+      "unit_type": "ml",
+      "mg_per_unit": 80,
       "concentration_mg_per_ml": 80
     },
     {
@@ -54,6 +58,8 @@
       "max_mg_per_dose": 875,
       "id": "amoxicilina_clavulanato_250mg_62_5mg_per_5ml_suspensao",
       "presentation": "250mg/62,5mg per 5ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 50,
       "concentration_mg_per_ml": 50
     },
     {
@@ -72,6 +78,8 @@
       "max_mg_per_dose": 875,
       "id": "amoxicilina_clavulanato_400mg_57mg_per_5ml_suspensao_o",
       "presentation": "400mg/57mg per 5ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 80,
       "concentration_mg_per_ml": 80
     },
     {
@@ -90,6 +98,8 @@
       "max_mg_per_dose": 500,
       "id": "ampicilina_250mg_5ml_suspensao_oral",
       "presentation": "250mg/5ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 50,
       "concentration_mg_per_ml": 50
     },
     {
@@ -108,6 +118,8 @@
       "max_mg_per_dose": 500,
       "id": "penicilina_v_80_000ui_ml_suspensao_oral",
       "presentation": "80.000UI/ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 50,
       "concentration_mg_per_ml": 50
     },
     {
@@ -126,6 +138,8 @@
       "max_mg_per_dose": 500,
       "id": "penicilina_v_500_000ui_comprimido",
       "presentation": "500.000UI comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -141,7 +155,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "<27kg: 600.000UI; ≥27kg: 1.200.000UI dose única",
       "id": "penicilina_g_benzatina_600_000ui_ampola_im_27kg",
-      "presentation": "600.000UI ampola IM (<27kg)"
+      "presentation": "600.000UI ampola IM (<27kg)",
+      "unit_type": "ampola",
+      "mg_per_unit": 0
     },
     {
       "name": "Penicilina G Benzatina",
@@ -156,7 +172,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "<27kg: 600.000UI; ≥27kg: 1.200.000UI dose única",
       "id": "penicilina_g_benzatina_1_200_000ui_ampola_im_27kg",
-      "presentation": "1.200.000UI ampola IM (≥27kg)"
+      "presentation": "1.200.000UI ampola IM (≥27kg)",
+      "unit_type": "ampola",
+      "mg_per_unit": 0
     },
     {
       "name": "Cefadroxila",
@@ -174,6 +192,8 @@
       "max_mg_per_dose": 1000,
       "id": "cefadroxila_250mg_5ml_suspensao_oral",
       "presentation": "250mg/5ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 50,
       "concentration_mg_per_ml": 50
     },
     {
@@ -192,6 +212,8 @@
       "max_mg_per_dose": 1000,
       "id": "cefadroxila_500mg_capsula",
       "presentation": "500mg cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 500.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -210,6 +232,8 @@
       "max_mg_per_dose": 1000,
       "id": "cefalexina_250mg_5ml_suspensao_oral",
       "presentation": "250mg/5ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 50,
       "concentration_mg_per_ml": 50
     },
     {
@@ -228,6 +252,8 @@
       "max_mg_per_dose": 1000,
       "id": "cefalexina_500mg_capsula",
       "presentation": "500mg cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 500.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -246,6 +272,8 @@
       "max_mg_per_dose": 500,
       "id": "cefaclor_250mg_5ml_suspensao_oral",
       "presentation": "250mg/5ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 50,
       "concentration_mg_per_ml": 50
     },
     {
@@ -264,6 +292,8 @@
       "max_mg_per_dose": 500,
       "id": "cefaclor_375mg_5ml_suspensao_oral",
       "presentation": "375mg/5ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 75,
       "concentration_mg_per_ml": 75
     },
     {
@@ -282,6 +312,8 @@
       "max_mg_per_dose": 500,
       "id": "cefuroxima_axetil_250mg_5ml_suspensao_oral",
       "presentation": "250mg/5ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 50,
       "concentration_mg_per_ml": 50
     },
     {
@@ -300,6 +332,8 @@
       "max_mg_per_dose": 500,
       "id": "cefuroxima_axetil_250mg_comprimido",
       "presentation": "250mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 250.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -318,6 +352,8 @@
       "max_mg_per_dose": 500,
       "id": "cefuroxima_axetil_500mg_comprimido",
       "presentation": "500mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 500.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -336,6 +372,8 @@
       "max_mg_per_dose": 500,
       "id": "cefprozil_250mg_5ml_suspensao_oral",
       "presentation": "250mg/5ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 50,
       "concentration_mg_per_ml": 50
     },
     {
@@ -354,6 +392,8 @@
       "max_mg_per_dose": 500,
       "id": "cefprozil_500mg_comprimido",
       "presentation": "500mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 500.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -372,6 +412,8 @@
       "max_mg_per_dose": 400,
       "id": "cefixima_100mg_5ml_suspensao_oral",
       "presentation": "100mg/5ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 20,
       "concentration_mg_per_ml": 20
     },
     {
@@ -390,6 +432,8 @@
       "max_mg_per_dose": 400,
       "id": "cefixima_400mg_capsula",
       "presentation": "400mg cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 400.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -408,6 +452,8 @@
       "max_mg_per_dose": 200,
       "id": "cefpodoxima_proxetil_40mg_5ml_suspensao_oral",
       "presentation": "40mg/5ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 8,
       "concentration_mg_per_ml": 8
     },
     {
@@ -426,6 +472,8 @@
       "max_mg_per_dose": 200,
       "id": "cefpodoxima_proxetil_80mg_5ml_suspensao_oral",
       "presentation": "80mg/5ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 16,
       "concentration_mg_per_ml": 16
     },
     {
@@ -444,6 +492,8 @@
       "max_mg_per_dose": 1000,
       "id": "ceftriaxona_500mg_po_im_iv",
       "presentation": "500mg pó IM/IV",
+      "unit_type": "frasco",
+      "mg_per_unit": 500.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -462,6 +512,8 @@
       "max_mg_per_dose": 1000,
       "id": "ceftriaxona_1g_po_im_iv",
       "presentation": "1g pó IM/IV",
+      "unit_type": "frasco",
+      "mg_per_unit": 0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -480,6 +532,8 @@
       "max_mg_per_dose": 500,
       "id": "azitromicina_200mg_5ml_suspensao_oral",
       "presentation": "200mg/5ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 40,
       "concentration_mg_per_ml": 40
     },
     {
@@ -498,6 +552,8 @@
       "max_mg_per_dose": 500,
       "id": "azitromicina_600mg_po_para_susp_5ml",
       "presentation": "600mg pó para susp (5ml)",
+      "unit_type": "ml",
+      "mg_per_unit": 120,
       "concentration_mg_per_ml": 120
     },
     {
@@ -516,6 +572,8 @@
       "max_mg_per_dose": 500,
       "id": "azitromicina_500mg_comprimido",
       "presentation": "500mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 500.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -534,6 +592,8 @@
       "max_mg_per_dose": 500,
       "id": "claritromicina_250mg_5ml_suspensao_oral",
       "presentation": "250mg/5ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 50,
       "concentration_mg_per_ml": 50
     },
     {
@@ -552,6 +612,8 @@
       "max_mg_per_dose": 500,
       "id": "claritromicina_500mg_comprimido",
       "presentation": "500mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 500.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -570,6 +632,8 @@
       "max_mg_per_dose": 500,
       "id": "eritromicina_estolato_125mg_5ml_suspensao_oral",
       "presentation": "125mg/5ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 25,
       "concentration_mg_per_ml": 25
     },
     {
@@ -588,6 +652,8 @@
       "max_mg_per_dose": 500,
       "id": "eritromicina_estolato_250mg_5ml_suspensao_oral",
       "presentation": "250mg/5ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 50,
       "concentration_mg_per_ml": 50
     },
     {
@@ -606,6 +672,8 @@
       "max_mg_per_dose": 600,
       "id": "clindamicina_75mg_5ml_solucao_oral",
       "presentation": "75mg/5ml solução oral",
+      "unit_type": "ml",
+      "mg_per_unit": 15,
       "concentration_mg_per_ml": 15
     },
     {
@@ -624,6 +692,8 @@
       "max_mg_per_dose": 600,
       "id": "clindamicina_150mg_capsula",
       "presentation": "150mg cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 150.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -642,6 +712,8 @@
       "max_mg_per_dose": 600,
       "id": "clindamicina_300mg_capsula",
       "presentation": "300mg cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 300.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -660,6 +732,8 @@
       "max_mg_per_dose": 100,
       "id": "doxiciclina_100mg_comprimido",
       "presentation": "100mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 100.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -678,6 +752,8 @@
       "max_mg_per_dose": 100,
       "id": "doxiciclina_100mg_capsula",
       "presentation": "100mg cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 100.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -696,6 +772,8 @@
       "max_mg_per_dose": 750,
       "id": "ciprofloxacino_250mg_5ml_suspensao_oral_50mg",
       "presentation": "250mg/5ml suspensão oral (50mg/ml)",
+      "unit_type": "ml",
+      "mg_per_unit": 50,
       "concentration_mg_per_ml": 50
     },
     {
@@ -714,6 +792,8 @@
       "max_mg_per_dose": 750,
       "id": "ciprofloxacino_500mg_5ml_suspensao_oral_100m",
       "presentation": "500mg/5ml suspensão oral (100mg/ml)",
+      "unit_type": "ml",
+      "mg_per_unit": 100,
       "concentration_mg_per_ml": 100
     },
     {
@@ -732,6 +812,8 @@
       "max_mg_per_dose": 750,
       "id": "ciprofloxacino_250mg_comprimido",
       "presentation": "250mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 250.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -750,6 +832,8 @@
       "max_mg_per_dose": 750,
       "id": "ciprofloxacino_500mg_comprimido",
       "presentation": "500mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 500.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -768,6 +852,8 @@
       "max_mg_per_dose": 750,
       "id": "levofloxacino_250mg_comprimido",
       "presentation": "250mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 250.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -786,6 +872,8 @@
       "max_mg_per_dose": 750,
       "id": "levofloxacino_500mg_comprimido",
       "presentation": "500mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 500.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -804,6 +892,8 @@
       "max_mg_per_dose": 750,
       "id": "levofloxacino_750mg_comprimido",
       "presentation": "750mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 750.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -822,6 +912,8 @@
       "max_mg_per_dose": 160,
       "id": "sulfametoxazol_trimetoprima_200mg_40mg_per_5ml_suspensao_o",
       "presentation": "200mg/40mg per 5ml suspensão oral (TMP 8mg/ml)",
+      "unit_type": "ml",
+      "mg_per_unit": 8,
       "concentration_mg_per_ml": 8
     },
     {
@@ -840,6 +932,8 @@
       "max_mg_per_dose": 160,
       "id": "sulfametoxazol_trimetoprima_400mg_80mg_comprimido_bactrim",
       "presentation": "400mg/80mg comprimido (Bactrim)",
+      "unit_type": "comprimido",
+      "mg_per_unit": 400.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -858,6 +952,8 @@
       "max_mg_per_dose": 160,
       "id": "sulfametoxazol_trimetoprima_800mg_160mg_comprimido_bactri",
       "presentation": "800mg/160mg comprimido (Bactrim F)",
+      "unit_type": "comprimido",
+      "mg_per_unit": 800.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -876,6 +972,8 @@
       "max_mg_per_dose": 100,
       "id": "nitrofurantoina_25mg_5ml_suspensao_oral",
       "presentation": "25mg/5ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 5,
       "concentration_mg_per_ml": 5
     },
     {
@@ -894,6 +992,8 @@
       "max_mg_per_dose": 100,
       "id": "nitrofurantoina_100mg_capsula_macrodantina",
       "presentation": "100mg cápsula (Macrodantina)",
+      "unit_type": "cápsula",
+      "mg_per_unit": 100.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -912,6 +1012,8 @@
       "max_mg_per_dose": 750,
       "id": "metronidazol_200mg_5ml_suspensao_oral_40mg",
       "presentation": "200mg/5ml suspensão oral (40mg/ml)",
+      "unit_type": "ml",
+      "mg_per_unit": 40,
       "concentration_mg_per_ml": 40
     },
     {
@@ -930,6 +1032,8 @@
       "max_mg_per_dose": 750,
       "id": "metronidazol_250mg_comprimido",
       "presentation": "250mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 250.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -948,6 +1052,8 @@
       "max_mg_per_dose": 750,
       "id": "metronidazol_400mg_comprimido",
       "presentation": "400mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 400.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -966,6 +1072,8 @@
       "max_mg_per_dose": 2000,
       "id": "tinidazol_500mg_comprimido",
       "presentation": "500mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 500.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -984,6 +1092,8 @@
       "max_mg_per_dose": 2000,
       "id": "secnidazol_1g_comprimido",
       "presentation": "1g comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -1002,6 +1112,8 @@
       "max_mg_per_dose": 2000,
       "id": "secnidazol_30mg_ml_suspensao_oral",
       "presentation": "30mg/ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 30,
       "concentration_mg_per_ml": 30
     },
     {
@@ -1020,6 +1132,8 @@
       "max_mg_per_dose": 600,
       "id": "linezolida_100mg_5ml_suspensao_oral",
       "presentation": "100mg/5ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 20,
       "concentration_mg_per_ml": 20
     },
     {
@@ -1038,6 +1152,8 @@
       "max_mg_per_dose": 600,
       "id": "linezolida_600mg_comprimido",
       "presentation": "600mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 600.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -1056,6 +1172,8 @@
       "max_mg_per_dose": 500,
       "id": "vancomicina_oral_250mg_5ml_suspensao_oral",
       "presentation": "250mg/5ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 50,
       "concentration_mg_per_ml": 50
     },
     {
@@ -1074,6 +1192,8 @@
       "max_mg_per_dose": 500,
       "id": "vancomicina_oral_500mg_capsula",
       "presentation": "500mg cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 500.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -1092,6 +1212,8 @@
       "max_mg_per_dose": 600,
       "id": "rifampicina_20mg_ml_suspensao_oral",
       "presentation": "20mg/ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 20,
       "concentration_mg_per_ml": 20
     },
     {
@@ -1110,6 +1232,8 @@
       "max_mg_per_dose": 600,
       "id": "rifampicina_300mg_capsula",
       "presentation": "300mg cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 300.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -1128,6 +1252,8 @@
       "max_mg_per_dose": 500,
       "id": "tianfenicol_125mg_5ml_granulado_para_susp",
       "presentation": "125mg/5ml granulado para susp",
+      "unit_type": "ml",
+      "mg_per_unit": 25,
       "concentration_mg_per_ml": 25
     },
     {
@@ -1146,6 +1272,8 @@
       "max_mg_per_dose": 500,
       "id": "tianfenicol_500mg_comprimido",
       "presentation": "500mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 500.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -1161,7 +1289,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Adulto/adolescente: 400 mg 2x/d",
       "id": "norfloxacino_400mg_comprimido",
-      "presentation": "400mg comprimido"
+      "presentation": "400mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 400.0
     },
     {
       "name": "Paracetamol",
@@ -1179,6 +1309,8 @@
       "max_mg_per_dose": 1000,
       "id": "paracetamol_200mg_ml_solucao_oral_gotas",
       "presentation": "200mg/ml solução oral (gotas)",
+      "unit_type": "ml",
+      "mg_per_unit": 200,
       "concentration_mg_per_ml": 200
     },
     {
@@ -1197,6 +1329,8 @@
       "max_mg_per_dose": 1000,
       "id": "paracetamol_100mg_ml_solucao_oral_gotas",
       "presentation": "100mg/ml solução oral (gotas - infantil)",
+      "unit_type": "ml",
+      "mg_per_unit": 100,
       "concentration_mg_per_ml": 100
     },
     {
@@ -1215,6 +1349,8 @@
       "max_mg_per_dose": 1000,
       "id": "paracetamol_160mg_5ml_suspensao_tylenol",
       "presentation": "160mg/5ml suspensão (Tylenol)",
+      "unit_type": "ml",
+      "mg_per_unit": 32,
       "concentration_mg_per_ml": 32
     },
     {
@@ -1233,6 +1369,8 @@
       "max_mg_per_dose": 1000,
       "id": "paracetamol_500mg_comprimido",
       "presentation": "500mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 500.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -1251,6 +1389,8 @@
       "max_mg_per_dose": 1000,
       "id": "paracetamol_750mg_comprimido",
       "presentation": "750mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 750.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -1269,6 +1409,8 @@
       "max_mg_per_dose": 1000,
       "id": "dipirona_500mg_ml_solucao_oral_gotas",
       "presentation": "500mg/ml solução oral (gotas)",
+      "unit_type": "ml",
+      "mg_per_unit": 500,
       "concentration_mg_per_ml": 500
     },
     {
@@ -1287,6 +1429,8 @@
       "max_mg_per_dose": 1000,
       "id": "dipirona_50mg_ml_suspensao_oral",
       "presentation": "50mg/ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 50,
       "concentration_mg_per_ml": 50
     },
     {
@@ -1305,6 +1449,8 @@
       "max_mg_per_dose": 1000,
       "id": "dipirona_500mg_comprimido",
       "presentation": "500mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 500.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -1323,6 +1469,8 @@
       "max_mg_per_dose": 800,
       "id": "ibuprofeno_50mg_ml_solucao_oral_gotas",
       "presentation": "50mg/ml solução oral (gotas)",
+      "unit_type": "ml",
+      "mg_per_unit": 50,
       "concentration_mg_per_ml": 50
     },
     {
@@ -1341,6 +1489,8 @@
       "max_mg_per_dose": 800,
       "id": "ibuprofeno_100mg_5ml_suspensao_oral_20mg",
       "presentation": "100mg/5ml suspensão oral (20mg/ml)",
+      "unit_type": "ml",
+      "mg_per_unit": 20,
       "concentration_mg_per_ml": 20
     },
     {
@@ -1359,6 +1509,8 @@
       "max_mg_per_dose": 800,
       "id": "ibuprofeno_200mg_comprimido",
       "presentation": "200mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 200.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -1377,6 +1529,8 @@
       "max_mg_per_dose": 800,
       "id": "ibuprofeno_300mg_comprimido",
       "presentation": "300mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 300.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -1395,6 +1549,8 @@
       "max_mg_per_dose": 800,
       "id": "ibuprofeno_400mg_comprimido",
       "presentation": "400mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 400.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -1413,6 +1569,8 @@
       "max_mg_per_dose": 800,
       "id": "ibuprofeno_600mg_comprimido",
       "presentation": "600mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 600.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -1431,6 +1589,8 @@
       "max_mg_per_dose": 500,
       "id": "naproxeno_125mg_5ml_suspensao_oral",
       "presentation": "125mg/5ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 25,
       "concentration_mg_per_ml": 25
     },
     {
@@ -1449,6 +1609,8 @@
       "max_mg_per_dose": 500,
       "id": "naproxeno_250mg_comprimido",
       "presentation": "250mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 250.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -1467,6 +1629,8 @@
       "max_mg_per_dose": 500,
       "id": "naproxeno_500mg_comprimido",
       "presentation": "500mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 500.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -1485,6 +1649,8 @@
       "max_mg_per_dose": 100,
       "id": "ketoprofeno_20mg_ml_solucao_oral_gotas",
       "presentation": "20mg/ml solução oral (gotas)",
+      "unit_type": "ml",
+      "mg_per_unit": 20,
       "concentration_mg_per_ml": 20
     },
     {
@@ -1503,6 +1669,8 @@
       "max_mg_per_dose": 100,
       "id": "ketoprofeno_50mg_capsula",
       "presentation": "50mg cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 50.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -1521,6 +1689,8 @@
       "max_mg_per_dose": 100,
       "id": "ketoprofeno_100mg_comprimido",
       "presentation": "100mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 100.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -1536,7 +1706,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "6m-2a: 2.5mg 1x/d. 2-6a: 2.5-5mg 1x/d. ≥6a: 5-10mg 1x/d",
       "id": "cetirizina_1mg_ml_solucao_oral_gotas_xar",
-      "presentation": "1mg/ml solução oral (gotas/xarope)"
+      "presentation": "1mg/ml solução oral (gotas/xarope)",
+      "unit_type": "ml",
+      "mg_per_unit": 1
     },
     {
       "name": "Cetirizina",
@@ -1551,7 +1723,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "6m-2a: 2.5mg 1x/d. 2-6a: 2.5-5mg 1x/d. ≥6a: 5-10mg 1x/d",
       "id": "cetirizina_10mg_comprimido",
-      "presentation": "10mg comprimido"
+      "presentation": "10mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 10.0
     },
     {
       "name": "Loratadina",
@@ -1566,7 +1740,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-5a: 5mg 1x/d. ≥6a: 10mg 1x/d",
       "id": "loratadina_1mg_ml_xarope",
-      "presentation": "1mg/ml xarope"
+      "presentation": "1mg/ml xarope",
+      "unit_type": "ml",
+      "mg_per_unit": 1
     },
     {
       "name": "Loratadina",
@@ -1581,7 +1757,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-5a: 5mg 1x/d. ≥6a: 10mg 1x/d",
       "id": "loratadina_10mg_comprimido",
-      "presentation": "10mg comprimido"
+      "presentation": "10mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 10.0
     },
     {
       "name": "Desloratadina",
@@ -1596,7 +1774,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "6-11m: 1mg 1x/d. 1-5a: 1.25mg 1x/d. 6-11a: 2.5mg 1x/d. ≥12a: 5mg 1x/d",
       "id": "desloratadina_0_5mg_ml_xarope",
-      "presentation": "0,5mg/ml xarope"
+      "presentation": "0,5mg/ml xarope",
+      "unit_type": "ml",
+      "mg_per_unit": 0.5
     },
     {
       "name": "Desloratadina",
@@ -1611,7 +1791,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "6-11m: 1mg 1x/d. 1-5a: 1.25mg 1x/d. 6-11a: 2.5mg 1x/d. ≥12a: 5mg 1x/d",
       "id": "desloratadina_5mg_comprimido",
-      "presentation": "5mg comprimido"
+      "presentation": "5mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 5.0
     },
     {
       "name": "Levocetirizina",
@@ -1626,7 +1808,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "6m-5a: 1.25mg 1x/d. 6-11a: 2.5mg 1x/d. ≥12a: 5mg 1x/d",
       "id": "levocetirizina_0_5mg_ml_solucao_oral",
-      "presentation": "0,5mg/ml solução oral"
+      "presentation": "0,5mg/ml solução oral",
+      "unit_type": "ml",
+      "mg_per_unit": 0.5
     },
     {
       "name": "Levocetirizina",
@@ -1641,7 +1825,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "6m-5a: 1.25mg 1x/d. 6-11a: 2.5mg 1x/d. ≥12a: 5mg 1x/d",
       "id": "levocetirizina_5mg_comprimido",
-      "presentation": "5mg comprimido"
+      "presentation": "5mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 5.0
     },
     {
       "name": "Hidroxizina",
@@ -1659,6 +1845,8 @@
       "max_mg_per_dose": 50,
       "id": "hidroxizina_2mg_ml_xarope",
       "presentation": "2mg/ml xarope",
+      "unit_type": "ml",
+      "mg_per_unit": 2,
       "concentration_mg_per_ml": 2
     },
     {
@@ -1677,6 +1865,8 @@
       "max_mg_per_dose": 50,
       "id": "hidroxizina_10mg_comprimido",
       "presentation": "10mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 10.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -1695,6 +1885,8 @@
       "max_mg_per_dose": 50,
       "id": "hidroxizina_25mg_comprimido",
       "presentation": "25mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 25.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -1713,6 +1905,8 @@
       "max_mg_per_dose": 50,
       "id": "difenidramina_2_5mg_ml_elixir",
       "presentation": "2,5mg/ml elixir",
+      "unit_type": "ml",
+      "mg_per_unit": 2.5,
       "concentration_mg_per_ml": 2.5
     },
     {
@@ -1731,6 +1925,8 @@
       "max_mg_per_dose": 50,
       "id": "difenidramina_25mg_capsula",
       "presentation": "25mg cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 25.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -1749,6 +1945,8 @@
       "max_mg_per_dose": 50,
       "id": "difenidramina_50mg_capsula",
       "presentation": "50mg cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 50.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -1764,7 +1962,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-5a: 0.5mg 3x/d. 6-11a: 1mg 3x/d. ≥12a: 2mg 3x/d",
       "id": "dexclorfeniramina_0_4mg_ml_xarope_polaramine",
-      "presentation": "0,4mg/ml xarope (Polaramine)"
+      "presentation": "0,4mg/ml xarope (Polaramine)",
+      "unit_type": "ml",
+      "mg_per_unit": 0.4
     },
     {
       "name": "Dexclorfeniramina",
@@ -1779,7 +1979,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-5a: 0.5mg 3x/d. 6-11a: 1mg 3x/d. ≥12a: 2mg 3x/d",
       "id": "dexclorfeniramina_2mg_comprimido",
-      "presentation": "2mg comprimido"
+      "presentation": "2mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 2.0
     },
     {
       "name": "Dexclorfeniramina",
@@ -1794,7 +1996,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-5a: 0.5mg 3x/d. 6-11a: 1mg 3x/d. ≥12a: 2mg 3x/d",
       "id": "dexclorfeniramina_6mg_comprimido_repetabs",
-      "presentation": "6mg comprimido repetabs"
+      "presentation": "6mg comprimido repetabs",
+      "unit_type": "comprimido",
+      "mg_per_unit": 6.0
     },
     {
       "name": "Fexofenadina",
@@ -1809,7 +2013,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "6m-2a: 15mg 2x/d. 2-11a: 30mg 2x/d. ≥12a: 60mg 2x/d ou 180mg 1x/d",
       "id": "fexofenadina_6mg_ml_suspensao_oral",
-      "presentation": "6mg/ml suspensão oral"
+      "presentation": "6mg/ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 6
     },
     {
       "name": "Fexofenadina",
@@ -1824,7 +2030,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "6m-2a: 15mg 2x/d. 2-11a: 30mg 2x/d. ≥12a: 60mg 2x/d ou 180mg 1x/d",
       "id": "fexofenadina_30mg_comprimido",
-      "presentation": "30mg comprimido"
+      "presentation": "30mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 30.0
     },
     {
       "name": "Fexofenadina",
@@ -1839,7 +2047,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "6m-2a: 15mg 2x/d. 2-11a: 30mg 2x/d. ≥12a: 60mg 2x/d ou 180mg 1x/d",
       "id": "fexofenadina_60mg_comprimido",
-      "presentation": "60mg comprimido"
+      "presentation": "60mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 60.0
     },
     {
       "name": "Fexofenadina",
@@ -1854,7 +2064,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "6m-2a: 15mg 2x/d. 2-11a: 30mg 2x/d. ≥12a: 60mg 2x/d ou 180mg 1x/d",
       "id": "fexofenadina_120mg_comprimido",
-      "presentation": "120mg comprimido"
+      "presentation": "120mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 120.0
     },
     {
       "name": "Fexofenadina",
@@ -1869,7 +2081,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "6m-2a: 15mg 2x/d. 2-11a: 30mg 2x/d. ≥12a: 60mg 2x/d ou 180mg 1x/d",
       "id": "fexofenadina_180mg_comprimido",
-      "presentation": "180mg comprimido"
+      "presentation": "180mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 180.0
     },
     {
       "name": "Ebastina",
@@ -1884,7 +2098,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-5a: 2.5mg 1x/d. 6-11a: 5mg 1x/d. ≥12a: 10-20mg 1x/d",
       "id": "ebastina_1mg_ml_xarope",
-      "presentation": "1mg/ml xarope"
+      "presentation": "1mg/ml xarope",
+      "unit_type": "ml",
+      "mg_per_unit": 1
     },
     {
       "name": "Ebastina",
@@ -1899,7 +2115,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-5a: 2.5mg 1x/d. 6-11a: 5mg 1x/d. ≥12a: 10-20mg 1x/d",
       "id": "ebastina_10mg_comprimido",
-      "presentation": "10mg comprimido"
+      "presentation": "10mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 10.0
     },
     {
       "name": "Prometazina",
@@ -1917,6 +2135,8 @@
       "max_mg_per_dose": 25,
       "id": "prometazina_25mg_comprimido",
       "presentation": "25mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 25.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -1935,6 +2155,8 @@
       "max_mg_per_dose": 25,
       "id": "prometazina_50mg_2ml_ampola_im_iv",
       "presentation": "50mg/2ml ampola IM/IV",
+      "unit_type": "ml",
+      "mg_per_unit": 25,
       "concentration_mg_per_ml": 25
     },
     {
@@ -1953,6 +2175,8 @@
       "max_mg_per_dose": 800,
       "id": "aciclovir_200mg_5ml_suspensao_oral",
       "presentation": "200mg/5ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 40,
       "concentration_mg_per_ml": 40
     },
     {
@@ -1971,6 +2195,8 @@
       "max_mg_per_dose": 800,
       "id": "aciclovir_200mg_comprimido",
       "presentation": "200mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 200.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -1989,6 +2215,8 @@
       "max_mg_per_dose": 800,
       "id": "aciclovir_400mg_comprimido",
       "presentation": "400mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 400.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -2007,6 +2235,8 @@
       "max_mg_per_dose": 1000,
       "id": "valaciclovir_500mg_comprimido",
       "presentation": "500mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 500.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -2025,6 +2255,8 @@
       "max_mg_per_dose": 1000,
       "id": "valaciclovir_1g_comprimido",
       "presentation": "1g comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -2040,7 +2272,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Adolescentes: 500mg 3x/d (herpes zoster) ou 1g 2x/d × 1d (herpes labial)",
       "id": "famciclovir_125mg_comprimido",
-      "presentation": "125mg comprimido"
+      "presentation": "125mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 125.0
     },
     {
       "name": "Famciclovir",
@@ -2055,7 +2289,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Adolescentes: 500mg 3x/d (herpes zoster) ou 1g 2x/d × 1d (herpes labial)",
       "id": "famciclovir_250mg_comprimido",
-      "presentation": "250mg comprimido"
+      "presentation": "250mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 250.0
     },
     {
       "name": "Famciclovir",
@@ -2070,7 +2306,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Adolescentes: 500mg 3x/d (herpes zoster) ou 1g 2x/d × 1d (herpes labial)",
       "id": "famciclovir_500mg_comprimido",
-      "presentation": "500mg comprimido"
+      "presentation": "500mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 500.0
     },
     {
       "name": "Oseltamivir",
@@ -2085,7 +2323,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≤15kg: 30mg 2x/d. 15-23kg: 45mg 2x/d. 23-40kg: 60mg 2x/d. >40kg: 75mg 2x/d",
       "id": "oseltamivir_6mg_ml_suspensao_oral",
-      "presentation": "6mg/ml suspensão oral"
+      "presentation": "6mg/ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 6
     },
     {
       "name": "Oseltamivir",
@@ -2100,7 +2340,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≤15kg: 30mg 2x/d. 15-23kg: 45mg 2x/d. 23-40kg: 60mg 2x/d. >40kg: 75mg 2x/d",
       "id": "oseltamivir_30mg_capsula",
-      "presentation": "30mg cápsula"
+      "presentation": "30mg cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 30.0
     },
     {
       "name": "Oseltamivir",
@@ -2115,7 +2357,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≤15kg: 30mg 2x/d. 15-23kg: 45mg 2x/d. 23-40kg: 60mg 2x/d. >40kg: 75mg 2x/d",
       "id": "oseltamivir_45mg_capsula",
-      "presentation": "45mg cápsula"
+      "presentation": "45mg cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 45.0
     },
     {
       "name": "Oseltamivir",
@@ -2130,7 +2374,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≤15kg: 30mg 2x/d. 15-23kg: 45mg 2x/d. 23-40kg: 60mg 2x/d. >40kg: 75mg 2x/d",
       "id": "oseltamivir_75mg_capsula",
-      "presentation": "75mg cápsula"
+      "presentation": "75mg cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 75.0
     },
     {
       "name": "Prednisolona",
@@ -2148,6 +2394,8 @@
       "max_mg_per_dose": 60,
       "id": "prednisolona_3mg_ml_solucao_oral_prelone",
       "presentation": "3mg/ml solução oral (Prelone)",
+      "unit_type": "ml",
+      "mg_per_unit": 3,
       "concentration_mg_per_ml": 3
     },
     {
@@ -2166,6 +2414,8 @@
       "max_mg_per_dose": 60,
       "id": "prednisolona_1mg_ml_solucao_oral",
       "presentation": "1mg/ml solução oral",
+      "unit_type": "ml",
+      "mg_per_unit": 1,
       "concentration_mg_per_ml": 1
     },
     {
@@ -2184,6 +2434,8 @@
       "max_mg_per_dose": 60,
       "id": "prednisona_5mg_comprimido",
       "presentation": "5mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 5.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -2202,6 +2454,8 @@
       "max_mg_per_dose": 60,
       "id": "prednisona_20mg_comprimido",
       "presentation": "20mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 20.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -2220,6 +2474,8 @@
       "max_mg_per_dose": 16,
       "id": "dexametasona_0_1mg_ml_elixir",
       "presentation": "0,1mg/ml elixir",
+      "unit_type": "ml",
+      "mg_per_unit": 0.1,
       "concentration_mg_per_ml": 0.1
     },
     {
@@ -2238,6 +2494,8 @@
       "max_mg_per_dose": 16,
       "id": "dexametasona_0_5mg_comprimido",
       "presentation": "0,5mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 0.5,
       "concentration_mg_per_ml": 0
     },
     {
@@ -2256,6 +2514,8 @@
       "max_mg_per_dose": 16,
       "id": "dexametasona_0_75mg_comprimido",
       "presentation": "0,75mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 0.75,
       "concentration_mg_per_ml": 0
     },
     {
@@ -2274,6 +2534,8 @@
       "max_mg_per_dose": 16,
       "id": "dexametasona_4mg_comprimido",
       "presentation": "4mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 4.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -2292,6 +2554,8 @@
       "max_mg_per_dose": 6,
       "id": "betametasona_0_1mg_ml_elixir_celestamine",
       "presentation": "0,1mg/ml elixir (Celestamine)",
+      "unit_type": "ml",
+      "mg_per_unit": 0.1,
       "concentration_mg_per_ml": 0.1
     },
     {
@@ -2310,6 +2574,8 @@
       "max_mg_per_dose": 6,
       "id": "betametasona_0_5mg_comprimido",
       "presentation": "0,5mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 0.5,
       "concentration_mg_per_ml": 0
     },
     {
@@ -2328,6 +2594,8 @@
       "max_mg_per_dose": 1000,
       "id": "metilprednisolona_40mg_po_iv",
       "presentation": "40mg pó IV",
+      "unit_type": "frasco",
+      "mg_per_unit": 40.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -2346,6 +2614,8 @@
       "max_mg_per_dose": 1000,
       "id": "metilprednisolona_125mg_po_iv",
       "presentation": "125mg pó IV",
+      "unit_type": "frasco",
+      "mg_per_unit": 125.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -2364,6 +2634,8 @@
       "max_mg_per_dose": 1000,
       "id": "metilprednisolona_500mg_po_iv",
       "presentation": "500mg pó IV",
+      "unit_type": "frasco",
+      "mg_per_unit": 500.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -2382,6 +2654,8 @@
       "max_mg_per_dose": 1000,
       "id": "metilprednisolona_1g_po_iv",
       "presentation": "1g pó IV",
+      "unit_type": "frasco",
+      "mg_per_unit": 0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -2400,6 +2674,8 @@
       "max_mg_per_dose": 72,
       "id": "deflazacorte_6mg_comprimido",
       "presentation": "6mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 6.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -2418,6 +2694,8 @@
       "max_mg_per_dose": 72,
       "id": "deflazacorte_30mg_comprimido",
       "presentation": "30mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 30.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -2433,7 +2711,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar fina camada 2-3x/d",
       "id": "hidrocortisona_topica_10mg_g_creme_1",
-      "presentation": "10mg/g creme 1%"
+      "presentation": "10mg/g creme 1%",
+      "unit_type": "g",
+      "mg_per_unit": 10.0
     },
     {
       "name": "Hidrocortisona (tópica)",
@@ -2448,7 +2728,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar fina camada 2-3x/d",
       "id": "hidrocortisona_topica_25mg_g_pomada_2_5",
-      "presentation": "25mg/g pomada 2.5%"
+      "presentation": "25mg/g pomada 2.5%",
+      "unit_type": "g",
+      "mg_per_unit": 25.0
     },
     {
       "name": "Mometasona (tópica)",
@@ -2463,7 +2745,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar fina camada 1x/d",
       "id": "mometasona_topica_1mg_g_creme_0_1",
-      "presentation": "1mg/g creme 0.1%"
+      "presentation": "1mg/g creme 0.1%",
+      "unit_type": "g",
+      "mg_per_unit": 1.0
     },
     {
       "name": "Mometasona (tópica)",
@@ -2478,7 +2762,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar fina camada 1x/d",
       "id": "mometasona_topica_1mg_g_pomada_0_1",
-      "presentation": "1mg/g pomada 0.1%"
+      "presentation": "1mg/g pomada 0.1%",
+      "unit_type": "g",
+      "mg_per_unit": 1.0
     },
     {
       "name": "Mometasona (tópica)",
@@ -2493,7 +2779,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar fina camada 1x/d",
       "id": "mometasona_topica_1mg_g_locao_0_1",
-      "presentation": "1mg/g loção 0.1%"
+      "presentation": "1mg/g loção 0.1%",
+      "unit_type": "ml",
+      "mg_per_unit": 1.0
     },
     {
       "name": "Betametasona (tópica)",
@@ -2508,7 +2796,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar fina camada 1-2x/d",
       "id": "betametasona_topica_0_5mg_g_creme_0_05_dipropion",
-      "presentation": "0,5mg/g creme 0.05% (dipropionato)"
+      "presentation": "0,5mg/g creme 0.05% (dipropionato)",
+      "unit_type": "g",
+      "mg_per_unit": 0.5
     },
     {
       "name": "Betametasona (tópica)",
@@ -2523,7 +2813,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar fina camada 1-2x/d",
       "id": "betametasona_topica_1mg_g_creme_0_1_valerato",
-      "presentation": "1mg/g creme 0.1% (valerato)"
+      "presentation": "1mg/g creme 0.1% (valerato)",
+      "unit_type": "g",
+      "mg_per_unit": 1.0
     },
     {
       "name": "Dexametasona (tópica)",
@@ -2538,7 +2830,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar fina camada 2x/d",
       "id": "dexametasona_topica_1mg_g_creme_0_1",
-      "presentation": "1mg/g creme 0.1%"
+      "presentation": "1mg/g creme 0.1%",
+      "unit_type": "g",
+      "mg_per_unit": 1.0
     },
     {
       "name": "Desonida",
@@ -2553,7 +2847,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar fina camada 2-3x/d",
       "id": "desonida_0_5mg_g_creme_0_05",
-      "presentation": "0,5mg/g creme 0.05%"
+      "presentation": "0,5mg/g creme 0.05%",
+      "unit_type": "g",
+      "mg_per_unit": 0.5
     },
     {
       "name": "Desonida",
@@ -2568,7 +2864,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar fina camada 2-3x/d",
       "id": "desonida_0_5mg_g_locao_0_05",
-      "presentation": "0,5mg/g loção 0.05%"
+      "presentation": "0,5mg/g loção 0.05%",
+      "unit_type": "ml",
+      "mg_per_unit": 0.5
     },
     {
       "name": "Triamcinolona (tópica)",
@@ -2583,7 +2881,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar fina camada 2-3x/d",
       "id": "triamcinolona_topica_1mg_g_pomada_0_1",
-      "presentation": "1mg/g pomada 0.1%"
+      "presentation": "1mg/g pomada 0.1%",
+      "unit_type": "g",
+      "mg_per_unit": 1.0
     },
     {
       "name": "Triamcinolona (tópica)",
@@ -2598,7 +2898,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar fina camada 2-3x/d",
       "id": "triamcinolona_topica_0_25mg_g_pomada_0_025",
-      "presentation": "0,25mg/g pomada 0.025%"
+      "presentation": "0,25mg/g pomada 0.025%",
+      "unit_type": "g",
+      "mg_per_unit": 0.25
     },
     {
       "name": "Clobetasol (tópico)",
@@ -2613,7 +2915,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar fina camada 1-2x/d, max 50g/semana",
       "id": "clobetasol_topico_0_5mg_g_creme_0_05",
-      "presentation": "0,5mg/g creme 0.05%"
+      "presentation": "0,5mg/g creme 0.05%",
+      "unit_type": "g",
+      "mg_per_unit": 0.5
     },
     {
       "name": "Clobetasol (tópico)",
@@ -2628,7 +2932,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar fina camada 1-2x/d, max 50g/semana",
       "id": "clobetasol_topico_0_5mg_g_pomada_0_05",
-      "presentation": "0,5mg/g pomada 0.05%"
+      "presentation": "0,5mg/g pomada 0.05%",
+      "unit_type": "g",
+      "mg_per_unit": 0.5
     },
     {
       "name": "Hidrocortisona + Miconazol (assadura)",
@@ -2643,7 +2949,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar fina camada 2x/d × 7 dias",
       "id": "hidrocortisona_miconazol_assadura_creme_combinado_daktacort_vo",
-      "presentation": "creme combinado (Daktacort, Vodol H)"
+      "presentation": "creme combinado (Daktacort, Vodol H)",
+      "unit_type": "g",
+      "mg_per_unit": 0
     },
     {
       "name": "Budesonida (inalatória)",
@@ -2658,7 +2966,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Neb: 0.25-0.5mg 2x/d (até 1mg/d). Turbuhaler 6-11a: 200-400mcg/d. ≥12a: 200-800mcg/d",
       "id": "budesonida_inalatoria_0_25mg_2ml_solucao_para_nebuli",
-      "presentation": "0,25mg/2ml solução para nebulização (Pulmicort)"
+      "presentation": "0,25mg/2ml solução para nebulização (Pulmicort)",
+      "unit_type": "ml",
+      "mg_per_unit": 0.125
     },
     {
       "name": "Budesonida (inalatória)",
@@ -2673,7 +2983,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Neb: 0.25-0.5mg 2x/d (até 1mg/d). Turbuhaler 6-11a: 200-400mcg/d. ≥12a: 200-800mcg/d",
       "id": "budesonida_inalatoria_0_5mg_2ml_solucao_para_nebuliz",
-      "presentation": "0,5mg/2ml solução para nebulização"
+      "presentation": "0,5mg/2ml solução para nebulização",
+      "unit_type": "ml",
+      "mg_per_unit": 0.25
     },
     {
       "name": "Budesonida (inalatória)",
@@ -2688,7 +3000,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Neb: 0.25-0.5mg 2x/d (até 1mg/d). Turbuhaler 6-11a: 200-400mcg/d. ≥12a: 200-800mcg/d",
       "id": "budesonida_inalatoria_turbuhaler_200mcg_dose",
-      "presentation": "Turbuhaler 200mcg/dose"
+      "presentation": "Turbuhaler 200mcg/dose",
+      "unit_type": "ml",
+      "mg_per_unit": 0
     },
     {
       "name": "Fluticasona (inalatória)",
@@ -2703,7 +3017,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥4a: 50-100mcg 2x/d (baixa). Médio: 100-200mcg 2x/d. Alta: ≥250mcg 2x/d",
       "id": "fluticasona_inalatoria_spray_50mcg_jato_flixotide",
-      "presentation": "spray 50mcg/jato (Flixotide)"
+      "presentation": "spray 50mcg/jato (Flixotide)",
+      "unit_type": "jato",
+      "mg_per_unit": 0.05
     },
     {
       "name": "Fluticasona (inalatória)",
@@ -2718,7 +3034,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥4a: 50-100mcg 2x/d (baixa). Médio: 100-200mcg 2x/d. Alta: ≥250mcg 2x/d",
       "id": "fluticasona_inalatoria_spray_125mcg_jato",
-      "presentation": "spray 125mcg/jato"
+      "presentation": "spray 125mcg/jato",
+      "unit_type": "jato",
+      "mg_per_unit": 0.125
     },
     {
       "name": "Fluticasona (inalatória)",
@@ -2733,7 +3051,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥4a: 50-100mcg 2x/d (baixa). Médio: 100-200mcg 2x/d. Alta: ≥250mcg 2x/d",
       "id": "fluticasona_inalatoria_spray_250mcg_jato",
-      "presentation": "spray 250mcg/jato"
+      "presentation": "spray 250mcg/jato",
+      "unit_type": "jato",
+      "mg_per_unit": 0.25
     },
     {
       "name": "Fluticasona (inalatória)",
@@ -2748,7 +3068,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥4a: 50-100mcg 2x/d (baixa). Médio: 100-200mcg 2x/d. Alta: ≥250mcg 2x/d",
       "id": "fluticasona_inalatoria_diskus_50mcg_dose",
-      "presentation": "diskus 50mcg/dose"
+      "presentation": "diskus 50mcg/dose",
+      "unit_type": "ml",
+      "mg_per_unit": 0
     },
     {
       "name": "Beclometasona (inalatória)",
@@ -2763,7 +3085,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "5-11a: 50-100mcg 2x/d. ≥12a: 100-400mcg 2x/d",
       "id": "beclometasona_inalatoria_spray_50mcg_jato_clenil",
-      "presentation": "spray 50mcg/jato (Clenil)"
+      "presentation": "spray 50mcg/jato (Clenil)",
+      "unit_type": "jato",
+      "mg_per_unit": 0.05
     },
     {
       "name": "Beclometasona (inalatória)",
@@ -2778,7 +3102,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "5-11a: 50-100mcg 2x/d. ≥12a: 100-400mcg 2x/d",
       "id": "beclometasona_inalatoria_spray_250mcg_jato",
-      "presentation": "spray 250mcg/jato"
+      "presentation": "spray 250mcg/jato",
+      "unit_type": "jato",
+      "mg_per_unit": 0.25
     },
     {
       "name": "Formoterol + Budesonida",
@@ -2793,7 +3119,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "6-11a: 6/100 ou 6/200, 2 inalações 2x/d. ≥12a: 6/100 ou 6/200 2 inal 2x/d",
       "id": "formoterol_budesonida_turbuhaler_6_100mcg_dose_symb",
-      "presentation": "Turbuhaler 6/100mcg/dose (Symbicort)"
+      "presentation": "Turbuhaler 6/100mcg/dose (Symbicort)",
+      "unit_type": "ml",
+      "mg_per_unit": 0
     },
     {
       "name": "Formoterol + Budesonida",
@@ -2808,7 +3136,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "6-11a: 6/100 ou 6/200, 2 inalações 2x/d. ≥12a: 6/100 ou 6/200 2 inal 2x/d",
       "id": "formoterol_budesonida_turbuhaler_6_200mcg_dose",
-      "presentation": "Turbuhaler 6/200mcg/dose"
+      "presentation": "Turbuhaler 6/200mcg/dose",
+      "unit_type": "ml",
+      "mg_per_unit": 0
     },
     {
       "name": "Formoterol + Budesonida",
@@ -2823,7 +3153,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "6-11a: 6/100 ou 6/200, 2 inalações 2x/d. ≥12a: 6/100 ou 6/200 2 inal 2x/d",
       "id": "formoterol_budesonida_turbuhaler_12_400mcg_dose",
-      "presentation": "Turbuhaler 12/400mcg/dose"
+      "presentation": "Turbuhaler 12/400mcg/dose",
+      "unit_type": "ml",
+      "mg_per_unit": 0
     },
     {
       "name": "Mometasona spray nasal",
@@ -2838,7 +3170,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-11a: 1 jato/narina 1x/d (100mcg/d). ≥12a: 2 jatos/narina 1x/d (200mcg/d)",
       "id": "mometasona_spray_nasal_50mcg_jato_spray_nasal_nasone",
-      "presentation": "50mcg/jato spray nasal (Nasonex)"
+      "presentation": "50mcg/jato spray nasal (Nasonex)",
+      "unit_type": "jato",
+      "mg_per_unit": 0.05
     },
     {
       "name": "Fluticasona spray nasal",
@@ -2853,7 +3187,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-11a: 1 jato/narina 1x/d. ≥12a: 2 jatos/narina 1x/d",
       "id": "fluticasona_spray_nasal_50mcg_jato_spray_nasal_avamys",
-      "presentation": "50mcg/jato spray nasal (Avamys)"
+      "presentation": "50mcg/jato spray nasal (Avamys)",
+      "unit_type": "jato",
+      "mg_per_unit": 0.05
     },
     {
       "name": "Budesonida spray nasal",
@@ -2868,7 +3204,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥6a: 1-2 jatos/narina 1x/d. Max 256mcg/d (6-11a) / 256mcg (≥12a)",
       "id": "budesonida_spray_nasal_32mcg_jato_rhinocort",
-      "presentation": "32mcg/jato (Rhinocort)"
+      "presentation": "32mcg/jato (Rhinocort)",
+      "unit_type": "jato",
+      "mg_per_unit": 0.032
     },
     {
       "name": "Budesonida spray nasal",
@@ -2883,7 +3221,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥6a: 1-2 jatos/narina 1x/d. Max 256mcg/d (6-11a) / 256mcg (≥12a)",
       "id": "budesonida_spray_nasal_64mcg_jato",
-      "presentation": "64mcg/jato"
+      "presentation": "64mcg/jato",
+      "unit_type": "jato",
+      "mg_per_unit": 0.064
     },
     {
       "name": "Fluconazol",
@@ -2901,6 +3241,8 @@
       "max_mg_per_dose": 400,
       "id": "fluconazol_10mg_ml_suspensao_oral",
       "presentation": "10mg/ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 10,
       "concentration_mg_per_ml": 10
     },
     {
@@ -2919,6 +3261,8 @@
       "max_mg_per_dose": 400,
       "id": "fluconazol_150mg_capsula",
       "presentation": "150mg cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 150.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -2937,6 +3281,8 @@
       "max_mg_per_dose": 200,
       "id": "itraconazol_10mg_ml_solucao_oral",
       "presentation": "10mg/ml solução oral",
+      "unit_type": "ml",
+      "mg_per_unit": 10,
       "concentration_mg_per_ml": 10
     },
     {
@@ -2955,6 +3301,8 @@
       "max_mg_per_dose": 200,
       "id": "itraconazol_100mg_capsula",
       "presentation": "100mg cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 100.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -2973,6 +3321,8 @@
       "max_mg_per_dose": 400,
       "id": "voriconazol_40mg_ml_suspensao_oral",
       "presentation": "40mg/ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 40,
       "concentration_mg_per_ml": 40
     },
     {
@@ -2991,6 +3341,8 @@
       "max_mg_per_dose": 400,
       "id": "voriconazol_50mg_comprimido",
       "presentation": "50mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 50.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -3009,6 +3361,8 @@
       "max_mg_per_dose": 400,
       "id": "voriconazol_200mg_comprimido",
       "presentation": "200mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 200.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -3024,7 +3378,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "<25kg: 125mg 1x/d. 25-35kg: 187.5mg 1x/d. >35kg: 250mg 1x/d",
       "id": "terbinafina_oral_250mg_comprimido",
-      "presentation": "250mg comprimido"
+      "presentation": "250mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 250.0
     },
     {
       "name": "Griseofulvina",
@@ -3042,6 +3398,8 @@
       "max_mg_per_dose": 1000,
       "id": "griseofulvina_125mg_5ml_suspensao_oral_micr",
       "presentation": "125mg/5ml suspensão oral (microsize)",
+      "unit_type": "ml",
+      "mg_per_unit": 25,
       "concentration_mg_per_ml": 25
     },
     {
@@ -3060,6 +3418,8 @@
       "max_mg_per_dose": 1000,
       "id": "griseofulvina_500mg_comprimido",
       "presentation": "500mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 500.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -3075,7 +3435,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Lactente: 1ml 4x/d. Criança/adolescente: 4-6ml 4x/d",
       "id": "nistatina_oral_100_000ui_ml_suspensao_oral",
-      "presentation": "100.000UI/ml suspensão oral"
+      "presentation": "100.000UI/ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 0
     },
     {
       "name": "Nistatina (tópica)",
@@ -3090,7 +3452,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar fina camada 2-3x/d",
       "id": "nistatina_topica_100_000ui_g_creme",
-      "presentation": "100.000UI/g creme"
+      "presentation": "100.000UI/g creme",
+      "unit_type": "g",
+      "mg_per_unit": 0
     },
     {
       "name": "Nistatina (tópica)",
@@ -3105,7 +3469,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar fina camada 2-3x/d",
       "id": "nistatina_topica_100_000ui_g_pomada",
-      "presentation": "100.000UI/g pomada"
+      "presentation": "100.000UI/g pomada",
+      "unit_type": "g",
+      "mg_per_unit": 0
     },
     {
       "name": "Miconazol (tópico)",
@@ -3120,7 +3486,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 2x/d",
       "id": "miconazol_topico_20mg_g_creme_2",
-      "presentation": "20mg/g creme 2%"
+      "presentation": "20mg/g creme 2%",
+      "unit_type": "g",
+      "mg_per_unit": 20.0
     },
     {
       "name": "Miconazol (tópico)",
@@ -3135,7 +3503,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 2x/d",
       "id": "miconazol_topico_20mg_g_po_2",
-      "presentation": "20mg/g pó 2%"
+      "presentation": "20mg/g pó 2%",
+      "unit_type": "frasco",
+      "mg_per_unit": 20.0
     },
     {
       "name": "Miconazol (tópico)",
@@ -3150,7 +3520,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 2x/d",
       "id": "miconazol_topico_20mg_g_locao_2",
-      "presentation": "20mg/g loção 2%"
+      "presentation": "20mg/g loção 2%",
+      "unit_type": "ml",
+      "mg_per_unit": 20.0
     },
     {
       "name": "Clotrimazol (tópico)",
@@ -3165,7 +3537,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 2x/d",
       "id": "clotrimazol_topico_10mg_g_creme_1",
-      "presentation": "10mg/g creme 1%"
+      "presentation": "10mg/g creme 1%",
+      "unit_type": "g",
+      "mg_per_unit": 10.0
     },
     {
       "name": "Clotrimazol (tópico)",
@@ -3180,7 +3554,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 2x/d",
       "id": "clotrimazol_topico_10mg_g_locao_1",
-      "presentation": "10mg/g loção 1%"
+      "presentation": "10mg/g loção 1%",
+      "unit_type": "ml",
+      "mg_per_unit": 10.0
     },
     {
       "name": "Cetoconazol (tópico)",
@@ -3195,7 +3571,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Creme: 1x/d. Xampu: 1-2x/sem deixar 3-5 min",
       "id": "cetoconazol_topico_20mg_g_creme_2",
-      "presentation": "20mg/g creme 2%"
+      "presentation": "20mg/g creme 2%",
+      "unit_type": "g",
+      "mg_per_unit": 20.0
     },
     {
       "name": "Cetoconazol (tópico)",
@@ -3210,7 +3588,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Creme: 1x/d. Xampu: 1-2x/sem deixar 3-5 min",
       "id": "cetoconazol_topico_20mg_ml_xampu_2",
-      "presentation": "20mg/ml xampu 2%"
+      "presentation": "20mg/ml xampu 2%",
+      "unit_type": "ml",
+      "mg_per_unit": 20
     },
     {
       "name": "Isoconazol (tópico)",
@@ -3225,7 +3605,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 1-2x/d",
       "id": "isoconazol_topico_10mg_g_creme_1",
-      "presentation": "10mg/g creme 1%"
+      "presentation": "10mg/g creme 1%",
+      "unit_type": "g",
+      "mg_per_unit": 10.0
     },
     {
       "name": "Terbinafina (tópica)",
@@ -3240,7 +3622,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 1-2x/d",
       "id": "terbinafina_topica_10mg_g_creme_1",
-      "presentation": "10mg/g creme 1%"
+      "presentation": "10mg/g creme 1%",
+      "unit_type": "g",
+      "mg_per_unit": 10.0
     },
     {
       "name": "Terbinafina (tópica)",
@@ -3255,7 +3639,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 1-2x/d",
       "id": "terbinafina_topica_10mg_g_gel_1",
-      "presentation": "10mg/g gel 1%"
+      "presentation": "10mg/g gel 1%",
+      "unit_type": "g",
+      "mg_per_unit": 10.0
     },
     {
       "name": "Ciclopirox (tópico)",
@@ -3270,7 +3656,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Creme: 2x/d. Esmalte: 1x/d na unha afetada",
       "id": "ciclopirox_topico_10mg_g_creme_1",
-      "presentation": "10mg/g creme 1%"
+      "presentation": "10mg/g creme 1%",
+      "unit_type": "g",
+      "mg_per_unit": 10.0
     },
     {
       "name": "Ciclopirox (tópico)",
@@ -3285,7 +3673,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Creme: 2x/d. Esmalte: 1x/d na unha afetada",
       "id": "ciclopirox_topico_10mg_ml_xampu",
-      "presentation": "10mg/ml xampu"
+      "presentation": "10mg/ml xampu",
+      "unit_type": "ml",
+      "mg_per_unit": 10
     },
     {
       "name": "Ciclopirox (tópico)",
@@ -3300,7 +3690,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Creme: 2x/d. Esmalte: 1x/d na unha afetada",
       "id": "ciclopirox_topico_esmalte_8_loceryl",
-      "presentation": "esmalte 8% (Loceryl)"
+      "presentation": "esmalte 8% (Loceryl)",
+      "unit_type": "ml",
+      "mg_per_unit": 0
     },
     {
       "name": "Albendazol",
@@ -3315,7 +3707,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥2a: 400mg dose única (ancilostomíase, ascaridíase). Estrongiloidíase/teníase: 400mg/d × 3d. Giardíase: 400mg/d × 5d",
       "id": "albendazol_40mg_ml_suspensao_oral",
-      "presentation": "40mg/ml suspensão oral"
+      "presentation": "40mg/ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 40
     },
     {
       "name": "Albendazol",
@@ -3330,7 +3724,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥2a: 400mg dose única (ancilostomíase, ascaridíase). Estrongiloidíase/teníase: 400mg/d × 3d. Giardíase: 400mg/d × 5d",
       "id": "albendazol_400mg_comprimido_mastigavel",
-      "presentation": "400mg comprimido mastigável"
+      "presentation": "400mg comprimido mastigável",
+      "unit_type": "comprimido",
+      "mg_per_unit": 400.0
     },
     {
       "name": "Mebendazol",
@@ -3345,7 +3741,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥2a: 100mg 2x/d × 3d (ascaridíase, ancilostomíase, tricuríase). Enterobíase: 100mg dose única, repetir em 14d",
       "id": "mebendazol_20mg_ml_suspensao_oral",
-      "presentation": "20mg/ml suspensão oral"
+      "presentation": "20mg/ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 20
     },
     {
       "name": "Mebendazol",
@@ -3360,7 +3758,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥2a: 100mg 2x/d × 3d (ascaridíase, ancilostomíase, tricuríase). Enterobíase: 100mg dose única, repetir em 14d",
       "id": "mebendazol_100mg_comprimido_mastigavel",
-      "presentation": "100mg comprimido mastigável"
+      "presentation": "100mg comprimido mastigável",
+      "unit_type": "comprimido",
+      "mg_per_unit": 100.0
     },
     {
       "name": "Nitazoxanida",
@@ -3375,7 +3775,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "1-3a: 100mg 2x/d. 4-11a: 200mg 2x/d. ≥12a: 500mg 2x/d × 3 dias",
       "id": "nitazoxanida_20mg_ml_suspensao_oral",
-      "presentation": "20mg/ml suspensão oral"
+      "presentation": "20mg/ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 20
     },
     {
       "name": "Nitazoxanida",
@@ -3390,7 +3792,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "1-3a: 100mg 2x/d. 4-11a: 200mg 2x/d. ≥12a: 500mg 2x/d × 3 dias",
       "id": "nitazoxanida_500mg_comprimido",
-      "presentation": "500mg comprimido"
+      "presentation": "500mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 500.0
     },
     {
       "name": "Praziquantel",
@@ -3408,6 +3812,8 @@
       "max_mg_per_dose": 1200,
       "id": "praziquantel_600mg_comprimido",
       "presentation": "600mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 600.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -3423,7 +3829,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥15kg ou ≥5a: 200 mcg/kg dose única; repetir em 7 dias (escabiose)",
       "id": "ivermectina_oral_6mg_comprimido",
-      "presentation": "6mg comprimido"
+      "presentation": "6mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 6.0
     },
     {
       "name": "Permetrina (tópica)",
@@ -3438,7 +3846,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Pediculose: 1% loção no couro cabeludo, deixar 10min, enxaguar; repetir 7d. Escabiose: 5% creme pescoço aos pés, deixar 8-14h, repetir 7d",
       "id": "permetrina_topica_10mg_ml_locao_1_pediculose",
-      "presentation": "10mg/ml loção 1% (pediculose)"
+      "presentation": "10mg/ml loção 1% (pediculose)",
+      "unit_type": "ml",
+      "mg_per_unit": 10
     },
     {
       "name": "Permetrina (tópica)",
@@ -3453,7 +3863,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Pediculose: 1% loção no couro cabeludo, deixar 10min, enxaguar; repetir 7d. Escabiose: 5% creme pescoço aos pés, deixar 8-14h, repetir 7d",
       "id": "permetrina_topica_50mg_g_creme_5_escabiose",
-      "presentation": "50mg/g creme 5% (escabiose)"
+      "presentation": "50mg/g creme 5% (escabiose)",
+      "unit_type": "g",
+      "mg_per_unit": 50.0
     },
     {
       "name": "Deltametrina",
@@ -3468,7 +3880,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar no couro cabeludo molhado, deixar 5 min, enxaguar. Repetir 7d",
       "id": "deltametrina_0_2mg_ml_locao_0_02_deltacid",
-      "presentation": "0,2mg/ml loção 0.02% (Deltacid)"
+      "presentation": "0,2mg/ml loção 0.02% (Deltacid)",
+      "unit_type": "ml",
+      "mg_per_unit": 0.2
     },
     {
       "name": "Benzoato de Benzila",
@@ -3483,7 +3897,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Adultos: 25% direto. Crianças >2a: diluir 1:1. Lactentes: diluir 1:2. Aplicar pescoço aos pés, deixar 24h, repetir 7d",
       "id": "benzoato_de_benzila_250mg_ml_locao_25",
-      "presentation": "250mg/ml loção 25%"
+      "presentation": "250mg/ml loção 25%",
+      "unit_type": "ml",
+      "mg_per_unit": 250
     },
     {
       "name": "Salbutamol Spray",
@@ -3498,7 +3914,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Resgate: 2-4 jatos com espaçador q4-6h. Crise: 4-8 jatos q20min × 1h. Profilaxia exercício: 2 jatos 15min antes",
       "id": "salbutamol_spray_100mcg_jato_aerossol_aerolin",
-      "presentation": "100mcg/jato aerossol (Aerolin)"
+      "presentation": "100mcg/jato aerossol (Aerolin)",
+      "unit_type": "jato",
+      "mg_per_unit": 0.1
     },
     {
       "name": "Salbutamol nebulização",
@@ -3513,7 +3931,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "0.15 mg/kg/dose (min 2.5mg, max 5mg) = 1 gota/2-3kg diluído em 3ml SF 0.9%",
       "id": "salbutamol_nebulizacao_5mg_ml_solucao_para_nebulizaca",
-      "presentation": "5mg/ml solução para nebulização (gotas)"
+      "presentation": "5mg/ml solução para nebulização (gotas)",
+      "unit_type": "ml",
+      "mg_per_unit": 5
     },
     {
       "name": "Fenoterol gotas",
@@ -3528,7 +3948,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "1 gota/3kg (max 10 gotas) diluído em 3ml SF",
       "id": "fenoterol_gotas_5mg_ml_solucao_para_nebulizaca",
-      "presentation": "5mg/ml solução para nebulização (Berotec)"
+      "presentation": "5mg/ml solução para nebulização (Berotec)",
+      "unit_type": "ml",
+      "mg_per_unit": 5
     },
     {
       "name": "Brometo de Ipratrópio",
@@ -3543,7 +3965,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "<6a: 0.25mg (20 gotas). ≥6a: 0.5mg (40 gotas). Crise asmática: associar ao salbutamol q20min × 3",
       "id": "brometo_de_ipratropio_0_25mg_ml_solucao_para_nebuliz",
-      "presentation": "0,25mg/ml solução para nebulização (Atrovent)"
+      "presentation": "0,25mg/ml solução para nebulização (Atrovent)",
+      "unit_type": "ml",
+      "mg_per_unit": 0.25
     },
     {
       "name": "Montelucaste",
@@ -3558,7 +3982,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "6m-5a: 4mg 1x/d à noite. 6-14a: 5mg 1x/d à noite. ≥15a: 10mg 1x/d à noite",
       "id": "montelucaste_4mg_comprimido_mastigavel",
-      "presentation": "4mg comprimido mastigável"
+      "presentation": "4mg comprimido mastigável",
+      "unit_type": "comprimido",
+      "mg_per_unit": 4.0
     },
     {
       "name": "Montelucaste",
@@ -3573,7 +3999,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "6m-5a: 4mg 1x/d à noite. 6-14a: 5mg 1x/d à noite. ≥15a: 10mg 1x/d à noite",
       "id": "montelucaste_5mg_comprimido_mastigavel",
-      "presentation": "5mg comprimido mastigável"
+      "presentation": "5mg comprimido mastigável",
+      "unit_type": "comprimido",
+      "mg_per_unit": 5.0
     },
     {
       "name": "Montelucaste",
@@ -3588,7 +4016,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "6m-5a: 4mg 1x/d à noite. 6-14a: 5mg 1x/d à noite. ≥15a: 10mg 1x/d à noite",
       "id": "montelucaste_10mg_comprimido",
-      "presentation": "10mg comprimido"
+      "presentation": "10mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 10.0
     },
     {
       "name": "Montelucaste",
@@ -3603,7 +4033,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "6m-5a: 4mg 1x/d à noite. 6-14a: 5mg 1x/d à noite. ≥15a: 10mg 1x/d à noite",
       "id": "montelucaste_4mg_sache_granulado",
-      "presentation": "4mg sachê granulado"
+      "presentation": "4mg sachê granulado",
+      "unit_type": "sachê",
+      "mg_per_unit": 4.0
     },
     {
       "name": "Ondansetrona",
@@ -3618,7 +4050,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "8-15kg: 2mg dose única (gastroenterite). 15-30kg: 4mg. >30kg: 8mg. Pode repetir q8h se necessário",
       "id": "ondansetrona_4mg_5ml_solucao_oral",
-      "presentation": "4mg/5ml solução oral"
+      "presentation": "4mg/5ml solução oral",
+      "unit_type": "ml",
+      "mg_per_unit": 0.8
     },
     {
       "name": "Ondansetrona",
@@ -3633,7 +4067,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "8-15kg: 2mg dose única (gastroenterite). 15-30kg: 4mg. >30kg: 8mg. Pode repetir q8h se necessário",
       "id": "ondansetrona_4mg_comprimido_orodispersivel",
-      "presentation": "4mg comprimido orodispersível"
+      "presentation": "4mg comprimido orodispersível",
+      "unit_type": "comprimido",
+      "mg_per_unit": 4.0
     },
     {
       "name": "Ondansetrona",
@@ -3648,7 +4084,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "8-15kg: 2mg dose única (gastroenterite). 15-30kg: 4mg. >30kg: 8mg. Pode repetir q8h se necessário",
       "id": "ondansetrona_8mg_comprimido_orodispersivel",
-      "presentation": "8mg comprimido orodispersível"
+      "presentation": "8mg comprimido orodispersível",
+      "unit_type": "comprimido",
+      "mg_per_unit": 8.0
     },
     {
       "name": "Bromoprida",
@@ -3663,7 +4101,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Lactentes: 1 gota/kg/dose 3x/d. >2a: 3-5 gotas/dose 3x/d. Max 10mg/dose",
       "id": "bromoprida_4mg_ml_solucao_oral_gotas_d",
-      "presentation": "4mg/ml solução oral (gotas - Digesan)"
+      "presentation": "4mg/ml solução oral (gotas - Digesan)",
+      "unit_type": "ml",
+      "mg_per_unit": 4
     },
     {
       "name": "Bromoprida",
@@ -3678,7 +4118,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Lactentes: 1 gota/kg/dose 3x/d. >2a: 3-5 gotas/dose 3x/d. Max 10mg/dose",
       "id": "bromoprida_10mg_capsula",
-      "presentation": "10mg cápsula"
+      "presentation": "10mg cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 10.0
     },
     {
       "name": "Metoclopramida",
@@ -3696,6 +4138,8 @@
       "max_mg_per_dose": 10,
       "id": "metoclopramida_4mg_ml_solucao_oral_gotas_p",
       "presentation": "4mg/ml solução oral (gotas - Plasil)",
+      "unit_type": "ml",
+      "mg_per_unit": 4,
       "concentration_mg_per_ml": 4
     },
     {
@@ -3714,6 +4158,8 @@
       "max_mg_per_dose": 10,
       "id": "metoclopramida_10mg_comprimido",
       "presentation": "10mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 10.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -3729,7 +4175,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-6a: 12.5-25mg q6-8h. 6-12a: 25-50mg q6-8h. ≥12a: 50-100mg q4-6h",
       "id": "dimenidrinato_1_5mg_ml_xarope_dramin",
-      "presentation": "1,5mg/ml xarope (Dramin)"
+      "presentation": "1,5mg/ml xarope (Dramin)",
+      "unit_type": "ml",
+      "mg_per_unit": 1.5
     },
     {
       "name": "Dimenidrinato",
@@ -3744,7 +4192,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-6a: 12.5-25mg q6-8h. 6-12a: 25-50mg q6-8h. ≥12a: 50-100mg q4-6h",
       "id": "dimenidrinato_50mg_comprimido",
-      "presentation": "50mg comprimido"
+      "presentation": "50mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 50.0
     },
     {
       "name": "Dimenidrinato",
@@ -3759,7 +4209,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-6a: 12.5-25mg q6-8h. 6-12a: 25-50mg q6-8h. ≥12a: 50-100mg q4-6h",
       "id": "dimenidrinato_100mg_comprimido",
-      "presentation": "100mg comprimido"
+      "presentation": "100mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 100.0
     },
     {
       "name": "Domperidona",
@@ -3777,6 +4229,8 @@
       "max_mg_per_dose": 10,
       "id": "domperidona_1mg_ml_suspensao_oral_motiliu",
       "presentation": "1mg/ml suspensão oral (Motilium)",
+      "unit_type": "ml",
+      "mg_per_unit": 1,
       "concentration_mg_per_ml": 1
     },
     {
@@ -3795,6 +4249,8 @@
       "max_mg_per_dose": 10,
       "id": "domperidona_10mg_comprimido",
       "presentation": "10mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 10.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -3810,7 +4266,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "5-<10kg: 5mg/d. 10-<20kg: 10mg/d. ≥20kg: 20mg/d. 1x/d 30min antes café",
       "id": "omeprazol_10mg_capsula",
-      "presentation": "10mg cápsula"
+      "presentation": "10mg cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 10.0
     },
     {
       "name": "Omeprazol",
@@ -3825,7 +4283,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "5-<10kg: 5mg/d. 10-<20kg: 10mg/d. ≥20kg: 20mg/d. 1x/d 30min antes café",
       "id": "omeprazol_20mg_capsula",
-      "presentation": "20mg cápsula"
+      "presentation": "20mg cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 20.0
     },
     {
       "name": "Omeprazol",
@@ -3840,7 +4300,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "5-<10kg: 5mg/d. 10-<20kg: 10mg/d. ≥20kg: 20mg/d. 1x/d 30min antes café",
       "id": "omeprazol_40mg_capsula",
-      "presentation": "40mg cápsula"
+      "presentation": "40mg cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 40.0
     },
     {
       "name": "Omeprazol",
@@ -3855,7 +4317,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "5-<10kg: 5mg/d. 10-<20kg: 10mg/d. ≥20kg: 20mg/d. 1x/d 30min antes café",
       "id": "omeprazol_suspensao_extemporanea_2mg_ml",
-      "presentation": "Suspensão extemporânea 2mg/ml"
+      "presentation": "Suspensão extemporânea 2mg/ml",
+      "unit_type": "ml",
+      "mg_per_unit": 2
     },
     {
       "name": "Esomeprazol",
@@ -3870,7 +4334,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "1-11a, <20kg: 10mg/d. ≥20kg: 10-20mg/d. ≥12a: 20-40mg/d",
       "id": "esomeprazol_20mg_comprimido_nexium",
-      "presentation": "20mg comprimido (Nexium)"
+      "presentation": "20mg comprimido (Nexium)",
+      "unit_type": "comprimido",
+      "mg_per_unit": 20.0
     },
     {
       "name": "Esomeprazol",
@@ -3885,7 +4351,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "1-11a, <20kg: 10mg/d. ≥20kg: 10-20mg/d. ≥12a: 20-40mg/d",
       "id": "esomeprazol_40mg_comprimido",
-      "presentation": "40mg comprimido"
+      "presentation": "40mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 40.0
     },
     {
       "name": "Lansoprazol",
@@ -3900,7 +4368,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "1-11a, ≤30kg: 15mg/d. >30kg: 30mg/d. ≥12a: 15-30mg/d",
       "id": "lansoprazol_15mg_capsula",
-      "presentation": "15mg cápsula"
+      "presentation": "15mg cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 15.0
     },
     {
       "name": "Lansoprazol",
@@ -3915,7 +4385,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "1-11a, ≤30kg: 15mg/d. >30kg: 30mg/d. ≥12a: 15-30mg/d",
       "id": "lansoprazol_30mg_capsula",
-      "presentation": "30mg cápsula"
+      "presentation": "30mg cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 30.0
     },
     {
       "name": "Pantoprazol",
@@ -3930,7 +4402,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "5-15kg: 20mg/d. >15kg: 40mg/d",
       "id": "pantoprazol_20mg_comprimido",
-      "presentation": "20mg comprimido"
+      "presentation": "20mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 20.0
     },
     {
       "name": "Pantoprazol",
@@ -3945,7 +4419,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "5-15kg: 20mg/d. >15kg: 40mg/d",
       "id": "pantoprazol_40mg_comprimido",
-      "presentation": "40mg comprimido"
+      "presentation": "40mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 40.0
     },
     {
       "name": "Famotidina",
@@ -3963,6 +4439,8 @@
       "max_mg_per_dose": 40,
       "id": "famotidina_8mg_ml_suspensao_oral",
       "presentation": "8mg/ml suspensão oral",
+      "unit_type": "ml",
+      "mg_per_unit": 8,
       "concentration_mg_per_ml": 8
     },
     {
@@ -3981,6 +4459,8 @@
       "max_mg_per_dose": 40,
       "id": "famotidina_20mg_comprimido",
       "presentation": "20mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 20.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -3999,6 +4479,8 @@
       "max_mg_per_dose": 40,
       "id": "famotidina_40mg_comprimido",
       "presentation": "40mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 40.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -4014,7 +4496,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Lactente: 2.5-10ml/d divididos. Criança: 7.5-15ml/d. Adolescente: 15-30ml 1-2x/d. Titular pelo efeito (1-3 evacuações/d)",
       "id": "lactulose_667mg_ml_xarope_lactulona_fa",
-      "presentation": "667mg/ml xarope (Lactulona, Farlac)"
+      "presentation": "667mg/ml xarope (Lactulona, Farlac)",
+      "unit_type": "ml",
+      "mg_per_unit": 667
     },
     {
       "name": "Polietilenoglicol (PEG)",
@@ -4029,7 +4513,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Manutenção constipação: 0.4-0.8 g/kg/d 1x/d (sachê 17g em 120ml água). Desimpactação: 1-1.5 g/kg/d × 3-6 dias",
       "id": "polietilenoglicol_peg_sache_105g_po_nulytely_limp",
-      "presentation": "sachê 105g pó (Nulytely - limpeza)"
+      "presentation": "sachê 105g pó (Nulytely - limpeza)",
+      "unit_type": "sachê",
+      "mg_per_unit": 0
     },
     {
       "name": "Polietilenoglicol (PEG)",
@@ -4044,7 +4530,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Manutenção constipação: 0.4-0.8 g/kg/d 1x/d (sachê 17g em 120ml água). Desimpactação: 1-1.5 g/kg/d × 3-6 dias",
       "id": "polietilenoglicol_peg_sache_17g_po_muvinlax",
-      "presentation": "sachê 17g pó (Muvinlax)"
+      "presentation": "sachê 17g pó (Muvinlax)",
+      "unit_type": "sachê",
+      "mg_per_unit": 0
     },
     {
       "name": "Bisacodil",
@@ -4059,7 +4547,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "3-11a: 5mg/d VO ou 5mg supos. ≥12a: 5-15mg/d VO ou 10mg supos",
       "id": "bisacodil_5mg_comprimido_dulcolax",
-      "presentation": "5mg comprimido (Dulcolax)"
+      "presentation": "5mg comprimido (Dulcolax)",
+      "unit_type": "comprimido",
+      "mg_per_unit": 5.0
     },
     {
       "name": "Bisacodil",
@@ -4074,7 +4564,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "3-11a: 5mg/d VO ou 5mg supos. ≥12a: 5-15mg/d VO ou 10mg supos",
       "id": "bisacodil_10mg_supositorio",
-      "presentation": "10mg supositório"
+      "presentation": "10mg supositório",
+      "unit_type": "supositório",
+      "mg_per_unit": 10.0
     },
     {
       "name": "Picossulfato de Sódio",
@@ -4089,7 +4581,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "1m-3a: 2.5-5mg (3-7 gotas)/d à noite. 4-9a: 5-10mg (7-14 gotas)/d. ≥10a: 10mg/d",
       "id": "picossulfato_de_sodio_7_5mg_ml_gotas_guttalax",
-      "presentation": "7,5mg/ml gotas (Guttalax)"
+      "presentation": "7,5mg/ml gotas (Guttalax)",
+      "unit_type": "ml",
+      "mg_per_unit": 7.5
     },
     {
       "name": "Supositório de Glicerina",
@@ -4104,7 +4598,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Lactente/criança: 1 supositório infantil quando necessário. Adolescente: 1 adulto",
       "id": "supositorio_de_glicerina_supositorio_infantil",
-      "presentation": "supositório infantil"
+      "presentation": "supositório infantil",
+      "unit_type": "supositório",
+      "mg_per_unit": 0
     },
     {
       "name": "Supositório de Glicerina",
@@ -4119,7 +4615,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Lactente/criança: 1 supositório infantil quando necessário. Adolescente: 1 adulto",
       "id": "supositorio_de_glicerina_supositorio_adulto",
-      "presentation": "supositório adulto"
+      "presentation": "supositório adulto",
+      "unit_type": "supositório",
+      "mg_per_unit": 0
     },
     {
       "name": "Óleo Mineral",
@@ -4134,7 +4632,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "5-11a: 5-15ml/d. ≥12a: 15-45ml/d. Tomar entre refeições",
       "id": "oleo_mineral_emulsao_oral_100_nujol",
-      "presentation": "emulsão oral 100% (Nujol)"
+      "presentation": "emulsão oral 100% (Nujol)",
+      "unit_type": "ml",
+      "mg_per_unit": 0
     },
     {
       "name": "Racecadotrila",
@@ -4149,7 +4649,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "1.5 mg/kg/dose 3x/d. <9kg: 10mg 3x/d. 9-13kg: 20mg 3x/d. 13-27kg: 30mg 3x/d. >27kg: 60mg 3x/d",
       "id": "racecadotrila_10mg_sache_lactente",
-      "presentation": "10mg sachê (lactente)"
+      "presentation": "10mg sachê (lactente)",
+      "unit_type": "sachê",
+      "mg_per_unit": 10.0
     },
     {
       "name": "Racecadotrila",
@@ -4164,7 +4666,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "1.5 mg/kg/dose 3x/d. <9kg: 10mg 3x/d. 9-13kg: 20mg 3x/d. 13-27kg: 30mg 3x/d. >27kg: 60mg 3x/d",
       "id": "racecadotrila_30mg_sache_crianca",
-      "presentation": "30mg sachê (criança)"
+      "presentation": "30mg sachê (criança)",
+      "unit_type": "sachê",
+      "mg_per_unit": 30.0
     },
     {
       "name": "Racecadotrila",
@@ -4179,7 +4683,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "1.5 mg/kg/dose 3x/d. <9kg: 10mg 3x/d. 9-13kg: 20mg 3x/d. 13-27kg: 30mg 3x/d. >27kg: 60mg 3x/d",
       "id": "racecadotrila_100mg_capsula",
-      "presentation": "100mg cápsula"
+      "presentation": "100mg cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 100.0
     },
     {
       "name": "Saccharomyces boulardii",
@@ -4194,7 +4700,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Lactente/criança: 200-400mg/d divididos. Adolescente: 500-1000mg/d",
       "id": "saccharomyces_boulardii_100mg_sache_floratil",
-      "presentation": "100mg sachê (Floratil)"
+      "presentation": "100mg sachê (Floratil)",
+      "unit_type": "sachê",
+      "mg_per_unit": 100.0
     },
     {
       "name": "Saccharomyces boulardii",
@@ -4209,7 +4717,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Lactente/criança: 200-400mg/d divididos. Adolescente: 500-1000mg/d",
       "id": "saccharomyces_boulardii_200mg_sache",
-      "presentation": "200mg sachê"
+      "presentation": "200mg sachê",
+      "unit_type": "sachê",
+      "mg_per_unit": 200.0
     },
     {
       "name": "Lactobacillus rhamnosus GG",
@@ -4224,7 +4734,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "10^9 a 10^10 UFC/d divididos 1-2x/d",
       "id": "lactobacillus_rhamnosus_gg_sache_capsula_concentracao_va",
-      "presentation": "sachê/cápsula (concentração varia)"
+      "presentation": "sachê/cápsula (concentração varia)",
+      "unit_type": "cápsula",
+      "mg_per_unit": 0
     },
     {
       "name": "Diosmectita (Smecta)",
@@ -4239,7 +4751,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "<1a: 1 sachê/d divididos. 1-2a: 1-2 sachês/d. >2a: 2-3 sachês/d divididos",
       "id": "diosmectita_smecta_sache_3g_po",
-      "presentation": "sachê 3g pó"
+      "presentation": "sachê 3g pó",
+      "unit_type": "sachê",
+      "mg_per_unit": 0
     },
     {
       "name": "Soro de Reidratação Oral (SRO)",
@@ -4254,7 +4768,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Plano A (sem desidratação): 50-100ml/kg/d livre demanda + 10ml/kg pós cada evacuação. Plano B: 75ml/kg em 4h",
       "id": "soro_de_reidratacao_oral_sro_sache_po_para_preparo_oms_hip",
-      "presentation": "sachê pó para preparo (OMS hipotônico)"
+      "presentation": "sachê pó para preparo (OMS hipotônico)",
+      "unit_type": "sachê",
+      "mg_per_unit": 0
     },
     {
       "name": "Vitamina D (Colecalciferol)",
@@ -4269,7 +4785,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "0-12m: 400 UI/d. 1-18a: 600 UI/d (SBP recomenda). Deficiência: 1000-2000 UI/d × 6-8 sem",
       "id": "vitamina_d_colecalciferol_200ui_gota_solucao_oral_adder",
-      "presentation": "200UI/gota solução oral (Addera D3)"
+      "presentation": "200UI/gota solução oral (Addera D3)",
+      "unit_type": "gota",
+      "mg_per_unit": 0
     },
     {
       "name": "Vitamina D (Colecalciferol)",
@@ -4284,7 +4802,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "0-12m: 400 UI/d. 1-18a: 600 UI/d (SBP recomenda). Deficiência: 1000-2000 UI/d × 6-8 sem",
       "id": "vitamina_d_colecalciferol_400ui_gota_solucao_oral",
-      "presentation": "400UI/gota solução oral"
+      "presentation": "400UI/gota solução oral",
+      "unit_type": "gota",
+      "mg_per_unit": 0
     },
     {
       "name": "Vitamina D (Colecalciferol)",
@@ -4299,7 +4819,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "0-12m: 400 UI/d. 1-18a: 600 UI/d (SBP recomenda). Deficiência: 1000-2000 UI/d × 6-8 sem",
       "id": "vitamina_d_colecalciferol_7000ui_ml_solucao_oral",
-      "presentation": "7000UI/ml solução oral"
+      "presentation": "7000UI/ml solução oral",
+      "unit_type": "ml",
+      "mg_per_unit": 0
     },
     {
       "name": "Vitamina D (Colecalciferol)",
@@ -4314,7 +4836,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "0-12m: 400 UI/d. 1-18a: 600 UI/d (SBP recomenda). Deficiência: 1000-2000 UI/d × 6-8 sem",
       "id": "vitamina_d_colecalciferol_50000ui_capsula",
-      "presentation": "50000UI cápsula"
+      "presentation": "50000UI cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 0
     },
     {
       "name": "Vitamina K (Fitomenadiona)",
@@ -4329,7 +4853,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Recém-nascido: 1mg IM dose única ao nascer (0.5mg se <1500g)",
       "id": "vitamina_k_fitomenadiona_10mg_ml_ampola_im",
-      "presentation": "10mg/ml ampola IM"
+      "presentation": "10mg/ml ampola IM",
+      "unit_type": "ml",
+      "mg_per_unit": 10
     },
     {
       "name": "Sulfato Ferroso",
@@ -4347,6 +4873,8 @@
       "max_mg_per_dose": 60,
       "id": "sulfato_ferroso_25mg_fe_elementar_ml_solucao_o",
       "presentation": "25mg Fe elementar/ml solução oral (gotas)",
+      "unit_type": "ml",
+      "mg_per_unit": 25,
       "concentration_mg_per_ml": 25
     },
     {
@@ -4365,6 +4893,8 @@
       "max_mg_per_dose": 60,
       "id": "sulfato_ferroso_40mg_fe_comprimido_300mg_sulf",
       "presentation": "40mg Fe comprimido (300mg sulfato)",
+      "unit_type": "comprimido",
+      "mg_per_unit": 40.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -4383,6 +4913,8 @@
       "max_mg_per_dose": 100,
       "id": "ferro_polimaltose_50mg_fe_elementar_ml_gotas_no",
       "presentation": "50mg Fe elementar/ml gotas (Noripurum)",
+      "unit_type": "ml",
+      "mg_per_unit": 50,
       "concentration_mg_per_ml": 50
     },
     {
@@ -4398,7 +4930,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Recém-nascido/lactente: 50 mcg/d. Criança: 100-400 mcg/d. Anemia megaloblástica: 1-5 mg/d × 1 mês",
       "id": "acido_folico_0_2mg_ml_solucao_oral",
-      "presentation": "0,2mg/ml solução oral"
+      "presentation": "0,2mg/ml solução oral",
+      "unit_type": "ml",
+      "mg_per_unit": 0.2
     },
     {
       "name": "Ácido Fólico",
@@ -4413,7 +4947,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Recém-nascido/lactente: 50 mcg/d. Criança: 100-400 mcg/d. Anemia megaloblástica: 1-5 mg/d × 1 mês",
       "id": "acido_folico_5mg_comprimido",
-      "presentation": "5mg comprimido"
+      "presentation": "5mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 5.0
     },
     {
       "name": "Vitamina A",
@@ -4428,7 +4964,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Megadose profilaxia (MS): 6-11m: 100.000UI dose única. 12-59m: 200.000UI a cada 6 meses",
       "id": "vitamina_a_200_000ui_capsula",
-      "presentation": "200.000UI cápsula"
+      "presentation": "200.000UI cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 0
     },
     {
       "name": "Vitamina A",
@@ -4443,7 +4981,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Megadose profilaxia (MS): 6-11m: 100.000UI dose única. 12-59m: 200.000UI a cada 6 meses",
       "id": "vitamina_a_100_000ui_capsula_lactente",
-      "presentation": "100.000UI cápsula (lactente)"
+      "presentation": "100.000UI cápsula (lactente)",
+      "unit_type": "cápsula",
+      "mg_per_unit": 0
     },
     {
       "name": "Sulfato de Zinco",
@@ -4458,7 +4998,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Diarreia aguda (OMS): <6m: 10mg/d × 10-14d. ≥6m: 20mg/d × 10-14d",
       "id": "sulfato_de_zinco_10mg_zn_elementar_ml_solucao_o",
-      "presentation": "10mg Zn elementar/ml solução oral"
+      "presentation": "10mg Zn elementar/ml solução oral",
+      "unit_type": "ml",
+      "mg_per_unit": 10
     },
     {
       "name": "Sulfato de Zinco",
@@ -4473,7 +5015,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Diarreia aguda (OMS): <6m: 10mg/d × 10-14d. ≥6m: 20mg/d × 10-14d",
       "id": "sulfato_de_zinco_20mg_comprimido_dispersivel",
-      "presentation": "20mg comprimido dispersível"
+      "presentation": "20mg comprimido dispersível",
+      "unit_type": "comprimido",
+      "mg_per_unit": 20.0
     },
     {
       "name": "Polivitamínico pediátrico",
@@ -4488,7 +5032,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Conforme bula do produto: lactente 0.6ml, criança 1ml, adolescente 1.5ml 1x/d",
       "id": "polivitaminico_pediatrico_solucao_oral_gotas_protovit",
-      "presentation": "solução oral (gotas - Protovit, Centrum, etc)"
+      "presentation": "solução oral (gotas - Protovit, Centrum, etc)",
+      "unit_type": "gota",
+      "mg_per_unit": 0
     },
     {
       "name": "Mupirocina (tópica)",
@@ -4503,7 +5049,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 3x/d × 5-10 dias",
       "id": "mupirocina_topica_20mg_g_pomada_2_bactroban",
-      "presentation": "20mg/g pomada 2% (Bactroban)"
+      "presentation": "20mg/g pomada 2% (Bactroban)",
+      "unit_type": "g",
+      "mg_per_unit": 20.0
     },
     {
       "name": "Mupirocina (tópica)",
@@ -4518,7 +5066,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 3x/d × 5-10 dias",
       "id": "mupirocina_topica_20mg_g_creme_2",
-      "presentation": "20mg/g creme 2%"
+      "presentation": "20mg/g creme 2%",
+      "unit_type": "g",
+      "mg_per_unit": 20.0
     },
     {
       "name": "Neomicina (tópica)",
@@ -4533,7 +5083,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 2-3x/d em pequena área. Não usar em queimadura extensa",
       "id": "neomicina_topica_5mg_g_pomada_nebacetin",
-      "presentation": "5mg/g pomada (Nebacetin)"
+      "presentation": "5mg/g pomada (Nebacetin)",
+      "unit_type": "g",
+      "mg_per_unit": 5.0
     },
     {
       "name": "Bacitracina + Neomicina (tópica)",
@@ -4548,7 +5100,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 2-3x/d em ferimentos superficiais limpos",
       "id": "bacitracina_neomicina_topica_250ui_5mg_g_pomada_nebacetin",
-      "presentation": "250UI+5mg/g pomada (Nebacetin)"
+      "presentation": "250UI+5mg/g pomada (Nebacetin)",
+      "unit_type": "g",
+      "mg_per_unit": 5.0
     },
     {
       "name": "Ácido Fusídico (tópico)",
@@ -4563,7 +5117,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 2-3x/d × 7-14 dias",
       "id": "acido_fusidico_topico_20mg_g_creme_2_verutex",
-      "presentation": "20mg/g creme 2% (Verutex)"
+      "presentation": "20mg/g creme 2% (Verutex)",
+      "unit_type": "g",
+      "mg_per_unit": 20.0
     },
     {
       "name": "Ácido Fusídico (tópico)",
@@ -4578,7 +5134,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 2-3x/d × 7-14 dias",
       "id": "acido_fusidico_topico_20mg_g_pomada_2",
-      "presentation": "20mg/g pomada 2%"
+      "presentation": "20mg/g pomada 2%",
+      "unit_type": "g",
+      "mg_per_unit": 20.0
     },
     {
       "name": "Retapamulina",
@@ -4593,7 +5151,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥9m: aplicar 2x/d × 5 dias",
       "id": "retapamulina_10mg_g_pomada_1_altargo",
-      "presentation": "10mg/g pomada 1% (Altargo)"
+      "presentation": "10mg/g pomada 1% (Altargo)",
+      "unit_type": "g",
+      "mg_per_unit": 10.0
     },
     {
       "name": "Soro Fisiológico 0,9% (inalatório)",
@@ -4608,7 +5168,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "3-5ml por nebulização, 3-6x/d ou conforme necessidade",
       "id": "soro_fisiologico_0_9_inalatorio_ampola_5ml_ou_10ml",
-      "presentation": "ampola 5ml ou 10ml"
+      "presentation": "ampola 5ml ou 10ml",
+      "unit_type": "ml",
+      "mg_per_unit": 9
     },
     {
       "name": "Solução salina nasal hipertônica 3%",
@@ -4623,7 +5185,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "1-2 jatos/nebulizações por narina 3-6x/d",
       "id": "solucao_salina_nasal_hipertonica_3_spray_ou_ampola_3_salsep",
-      "presentation": "spray ou ampola 3% (Salsep)"
+      "presentation": "spray ou ampola 3% (Salsep)",
+      "unit_type": "jato",
+      "mg_per_unit": 30
     },
     {
       "name": "Cromoglicato dissódico (nasal)",
@@ -4638,7 +5202,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥2a: 1 jato/narina 3-4x/d",
       "id": "cromoglicato_dissodico_nasal_20mg_ml_spray_nasal_2_rilan",
-      "presentation": "20mg/ml spray nasal 2% (Rilan)"
+      "presentation": "20mg/ml spray nasal 2% (Rilan)",
+      "unit_type": "ml",
+      "mg_per_unit": 20
     },
     {
       "name": "Cromoglicato dissódico (nasal)",
@@ -4653,7 +5219,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥2a: 1 jato/narina 3-4x/d",
       "id": "cromoglicato_dissodico_nasal_40mg_ml_spray_nasal_4",
-      "presentation": "40mg/ml spray nasal 4%"
+      "presentation": "40mg/ml spray nasal 4%",
+      "unit_type": "ml",
+      "mg_per_unit": 40
     },
     {
       "name": "Acetilcisteína (oral)",
@@ -4668,7 +5236,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-6a: 100mg 2-3x/d. 7-13a: 200mg 2x/d. ≥14a: 200-600mg 2-3x/d",
       "id": "acetilcisteina_oral_20mg_ml_xarope_fluimucil",
-      "presentation": "20mg/ml xarope (Fluimucil)"
+      "presentation": "20mg/ml xarope (Fluimucil)",
+      "unit_type": "ml",
+      "mg_per_unit": 20
     },
     {
       "name": "Acetilcisteína (oral)",
@@ -4683,7 +5253,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-6a: 100mg 2-3x/d. 7-13a: 200mg 2x/d. ≥14a: 200-600mg 2-3x/d",
       "id": "acetilcisteina_oral_100mg_sache",
-      "presentation": "100mg sachê"
+      "presentation": "100mg sachê",
+      "unit_type": "sachê",
+      "mg_per_unit": 100.0
     },
     {
       "name": "Acetilcisteína (oral)",
@@ -4698,7 +5270,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-6a: 100mg 2-3x/d. 7-13a: 200mg 2x/d. ≥14a: 200-600mg 2-3x/d",
       "id": "acetilcisteina_oral_200mg_sache",
-      "presentation": "200mg sachê"
+      "presentation": "200mg sachê",
+      "unit_type": "sachê",
+      "mg_per_unit": 200.0
     },
     {
       "name": "Acetilcisteína (oral)",
@@ -4713,7 +5287,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-6a: 100mg 2-3x/d. 7-13a: 200mg 2x/d. ≥14a: 200-600mg 2-3x/d",
       "id": "acetilcisteina_oral_600mg_comprimido_efervescente",
-      "presentation": "600mg comprimido efervescente"
+      "presentation": "600mg comprimido efervescente",
+      "unit_type": "comprimido",
+      "mg_per_unit": 600.0
     },
     {
       "name": "Carbocisteína",
@@ -4728,7 +5304,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-5a: 100mg (5ml 2%) 3x/d. 6-12a: 250mg 3x/d. ≥12a: 750mg/d divididos",
       "id": "carbocisteina_20mg_ml_xarope_infantil_mucof",
-      "presentation": "20mg/ml xarope infantil (Mucofan)"
+      "presentation": "20mg/ml xarope infantil (Mucofan)",
+      "unit_type": "ml",
+      "mg_per_unit": 20
     },
     {
       "name": "Carbocisteína",
@@ -4743,7 +5321,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-5a: 100mg (5ml 2%) 3x/d. 6-12a: 250mg 3x/d. ≥12a: 750mg/d divididos",
       "id": "carbocisteina_50mg_ml_xarope_adulto",
-      "presentation": "50mg/ml xarope adulto"
+      "presentation": "50mg/ml xarope adulto",
+      "unit_type": "ml",
+      "mg_per_unit": 50
     },
     {
       "name": "Peróxido de Benzoíla",
@@ -4758,7 +5338,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 1x/d à noite (iniciar) → 2x/d se tolerar",
       "id": "peroxido_de_benzoila_25mg_g_gel_2_5",
-      "presentation": "25mg/g gel 2.5%"
+      "presentation": "25mg/g gel 2.5%",
+      "unit_type": "g",
+      "mg_per_unit": 25.0
     },
     {
       "name": "Peróxido de Benzoíla",
@@ -4773,7 +5355,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 1x/d à noite (iniciar) → 2x/d se tolerar",
       "id": "peroxido_de_benzoila_50mg_g_gel_5",
-      "presentation": "50mg/g gel 5%"
+      "presentation": "50mg/g gel 5%",
+      "unit_type": "g",
+      "mg_per_unit": 50.0
     },
     {
       "name": "Peróxido de Benzoíla",
@@ -4788,7 +5372,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 1x/d à noite (iniciar) → 2x/d se tolerar",
       "id": "peroxido_de_benzoila_100mg_g_gel_10",
-      "presentation": "100mg/g gel 10%"
+      "presentation": "100mg/g gel 10%",
+      "unit_type": "g",
+      "mg_per_unit": 100.0
     },
     {
       "name": "Adapaleno",
@@ -4803,7 +5389,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 1x/d à noite (fina camada)",
       "id": "adapaleno_1mg_g_gel_0_1_differin",
-      "presentation": "1mg/g gel 0.1% (Differin)"
+      "presentation": "1mg/g gel 0.1% (Differin)",
+      "unit_type": "g",
+      "mg_per_unit": 1.0
     },
     {
       "name": "Adapaleno",
@@ -4818,7 +5406,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 1x/d à noite (fina camada)",
       "id": "adapaleno_3mg_g_gel_0_3",
-      "presentation": "3mg/g gel 0.3%"
+      "presentation": "3mg/g gel 0.3%",
+      "unit_type": "g",
+      "mg_per_unit": 3.0
     },
     {
       "name": "Clindamicina (tópica)",
@@ -4833,7 +5423,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 2x/d em pele limpa",
       "id": "clindamicina_topica_10mg_g_gel_1_clindoxyl",
-      "presentation": "10mg/g gel 1% (Clindoxyl)"
+      "presentation": "10mg/g gel 1% (Clindoxyl)",
+      "unit_type": "g",
+      "mg_per_unit": 10.0
     },
     {
       "name": "Clindamicina (tópica)",
@@ -4848,7 +5440,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 2x/d em pele limpa",
       "id": "clindamicina_topica_10mg_ml_solucao_topica",
-      "presentation": "10mg/ml solução tópica"
+      "presentation": "10mg/ml solução tópica",
+      "unit_type": "ml",
+      "mg_per_unit": 10
     },
     {
       "name": "Eritromicina (tópica)",
@@ -4863,7 +5457,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 2x/d",
       "id": "eritromicina_topica_20mg_g_gel_2_eryacne",
-      "presentation": "20mg/g gel 2% (Eryacne)"
+      "presentation": "20mg/g gel 2% (Eryacne)",
+      "unit_type": "g",
+      "mg_per_unit": 20.0
     },
     {
       "name": "Calamina + Óxido de Zinco",
@@ -4878,7 +5474,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 3-4x/d na área pruriginosa",
       "id": "calamina_oxido_de_zinco_locao_caladryl",
-      "presentation": "loção (Caladryl)"
+      "presentation": "loção (Caladryl)",
+      "unit_type": "ml",
+      "mg_per_unit": 0
     },
     {
       "name": "Óxido de Zinco",
@@ -4893,7 +5491,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar generosamente em cada troca de fralda",
       "id": "oxido_de_zinco_pasta_d_agua_hipoglos_etc",
-      "presentation": "pasta d'água (Hipoglós, etc)"
+      "presentation": "pasta d'água (Hipoglós, etc)",
+      "unit_type": "ml",
+      "mg_per_unit": 0
     },
     {
       "name": "Óxido de Zinco",
@@ -4908,7 +5508,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar generosamente em cada troca de fralda",
       "id": "oxido_de_zinco_pomada_10_40_concentracoes_va",
-      "presentation": "pomada 10-40% concentrações variadas"
+      "presentation": "pomada 10-40% concentrações variadas",
+      "unit_type": "g",
+      "mg_per_unit": 0
     },
     {
       "name": "Dexpantenol",
@@ -4923,7 +5525,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 2-3x/d",
       "id": "dexpantenol_50mg_g_creme_5_bepantol",
-      "presentation": "50mg/g creme 5% (Bepantol)"
+      "presentation": "50mg/g creme 5% (Bepantol)",
+      "unit_type": "g",
+      "mg_per_unit": 50.0
     },
     {
       "name": "Lidocaína gel 2%",
@@ -4938,7 +5542,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar pequena quantidade conforme necessidade. Max 4.5 mg/kg/dose (≤200mg total)",
       "id": "lidocaina_gel_2_20mg_g_gel_2_xylocaina",
-      "presentation": "20mg/g gel 2% (Xylocaína)"
+      "presentation": "20mg/g gel 2% (Xylocaína)",
+      "unit_type": "g",
+      "mg_per_unit": 20.0
     },
     {
       "name": "EMLA (lidocaína+prilocaína)",
@@ -4953,7 +5559,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 1-2g sob curativo oclusivo 60min antes do procedimento (max conforme idade/peso)",
       "id": "emla_lidocaina_prilocaina_25mg_25mg_g_creme_emla",
-      "presentation": "25mg+25mg/g creme (EMLA)"
+      "presentation": "25mg+25mg/g creme (EMLA)",
+      "unit_type": "g",
+      "mg_per_unit": 25.0
     },
     {
       "name": "Clorexidina degermante 2%",
@@ -4968,7 +5576,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar e enxaguar (antissepsia pré-procedimento)",
       "id": "clorexidina_degermante_2_20mg_ml_solucao_degermante_2",
-      "presentation": "20mg/ml solução degermante 2%"
+      "presentation": "20mg/ml solução degermante 2%",
+      "unit_type": "ml",
+      "mg_per_unit": 20
     },
     {
       "name": "Clorexidina degermante 2%",
@@ -4983,7 +5593,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar e enxaguar (antissepsia pré-procedimento)",
       "id": "clorexidina_degermante_2_5mg_ml_solucao_aquosa_0_5",
-      "presentation": "5mg/ml solução aquosa 0.5%"
+      "presentation": "5mg/ml solução aquosa 0.5%",
+      "unit_type": "ml",
+      "mg_per_unit": 5
     },
     {
       "name": "Iodopovidona (PVPI)",
@@ -4998,7 +5610,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar em ferimentos e antissepsia",
       "id": "iodopovidona_pvpi_100mg_ml_solucao_topica_10",
-      "presentation": "100mg/ml solução tópica 10%"
+      "presentation": "100mg/ml solução tópica 10%",
+      "unit_type": "ml",
+      "mg_per_unit": 100
     },
     {
       "name": "Iodopovidona (PVPI)",
@@ -5013,7 +5627,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar em ferimentos e antissepsia",
       "id": "iodopovidona_pvpi_100mg_ml_degermante_10",
-      "presentation": "100mg/ml degermante 10%"
+      "presentation": "100mg/ml degermante 10%",
+      "unit_type": "ml",
+      "mg_per_unit": 100
     },
     {
       "name": "Ureia (tópica)",
@@ -5028,7 +5644,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "10%: hidratante 2x/d. 20-40%: queratolítico 1-2x/d em áreas espessas",
       "id": "ureia_topica_100mg_g_creme_10_hidratante",
-      "presentation": "100mg/g creme 10% (hidratante)"
+      "presentation": "100mg/g creme 10% (hidratante)",
+      "unit_type": "g",
+      "mg_per_unit": 100.0
     },
     {
       "name": "Ureia (tópica)",
@@ -5043,7 +5661,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "10%: hidratante 2x/d. 20-40%: queratolítico 1-2x/d em áreas espessas",
       "id": "ureia_topica_200mg_g_creme_20_queratoliti",
-      "presentation": "200mg/g creme 20% (queratolítico)"
+      "presentation": "200mg/g creme 20% (queratolítico)",
+      "unit_type": "g",
+      "mg_per_unit": 200.0
     },
     {
       "name": "Ureia (tópica)",
@@ -5058,7 +5678,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "10%: hidratante 2x/d. 20-40%: queratolítico 1-2x/d em áreas espessas",
       "id": "ureia_topica_400mg_g_creme_40_queratoliti",
-      "presentation": "400mg/g creme 40% (queratolítico)"
+      "presentation": "400mg/g creme 40% (queratolítico)",
+      "unit_type": "g",
+      "mg_per_unit": 400.0
     },
     {
       "name": "Alantoína",
@@ -5073,7 +5695,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 2-3x/d",
       "id": "alantoina_creme_locao_combinacao_variad",
-      "presentation": "creme/loção (combinação variada)"
+      "presentation": "creme/loção (combinação variada)",
+      "unit_type": "g",
+      "mg_per_unit": 0
     },
     {
       "name": "Dimeticona (Luftal)",
@@ -5088,7 +5712,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Lactente: 3-6 gotas após cada mamada (até 6x/d). Criança: 6-12 gotas até 4x/d",
       "id": "dimeticona_luftal_75mg_ml_gotas_luftal",
-      "presentation": "75mg/ml gotas (Luftal)"
+      "presentation": "75mg/ml gotas (Luftal)",
+      "unit_type": "ml",
+      "mg_per_unit": 75
     },
     {
       "name": "Tobramicina colírio 0,3%",
@@ -5103,7 +5729,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Conjuntivite leve/mod: 1-2 gotas q4-6h × 5-7d. Grave: q1h inicialmente",
       "id": "tobramicina_colirio_0_3_3mg_ml_colirio_tobrex",
-      "presentation": "3mg/ml colírio (Tobrex)"
+      "presentation": "3mg/ml colírio (Tobrex)",
+      "unit_type": "ml",
+      "mg_per_unit": 3
     },
     {
       "name": "Ciprofloxacino colírio 0,3%",
@@ -5118,7 +5746,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "1-2 gotas q4-6h (até q2h dia 1-2 em casos graves) × 5-7 dias",
       "id": "ciprofloxacino_colirio_0_3_3mg_ml_colirio_ciloxan",
-      "presentation": "3mg/ml colírio (Ciloxan)"
+      "presentation": "3mg/ml colírio (Ciloxan)",
+      "unit_type": "ml",
+      "mg_per_unit": 3
     },
     {
       "name": "Cloranfenicol colírio 0,5%",
@@ -5133,7 +5763,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Colírio: 1-2 gotas 3-4x/d. Pomada: 3-4x/d ou antes de dormir",
       "id": "cloranfenicol_colirio_0_5_5mg_ml_colirio",
-      "presentation": "5mg/ml colírio"
+      "presentation": "5mg/ml colírio",
+      "unit_type": "ml",
+      "mg_per_unit": 5
     },
     {
       "name": "Cloranfenicol colírio 0,5%",
@@ -5148,7 +5780,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Colírio: 1-2 gotas 3-4x/d. Pomada: 3-4x/d ou antes de dormir",
       "id": "cloranfenicol_colirio_0_5_10mg_g_pomada_oftalmica_1",
-      "presentation": "10mg/g pomada oftálmica 1%"
+      "presentation": "10mg/g pomada oftálmica 1%",
+      "unit_type": "g",
+      "mg_per_unit": 10.0
     },
     {
       "name": "Olopatadina colírio",
@@ -5163,7 +5797,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "0.1%: 1 gota 2x/d. 0.2%: 1 gota 1x/d. ≥3 anos",
       "id": "olopatadina_colirio_1mg_ml_colirio_0_1_patanol",
-      "presentation": "1mg/ml colírio 0.1% (Patanol)"
+      "presentation": "1mg/ml colírio 0.1% (Patanol)",
+      "unit_type": "ml",
+      "mg_per_unit": 1
     },
     {
       "name": "Olopatadina colírio",
@@ -5178,7 +5814,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "0.1%: 1 gota 2x/d. 0.2%: 1 gota 1x/d. ≥3 anos",
       "id": "olopatadina_colirio_2mg_ml_colirio_0_2",
-      "presentation": "2mg/ml colírio 0.2%"
+      "presentation": "2mg/ml colírio 0.2%",
+      "unit_type": "ml",
+      "mg_per_unit": 2
     },
     {
       "name": "Ketotifeno colírio",
@@ -5193,7 +5831,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥3 anos: 1 gota 2x/d",
       "id": "ketotifeno_colirio_0_25mg_ml_colirio_0_025_zadi",
-      "presentation": "0,25mg/ml colírio 0.025% (Zaditen)"
+      "presentation": "0,25mg/ml colírio 0.025% (Zaditen)",
+      "unit_type": "ml",
+      "mg_per_unit": 0.25
     },
     {
       "name": "Lágrima artificial (Hipromelose)",
@@ -5208,7 +5848,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "1-2 gotas em cada olho conforme necessidade (geralmente 4-6x/d)",
       "id": "lagrima_artificial_hipromelose_5mg_ml_colirio_0_5_lacrima_p",
-      "presentation": "5mg/ml colírio 0.5% (Lacrima Plus)"
+      "presentation": "5mg/ml colírio 0.5% (Lacrima Plus)",
+      "unit_type": "ml",
+      "mg_per_unit": 5
     },
     {
       "name": "Dexametasona + Tobramicina colírio",
@@ -5223,7 +5865,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥2a: 1 gota q4-6h (até q2h grave). Reduzir progressivamente",
       "id": "dexametasona_tobramicina_colirio_1mg_3mg_ml_colirio_tobradex",
-      "presentation": "1mg+3mg/ml colírio (Tobradex)"
+      "presentation": "1mg+3mg/ml colírio (Tobradex)",
+      "unit_type": "ml",
+      "mg_per_unit": 0
     },
     {
       "name": "Ciprofloxacino otológico 0,3%",
@@ -5238,7 +5882,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥6m: 4 gotas no ouvido afetado 2x/d × 7 dias",
       "id": "ciprofloxacino_otologico_0_3_3mg_ml_solucao_otologica_cipr",
-      "presentation": "3mg/ml solução otológica (Cipro otol)"
+      "presentation": "3mg/ml solução otológica (Cipro otol)",
+      "unit_type": "ml",
+      "mg_per_unit": 3
     },
     {
       "name": "Polimixina B + Neomicina otológico (Otosporin)",
@@ -5253,7 +5899,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "3-4 gotas no ouvido afetado 3-4x/d × 7-10 dias",
       "id": "polimixina_b_neomicina_otologico_otosporin_polimixina_neomicina_hidrocort",
-      "presentation": "Polimixina+Neomicina+Hidrocortisona solução (Otosporin)"
+      "presentation": "Polimixina+Neomicina+Hidrocortisona solução (Otosporin)",
+      "unit_type": "ml",
+      "mg_per_unit": 0
     },
     {
       "name": "Otalgan (Fenazona + Lidocaína)",
@@ -5268,7 +5916,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "3-4 gotas no ouvido afetado q1-2h conforme dor",
       "id": "otalgan_fenazona_lidocaina_solucao_otologica_otalgan",
-      "presentation": "solução otológica (Otalgan)"
+      "presentation": "solução otológica (Otalgan)",
+      "unit_type": "gota",
+      "mg_per_unit": 0
     },
     {
       "name": "Cerumenolítico",
@@ -5283,7 +5933,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Instilar 3-5 gotas 2x/d × 3-5 dias antes da lavagem",
       "id": "cerumenolitico_oleo_mineral",
-      "presentation": "óleo mineral"
+      "presentation": "óleo mineral",
+      "unit_type": "ml",
+      "mg_per_unit": 0
     },
     {
       "name": "Cerumenolítico",
@@ -5298,7 +5950,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Instilar 3-5 gotas 2x/d × 3-5 dias antes da lavagem",
       "id": "cerumenolitico_trietanolamina_5_cerumin",
-      "presentation": "trietanolamina 5% (Cerumin)"
+      "presentation": "trietanolamina 5% (Cerumin)",
+      "unit_type": "ml",
+      "mg_per_unit": 50
     },
     {
       "name": "Metilfenidato (TDAH)",
@@ -5313,7 +5967,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥6 anos: iniciar 5mg 2x/d, titular semanalmente até dose efetiva. Max 2 mg/kg/d ou 60 mg/d",
       "id": "metilfenidato_tdah_10mg_comprimido_ritalina",
-      "presentation": "10mg comprimido (Ritalina)"
+      "presentation": "10mg comprimido (Ritalina)",
+      "unit_type": "comprimido",
+      "mg_per_unit": 10.0
     },
     {
       "name": "Metilfenidato (TDAH)",
@@ -5328,7 +5984,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥6 anos: iniciar 5mg 2x/d, titular semanalmente até dose efetiva. Max 2 mg/kg/d ou 60 mg/d",
       "id": "metilfenidato_tdah_20mg_capsula_la",
-      "presentation": "20mg cápsula LA"
+      "presentation": "20mg cápsula LA",
+      "unit_type": "cápsula",
+      "mg_per_unit": 20.0
     },
     {
       "name": "Metilfenidato (TDAH)",
@@ -5343,7 +6001,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥6 anos: iniciar 5mg 2x/d, titular semanalmente até dose efetiva. Max 2 mg/kg/d ou 60 mg/d",
       "id": "metilfenidato_tdah_30mg_40mg_60mg_concerta",
-      "presentation": "30mg, 40mg, 60mg Concerta"
+      "presentation": "30mg, 40mg, 60mg Concerta",
+      "unit_type": "ml",
+      "mg_per_unit": 0
     },
     {
       "name": "Ácido Valproico",
@@ -5361,6 +6021,8 @@
       "max_mg_per_dose": 1500,
       "id": "acido_valproico_50mg_ml_xarope_depakene",
       "presentation": "50mg/ml xarope (Depakene)",
+      "unit_type": "ml",
+      "mg_per_unit": 50,
       "concentration_mg_per_ml": 50
     },
     {
@@ -5379,6 +6041,8 @@
       "max_mg_per_dose": 1500,
       "id": "acido_valproico_250mg_capsula",
       "presentation": "250mg cápsula",
+      "unit_type": "cápsula",
+      "mg_per_unit": 250.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -5397,6 +6061,8 @@
       "max_mg_per_dose": 1500,
       "id": "acido_valproico_500mg_comprimido_la",
       "presentation": "500mg comprimido LA",
+      "unit_type": "comprimido",
+      "mg_per_unit": 500.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -5415,6 +6081,8 @@
       "max_mg_per_dose": 200,
       "id": "topiramato_25mg_comprimido",
       "presentation": "25mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 25.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -5433,6 +6101,8 @@
       "max_mg_per_dose": 200,
       "id": "topiramato_50mg_comprimido",
       "presentation": "50mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 50.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -5451,6 +6121,8 @@
       "max_mg_per_dose": 200,
       "id": "topiramato_100mg_comprimido",
       "presentation": "100mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 100.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -5469,6 +6141,8 @@
       "max_mg_per_dose": 600,
       "id": "carbamazepina_20mg_ml_suspensao_oral_tegret",
       "presentation": "20mg/ml suspensão oral (Tegretol)",
+      "unit_type": "ml",
+      "mg_per_unit": 20,
       "concentration_mg_per_ml": 20
     },
     {
@@ -5487,6 +6161,8 @@
       "max_mg_per_dose": 600,
       "id": "carbamazepina_200mg_comprimido",
       "presentation": "200mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 200.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -5505,6 +6181,8 @@
       "max_mg_per_dose": 600,
       "id": "carbamazepina_400mg_comprimido",
       "presentation": "400mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 400.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -5520,7 +6198,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥4a: 1-2 gotas 4-6x/d",
       "id": "cromoglicato_dissodico_colirio_20mg_ml_colirio_2_cromolerg",
-      "presentation": "20mg/ml colírio 2% (Cromolerg)"
+      "presentation": "20mg/ml colírio 2% (Cromolerg)",
+      "unit_type": "ml",
+      "mg_per_unit": 20
     },
     {
       "name": "Cromoglicato dissódico colírio",
@@ -5535,7 +6215,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥4a: 1-2 gotas 4-6x/d",
       "id": "cromoglicato_dissodico_colirio_40mg_ml_colirio_4",
-      "presentation": "40mg/ml colírio 4%"
+      "presentation": "40mg/ml colírio 4%",
+      "unit_type": "ml",
+      "mg_per_unit": 40
     },
     {
       "name": "Nafazolina colírio",
@@ -5550,7 +6232,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥6a: 1 gota 3-4x/d × max 72h",
       "id": "nafazolina_colirio_0_12mg_ml_colirio_0_012",
-      "presentation": "0,12mg/ml colírio 0.012%"
+      "presentation": "0,12mg/ml colírio 0.012%",
+      "unit_type": "ml",
+      "mg_per_unit": 0.12
     },
     {
       "name": "Vaselina sólida",
@@ -5565,7 +6249,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar conforme necessidade",
       "id": "vaselina_solida_vaselina_liquida_ou_solida",
-      "presentation": "vaselina líquida ou sólida"
+      "presentation": "vaselina líquida ou sólida",
+      "unit_type": "ml",
+      "mg_per_unit": 0
     },
     {
       "name": "Deltametrina loção pediculose",
@@ -5580,7 +6266,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar no couro cabeludo molhado, deixar 10min, enxaguar. Repetir 7-10d",
       "id": "deltametrina_locao_pediculose_0_2mg_ml_locao_0_02_deltacid",
-      "presentation": "0,2mg/ml loção 0.02% (Deltacid)"
+      "presentation": "0,2mg/ml loção 0.02% (Deltacid)",
+      "unit_type": "ml",
+      "mg_per_unit": 0.2
     },
     {
       "name": "Dimeticona pediculose (loção)",
@@ -5595,7 +6283,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar no cabelo seco, deixar 8h ou overnight, enxaguar. Repetir 7d",
       "id": "dimeticona_pediculose_locao_40_50mg_ml_locao_mediker_ap",
-      "presentation": "40-50mg/ml loção (Mediker AP)"
+      "presentation": "40-50mg/ml loção (Mediker AP)",
+      "unit_type": "ml",
+      "mg_per_unit": 40
     },
     {
       "name": "Levosalbutamol",
@@ -5610,7 +6300,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Spray ≥4a: 1-2 inal q4-6h. Neb 6-11a: 0.31mg q6h. ≥12a: 0.63-1.25mg q6h",
       "id": "levosalbutamol_spray_45mcg_jato",
-      "presentation": "spray 45mcg/jato"
+      "presentation": "spray 45mcg/jato",
+      "unit_type": "jato",
+      "mg_per_unit": 0.045
     },
     {
       "name": "Levosalbutamol",
@@ -5625,7 +6317,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Spray ≥4a: 1-2 inal q4-6h. Neb 6-11a: 0.31mg q6h. ≥12a: 0.63-1.25mg q6h",
       "id": "levosalbutamol_0_31mg_3ml_solucao_nebulizacao",
-      "presentation": "0.31mg/3ml solução nebulização"
+      "presentation": "0.31mg/3ml solução nebulização",
+      "unit_type": "ml",
+      "mg_per_unit": 0.1
     },
     {
       "name": "Levosalbutamol",
@@ -5640,7 +6334,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Spray ≥4a: 1-2 inal q4-6h. Neb 6-11a: 0.31mg q6h. ≥12a: 0.63-1.25mg q6h",
       "id": "levosalbutamol_0_63mg_3ml_solucao_nebulizacao",
-      "presentation": "0.63mg/3ml solução nebulização"
+      "presentation": "0.63mg/3ml solução nebulização",
+      "unit_type": "ml",
+      "mg_per_unit": 0.21
     },
     {
       "name": "Salmeterol + Fluticasona",
@@ -5655,7 +6351,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥4a: 1 inal Diskus 50/100 2x/d. ≥12a: até 50/500 2x/d",
       "id": "salmeterol_fluticasona_diskus_50_100_50_250_50_500",
-      "presentation": "Diskus 50/100, 50/250, 50/500 (Seretide)"
+      "presentation": "Diskus 50/100, 50/250, 50/500 (Seretide)",
+      "unit_type": "ml",
+      "mg_per_unit": 0
     },
     {
       "name": "Salmeterol + Fluticasona",
@@ -5670,7 +6368,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥4a: 1 inal Diskus 50/100 2x/d. ≥12a: até 50/500 2x/d",
       "id": "salmeterol_fluticasona_spray_25_50_25_125_25_250",
-      "presentation": "Spray 25/50, 25/125, 25/250"
+      "presentation": "Spray 25/50, 25/125, 25/250",
+      "unit_type": "jato",
+      "mg_per_unit": 0
     },
     {
       "name": "Beclometasona spray nasal",
@@ -5685,7 +6385,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥6a: 1-2 jatos/narina 1-2x/d",
       "id": "beclometasona_spray_nasal_50mcg_jato_spray_nasal",
-      "presentation": "50mcg/jato spray nasal"
+      "presentation": "50mcg/jato spray nasal",
+      "unit_type": "jato",
+      "mg_per_unit": 0.05
     },
     {
       "name": "Ciclesonida inalatória",
@@ -5700,7 +6402,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥12a: 80-160 mcg 1-2x/d",
       "id": "ciclesonida_inalatoria_spray_80mcg_jato_alvesco",
-      "presentation": "spray 80mcg/jato (Alvesco)"
+      "presentation": "spray 80mcg/jato (Alvesco)",
+      "unit_type": "jato",
+      "mg_per_unit": 0.08
     },
     {
       "name": "Ciclesonida inalatória",
@@ -5715,7 +6419,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥12a: 80-160 mcg 1-2x/d",
       "id": "ciclesonida_inalatoria_spray_160mcg_jato",
-      "presentation": "spray 160mcg/jato"
+      "presentation": "spray 160mcg/jato",
+      "unit_type": "jato",
+      "mg_per_unit": 0.16
     },
     {
       "name": "Triancinolona spray nasal",
@@ -5730,7 +6436,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-5a: 1 jato/narina 1x/d. 6-11a: 1-2 jatos/narina 1x/d. ≥12a: 2 jatos/narina 1x/d",
       "id": "triancinolona_spray_nasal_55mcg_jato_spray_nasal_nasaco",
-      "presentation": "55mcg/jato spray nasal (Nasacort)"
+      "presentation": "55mcg/jato spray nasal (Nasacort)",
+      "unit_type": "jato",
+      "mg_per_unit": 0.055
     },
     {
       "name": "Cetoconazol oral",
@@ -5748,6 +6456,8 @@
       "max_mg_per_dose": 400,
       "id": "cetoconazol_oral_200mg_comprimido",
       "presentation": "200mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 200.0,
       "concentration_mg_per_ml": 0
     },
     {
@@ -5763,7 +6473,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 2x/d × 14-21d",
       "id": "tioconazol_topico_10mg_g_creme_1",
-      "presentation": "10mg/g creme 1%"
+      "presentation": "10mg/g creme 1%",
+      "unit_type": "g",
+      "mg_per_unit": 10.0
     },
     {
       "name": "Oxiconazol (tópico)",
@@ -5778,7 +6490,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar 1-2x/d × 2-4 sem",
       "id": "oxiconazol_topico_10mg_g_creme_1_oxistat",
-      "presentation": "10mg/g creme 1% (Oxistat)"
+      "presentation": "10mg/g creme 1% (Oxistat)",
+      "unit_type": "g",
+      "mg_per_unit": 10.0
     },
     {
       "name": "Dexametasona+Neomicina otológico",
@@ -5793,7 +6507,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "3-4 gotas 3x/d × 7-10d",
       "id": "dexametasona_neomicina_otologico_solucao_otologica_combinada",
-      "presentation": "solução otológica combinada"
+      "presentation": "solução otológica combinada",
+      "unit_type": "gota",
+      "mg_per_unit": 0
     },
     {
       "name": "Lidocaína otológica",
@@ -5808,7 +6524,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "3-4 gotas conforme dor (q1-2h)",
       "id": "lidocaina_otologica_20mg_ml_solucao_otologica",
-      "presentation": "20mg/ml solução otológica"
+      "presentation": "20mg/ml solução otológica",
+      "unit_type": "ml",
+      "mg_per_unit": 20
     },
     {
       "name": "Loratadina + Pseudoefedrina",
@@ -5823,7 +6541,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥12a: 1 comp 2x/d. Não recomendado <12 anos",
       "id": "loratadina_pseudoefedrina_5mg_120mg_comprimido",
-      "presentation": "5mg+120mg comprimido"
+      "presentation": "5mg+120mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 5.0
     },
     {
       "name": "Pseudoefedrina (isolada)",
@@ -5838,7 +6558,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "≥12a: 30-60mg q4-6h",
       "id": "pseudoefedrina_isolada_30mg_comp_60mg_comp_xarope_6",
-      "presentation": "30mg comp; 60mg comp; xarope 6mg/ml"
+      "presentation": "30mg comp; 60mg comp; xarope 6mg/ml",
+      "unit_type": "ml",
+      "mg_per_unit": 6
     },
     {
       "name": "Oximetazolina nasal",
@@ -5853,7 +6575,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-5a: 0.025% 1 jato/narina q12h. ≥6a: 0.05% 1-2 jatos/narina q12h. Max 3 dias",
       "id": "oximetazolina_nasal_0_05_spray_nasal",
-      "presentation": "0.05% spray nasal"
+      "presentation": "0.05% spray nasal",
+      "unit_type": "jato",
+      "mg_per_unit": 0.5
     },
     {
       "name": "Oximetazolina nasal",
@@ -5868,7 +6592,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-5a: 0.025% 1 jato/narina q12h. ≥6a: 0.05% 1-2 jatos/narina q12h. Max 3 dias",
       "id": "oximetazolina_nasal_0_025_spray_nasal_pediatrico",
-      "presentation": "0.025% spray nasal pediátrico"
+      "presentation": "0.025% spray nasal pediátrico",
+      "unit_type": "jato",
+      "mg_per_unit": 0.25
     },
     {
       "name": "Glicerina supositório infantil",
@@ -5883,7 +6609,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "1 supositório quando necessário",
       "id": "glicerina_supositorio_infantil_supositorio_infantil_1g",
-      "presentation": "supositório infantil 1g"
+      "presentation": "supositório infantil 1g",
+      "unit_type": "supositório",
+      "mg_per_unit": 0
     },
     {
       "name": "Lactulose Pediátrica xarope 10%",
@@ -5898,7 +6626,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Lactentes: 2.5-5ml/d. Crianças: 5-15ml/d. Titular pelo efeito",
       "id": "lactulose_pediatrica_xarope_10_100mg_ml_xarope_10_apresenta",
-      "presentation": "100mg/ml xarope 10% (apresentações pediátricas)"
+      "presentation": "100mg/ml xarope 10% (apresentações pediátricas)",
+      "unit_type": "ml",
+      "mg_per_unit": 100
     },
     {
       "name": "Polivitamínico com ferro (Protovit Plus)",
@@ -5913,7 +6643,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Conforme bula (varia por produto)",
       "id": "polivitaminico_com_ferro_protovit_plus_solucao_oral_combinada",
-      "presentation": "solução oral combinada"
+      "presentation": "solução oral combinada",
+      "unit_type": "ml",
+      "mg_per_unit": 0
     },
     {
       "name": "Proctyl (lidocaína+hidrocortisona retal)",
@@ -5928,7 +6660,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Aplicar após evacuações × 5-7 dias",
       "id": "proctyl_lidocaina_hidrocortisona_retal_pomada_anorretal_combinada",
-      "presentation": "pomada anorretal combinada"
+      "presentation": "pomada anorretal combinada",
+      "unit_type": "g",
+      "mg_per_unit": 0
     },
     {
       "name": "Bromexina",
@@ -5943,7 +6677,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-5a: 4mg (5ml) 3x/d. 6-11a: 4-8mg 3x/d. ≥12a: 8mg 3x/d",
       "id": "bromexina_0_8mg_ml_xarope_pediatrico_bi",
-      "presentation": "0,8mg/ml xarope pediátrico (Bisolvon)"
+      "presentation": "0,8mg/ml xarope pediátrico (Bisolvon)",
+      "unit_type": "ml",
+      "mg_per_unit": 0.8
     },
     {
       "name": "Bromexina",
@@ -5958,7 +6694,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-5a: 4mg (5ml) 3x/d. 6-11a: 4-8mg 3x/d. ≥12a: 8mg 3x/d",
       "id": "bromexina_1_6mg_ml_xarope_adulto",
-      "presentation": "1,6mg/ml xarope adulto"
+      "presentation": "1,6mg/ml xarope adulto",
+      "unit_type": "ml",
+      "mg_per_unit": 1.6
     },
     {
       "name": "Guaifenesina",
@@ -5973,7 +6711,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-5a: 50-100mg q4h. 6-11a: 100-200mg q4h. ≥12a: 200-400mg q4h",
       "id": "guaifenesina_20mg_ml_xarope",
-      "presentation": "20mg/ml xarope"
+      "presentation": "20mg/ml xarope",
+      "unit_type": "ml",
+      "mg_per_unit": 20
     },
     {
       "name": "Dextrometorfano (antitussígeno)",
@@ -5988,7 +6728,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "6-11a: 5-10mg q4h. ≥12a: 10-20mg q4h",
       "id": "dextrometorfano_antitussigeno_1mg_ml_xarope_vick_44",
-      "presentation": "1mg/ml xarope (Vick 44)"
+      "presentation": "1mg/ml xarope (Vick 44)",
+      "unit_type": "ml",
+      "mg_per_unit": 1
     },
     {
       "name": "Dextrometorfano (antitussígeno)",
@@ -6003,7 +6745,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "6-11a: 5-10mg q4h. ≥12a: 10-20mg q4h",
       "id": "dextrometorfano_antitussigeno_15mg_comprimido",
-      "presentation": "15mg comprimido"
+      "presentation": "15mg comprimido",
+      "unit_type": "comprimido",
+      "mg_per_unit": 15.0
     },
     {
       "name": "Brometo de Ipratrópio + Salbutamol",
@@ -6018,7 +6762,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Uso em crise: 1 nebulização ou 4 jatos q20min × 3 (depois q1-4h)",
       "id": "brometo_de_ipratropio_salbutamol_solucao_para_nebulizacao_combi",
-      "presentation": "solução para nebulização combinada"
+      "presentation": "solução para nebulização combinada",
+      "unit_type": "ml",
+      "mg_per_unit": 0
     },
     {
       "name": "Brometo de Ipratrópio + Salbutamol",
@@ -6033,7 +6779,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Uso em crise: 1 nebulização ou 4 jatos q20min × 3 (depois q1-4h)",
       "id": "brometo_de_ipratropio_salbutamol_spray_combinado",
-      "presentation": "spray combinado"
+      "presentation": "spray combinado",
+      "unit_type": "jato",
+      "mg_per_unit": 0
     },
     {
       "name": "Saccharomyces cerevisiae",
@@ -6048,7 +6796,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Mesma dose do S. boulardii (mesma cepa)",
       "id": "saccharomyces_cerevisiae_100mg_sache",
-      "presentation": "100mg sachê"
+      "presentation": "100mg sachê",
+      "unit_type": "sachê",
+      "mg_per_unit": 100.0
     },
     {
       "name": "Carvão Ativado",
@@ -6063,7 +6813,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Intoxicação: 1g/kg dose única (max 50g) — primeiras 1-2h pós-ingesta",
       "id": "carvao_ativado_comprimidos_sache_po",
-      "presentation": "comprimidos / sachê / pó"
+      "presentation": "comprimidos / sachê / pó",
+      "unit_type": "comprimido",
+      "mg_per_unit": 0
     },
     {
       "name": "Simeticona (oral)",
@@ -6078,7 +6830,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "Mesma dose do Luftal (ver acima)",
       "id": "simeticona_oral_75mg_ml_gotas_alternativa_a_l",
-      "presentation": "75mg/ml gotas (alternativa a Luftal)"
+      "presentation": "75mg/ml gotas (alternativa a Luftal)",
+      "unit_type": "ml",
+      "mg_per_unit": 75
     },
     {
       "name": "Cromoglicato dissódico oral",
@@ -6093,7 +6847,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-12a: 100mg 4x/d. ≥13a: 200mg 4x/d (15-30 min antes refeições)",
       "id": "cromoglicato_dissodico_oral_100mg_5ml_solucao_oral_master",
-      "presentation": "100mg/5ml solução oral (Mastergal)"
+      "presentation": "100mg/5ml solução oral (Mastergal)",
+      "unit_type": "ml",
+      "mg_per_unit": 20
     },
     {
       "name": "Salbutamol xarope (oral)",
@@ -6108,7 +6864,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "2-5a: 1-2mg q6-8h (2.5-5ml). 6-11a: 2mg q6-8h. ≥12a: 2-4mg q6-8h",
       "id": "salbutamol_xarope_oral_2mg_5ml_xarope_aerolin_xarope",
-      "presentation": "2mg/5ml xarope (Aerolin Xarope)"
+      "presentation": "2mg/5ml xarope (Aerolin Xarope)",
+      "unit_type": "ml",
+      "mg_per_unit": 0.4
     },
     {
       "name": "Ranitidina (DESCONTINUADA Brasil)",
@@ -6123,7 +6881,9 @@
       "fixed_dose": true,
       "fixed_dose_string": "DESCONTINUADA — usar Famotidina",
       "id": "ranitidina_descontinuada_brasil_produto_retirado_do_mercado_p",
-      "presentation": "(produto retirado do mercado por contaminação NDMA)"
+      "presentation": "(produto retirado do mercado por contaminação NDMA)",
+      "unit_type": "ml",
+      "mg_per_unit": 0
     },
     {
       "id": "notice",
