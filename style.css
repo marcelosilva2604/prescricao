@@ -203,7 +203,7 @@ html, body {
 .sel-summary { font-size: 0.85rem; color: var(--text-muted); margin-top: 0.15rem; }
 .sel-actions { display: flex; gap: 0.4rem; flex-shrink: 0; }
 
-/* ── Live PDF preview ──────────────────────────────────────────────── */
+/* ── Live preview: canvas + DOM overlay ──────────────────────────── */
 .preview-wrap { padding: 1rem; }
 .preview-header {
   display: flex;
@@ -213,17 +213,54 @@ html, body {
 }
 .preview-header h2 { margin: 0; }
 .preview-status { font-size: 0.8rem; }
-.preview-frame {
+
+.preview-stage {
+  position: relative;
   width: 100%;
-  height: calc(100vh - 200px);
-  min-height: 600px;
   border: 1px solid var(--border);
   border-radius: 4px;
-  background: #f0f1f3;
-  display: block;
+  background: #fff;
+  overflow: hidden;
+  /* A4 portrait aspect ratio = 595:842 = 1:1.4151 */
+  aspect-ratio: 595 / 842;
 }
-@media (max-width: 900px) {
-  .preview-frame { height: 70vh; }
+.preview-canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.preview-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  color: #000;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.preview-overlay > div {
+  position: absolute;
+  white-space: nowrap;
+  line-height: 1;
+}
+.ov-name { font-weight: 700; }
+.ov-route {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.ov-med1 {
+  display: flex;
+  align-items: baseline;
+  gap: 0.3em;
+  width: calc(100% - 120px);
+}
+.ov-med1 > span:first-child { flex-shrink: 0; }
+.ov-dashes {
+  flex: 1;
+  overflow: hidden;
+  height: 1em;
+  background-image: repeating-linear-gradient(to right, currentColor 0 4px, transparent 4px 7px);
+  background-position: 0 0.7em;
+  background-size: 100% 1.2px;
+  background-repeat: no-repeat;
 }
 .prev-page {
   background: #fff;

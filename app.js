@@ -34,7 +34,9 @@
     el.selectedList = document.getElementById('selectedList');
     el.generateBtn = document.getElementById('generateBtn');
     el.newPrescriptionBtn = document.getElementById('newPrescriptionBtn');
-    el.previewFrame = document.getElementById('previewFrame');
+    el.previewStage = document.getElementById('previewStage');
+    el.previewCanvas = document.getElementById('previewCanvas');
+    el.previewOverlay = document.getElementById('previewOverlay');
     el.previewStatus = document.getElementById('previewStatus');
     el.firstTimeModal = document.getElementById('firstTimeModal');
     el.firstTimeTitle = document.getElementById('firstTimeTitle');
@@ -480,60 +482,128 @@
     });
   }
 
-  // ── Live PDF preview ──────────────────────────────────────────────────
-  // Regenerates the actual PDF in the iframe on every change (debounced).
-  // True WYSIWYG: what you see is what the download will produce.
-  let previewBlobUrl = null;
-  let previewDebounceTimer = null;
-  let previewInFlight = false;
-  let previewRetry = false;
+  // ── Live preview: PDF.js renders template ONCE to canvas, text overlays in DOM ──
+  // PDF gen is reserved for the download. Preview is instant DOM updates.
+  // PDF coord system: 595×842 pt, bottom-left origin.
+  const PDF_W = 595;
+  const PDF_H = 842;
+
+  // Layout constants must mirror pdf-overlay.js LAYOUT for visual fidelity.
+  const PV = {
+    zoneLeft: 60,
+    patientY: 680,
+    patientSize: 22,
+    gapAfterPatient: 32,
+    routeSize: 13,
+    gapAfterRoute: 14,
+    medSize: 11,
+    medLineHeight: 15,
+    medIndentX: 80,
+    gapBetweenMeds: 10,
+  };
+
+  let previewScale = 1; // displayed-px / pdf-pt
+  let previewReady = false;
+
+  async function renderTemplateToCanvas() {
+    if (!window.pdfjsLib) throw new Error('pdf.js not loaded');
+    if (el.previewStatus) el.previewStatus.textContent = 'carregando…';
+    const data = await fetch('./Consultorio.pdf').then((r) => r.arrayBuffer());
+    const pdf = await window.pdfjsLib.getDocument({ data }).promise;
+    const page = await pdf.getPage(1);
+    // Render at 2x for retina sharpness; CSS will downscale.
+    const dpr = window.devicePixelRatio || 1;
+    const renderScale = 2 * dpr;
+    const viewport = page.getViewport({ scale: renderScale });
+    el.previewCanvas.width = viewport.width;
+    el.previewCanvas.height = viewport.height;
+    el.previewCanvas.style.width = '100%';
+    el.previewCanvas.style.height = 'auto';
+    const ctx = el.previewCanvas.getContext('2d');
+    await page.render({ canvasContext: ctx, viewport }).promise;
+    previewReady = true;
+    if (el.previewStatus) el.previewStatus.textContent = '';
+    updateOverlayScale();
+    renderOverlay();
+  }
+
+  function updateOverlayScale() {
+    // Match overlay size to the displayed canvas size.
+    const w = el.previewCanvas.clientWidth;
+    const h = el.previewCanvas.clientHeight;
+    if (!w || !h) return;
+    previewScale = w / PDF_W;
+    el.previewOverlay.style.width = w + 'px';
+    el.previewOverlay.style.height = h + 'px';
+  }
+
+  function pdfToCss(xPt, yPtFromBottom, size) {
+    // Convert PDF point coords (bottom-left origin) to CSS pixels in overlay.
+    const x = xPt * previewScale;
+    const top = (PDF_H - yPtFromBottom) * previewScale;
+    const fontSize = size * previewScale;
+    return { x, top, fontSize };
+  }
 
   function schedulePreviewUpdate() {
-    clearTimeout(previewDebounceTimer);
-    previewDebounceTimer = setTimeout(triggerPreviewUpdate, 80);
+    // Overlay updates are cheap (DOM only) — no debounce needed.
+    renderOverlay();
   }
 
-  function triggerPreviewUpdate() {
-    if (previewInFlight) {
-      previewRetry = true;
-      return;
-    }
-    previewInFlight = true;
-    if (el.previewStatus) el.previewStatus.textContent = 'atualizando…';
-    updatePreviewPDF().finally(() => {
-      previewInFlight = false;
-      if (el.previewStatus) el.previewStatus.textContent = '';
-      if (previewRetry) {
-        previewRetry = false;
-        triggerPreviewUpdate();
-      }
-    });
-  }
+  function renderOverlay() {
+    if (!el.previewOverlay) return;
+    if (!previewReady) return;
+    updateOverlayScale();
 
-  async function updatePreviewPDF() {
-    try {
-      const patient = {
-        name: state.patient.name || ' ',
-        weight: parseFloat(state.patient.weight) || 0,
-      };
-      const bytes = await window.PdfOverlay.generatePrescriptionPDF(
-        patient,
-        state.selected
-      );
-      const blob = new Blob([bytes], { type: 'application/pdf' });
-      const url = URL.createObjectURL(blob);
-      const previousUrl = previewBlobUrl;
-      previewBlobUrl = url;
-      // #toolbar=0 hides the viewer chrome in Chrome; #view=FitH fits horizontally.
-      el.previewFrame.src = url + '#toolbar=0&view=FitH';
-      if (previousUrl) {
-        // Revoke after a short delay so the iframe has time to load the new URL.
-        setTimeout(() => URL.revokeObjectURL(previousUrl), 500);
-      }
-    } catch (e) {
-      console.error('Preview generation failed', e);
-      if (el.previewStatus) el.previewStatus.textContent = 'erro ao gerar preview';
+    const name = state.patient.name.trim();
+    const displayName = name
+      ? window.PdfOverlay.capitalizeWords(name)
+      : '';
+
+    let html = '';
+
+    // Patient name
+    if (displayName) {
+      const p = pdfToCss(PV.zoneLeft, PV.patientY, PV.patientSize);
+      html += `<div class="ov-name" style="left:${p.x}px;top:${p.top}px;font-size:${p.fontSize}px;">${escapeHtml(displayName)}</div>`;
     }
+
+    // Plan items mirroring pdf-overlay.js planLayout (single-page approximation).
+    const grouped = groupSelectedByRoute(state.selected);
+    let currentY = displayName
+      ? PV.patientY - PV.gapAfterPatient
+      : PV.patientY + (PV.patientSize - PV.routeSize);
+    let medNumber = 1;
+
+    for (const group of grouped) {
+      const r = pdfToCss(PV.zoneLeft, currentY, PV.routeSize);
+      const label = `Uso ${group.route}`;
+      html += `<div class="ov-route" style="left:${r.x}px;top:${r.top}px;font-size:${r.fontSize}px;">${escapeHtml(label)}</div>`;
+      currentY -= PV.routeSize + PV.gapAfterRoute;
+
+      for (const item of group.items) {
+        const m = pdfToCss(PV.zoneLeft, currentY, PV.medSize);
+        const m2 = pdfToCss(PV.medIndentX, currentY - PV.medLineHeight, PV.medSize);
+        const med = item.medication;
+        const presShort = window.PdfOverlay.presentationShort(med.presentation);
+        const freq = window.PdfOverlay.frequencyString(item.params.dosesPerDay);
+        const line1Prefix = `${medNumber}) ${med.name} ${presShort}`;
+        let line2;
+        if (med.fixed_dose) {
+          line2 = `Ofertar ${med.fixed_dose_string} via ${med.route} ${freq} por ${item.params.durationDays} dias`;
+        } else {
+          const v = item.calc.volumePerDoseMl;
+          const vol = v != null && !isNaN(v) ? v.toFixed(1).replace('.', ',') : '—';
+          line2 = `Ofertar ${vol}ml via ${med.route} ${freq} por ${item.params.durationDays} dias`;
+        }
+        html += `<div class="ov-med1" style="left:${m.x}px;top:${m.top}px;font-size:${m.fontSize}px;"><span>${escapeHtml(line1Prefix)}</span><span class="ov-dashes" aria-hidden="true"></span></div>`;
+        html += `<div class="ov-med2" style="left:${m2.x}px;top:${m2.top}px;font-size:${m2.fontSize}px;">${escapeHtml(line2)}</div>`;
+        currentY -= 2 * PV.medLineHeight + PV.gapBetweenMeds;
+        medNumber += 1;
+      }
+    }
+
+    el.previewOverlay.innerHTML = html;
   }
 
   function groupSelectedByRoute(items) {
@@ -620,6 +690,12 @@
     bindNewPrescription();
     await loadCatalog();
     render();
+    // Template render is async; overlay re-renders when ready.
+    renderTemplateToCanvas().catch((e) => {
+      console.error('Template render failed', e);
+      if (el.previewStatus) el.previewStatus.textContent = 'erro carregando template';
+    });
+    window.addEventListener('resize', () => renderOverlay());
   }
 
   document.addEventListener('DOMContentLoaded', init);
