@@ -185,6 +185,35 @@ html, body {
 .med-list .med-name { font-weight: 500; }
 .med-list .med-pres { font-size: 0.85rem; color: var(--text-muted); }
 .med-list .med-cat { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; }
+.med-row { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
+.med-info { display: flex; flex-direction: column; gap: 0.1rem; flex: 1; min-width: 0; }
+
+/* Circular info button — opens taketomo at the medication's page */
+.info-btn, .info-btn-sel {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+  border-radius: 50%;
+  border: 1.5px solid var(--primary);
+  background: var(--surface);
+  color: var(--primary);
+  font-style: italic;
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 0.85rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+}
+.info-btn:hover, .info-btn-sel:hover {
+  background: var(--primary);
+  color: #fff;
+}
+.info-btn-sel { min-height: 36px; height: 36px; width: 36px; min-width: 36px; font-size: 1rem; }
 
 /* ── Selected medications list ─────────────────────────────────────── */
 .selected-list { list-style: none; margin: 0; padding: 0; }

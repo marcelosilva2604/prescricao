@@ -7,7 +7,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Prescrição Pediátrica</title>
-  <link rel="stylesheet" href="./style.css?v=12">
+  <link rel="stylesheet" href="./style.css?v=13">
 </head>
 <body>
   <header class="topbar">
@@ -83,6 +83,30 @@
     </div>
     <div class="modal-body">
       <div id="ftFixedNotice" style="display:none;"></div>
+      <div class="field" id="ftPresentationField" style="display:none;">
+        <label for="ftPresentation">Apresentação</label>
+        <input id="ftPresentation" type="text" placeholder="Ex: 250mg/5ml suspensão oral">
+      </div>
+      <div class="field-row" id="ftConcRouteRow" style="display:none;">
+        <div class="field">
+          <label for="ftConcentration">Concentração (mg/ml)</label>
+          <input id="ftConcentration" type="number" step="0.01" min="0" inputmode="decimal">
+        </div>
+        <div class="field">
+          <label for="ftRoute">Via</label>
+          <select id="ftRoute">
+            <option value="Oral">Oral</option>
+            <option value="Inalatório">Inalatório</option>
+            <option value="Tópico">Tópico</option>
+            <option value="Sublingual">Sublingual</option>
+            <option value="Retal">Retal</option>
+            <option value="Nasal">Nasal</option>
+            <option value="Oftálmica">Oftálmica</option>
+            <option value="Otológica">Otológica</option>
+            <option value="Outro">Outro</option>
+          </select>
+        </div>
+      </div>
       <div class="field" id="ftDoseField">
         <label for="ftDose">Dose (mg/kg/dia)</label>
         <input id="ftDose" type="number" step="0.1" min="0" inputmode="decimal">
@@ -139,7 +163,7 @@
   </script>
 
   <!-- ── App scripts ───────────────────────────────────────────────── -->
-  <script src="./pdf-overlay.js?v=12"></script>
-  <script src="./app.js?v=12"></script>
+  <script src="./pdf-overlay.js?v=13"></script>
+  <script src="./app.js?v=13"></script>
 </body>
 </html>

@@ -7,6 +7,11 @@
 
   const ROUTE_ORDER = ['Oral', 'Inalatório', 'Tópico', 'Outro'];
 
+  // Taketomo handbook PDF — served from repo root (under 100 MB after compression).
+  // The #page=N anchor opens the browser PDF viewer at the right page.
+  const TAKETOMO_URL = './taketomo.pdf';
+  const SEARCH_RESULT_CAP = 50;
+
   const state = {
     medications: [],
     selected: [],
@@ -45,6 +50,11 @@
     el.ftDoseField = document.getElementById('ftDoseField');
     el.ftMaxField = document.getElementById('ftMaxField');
     el.ftFixedNotice = document.getElementById('ftFixedNotice');
+    el.ftPresentation = document.getElementById('ftPresentation');
+    el.ftConcentration = document.getElementById('ftConcentration');
+    el.ftRoute = document.getElementById('ftRoute');
+    el.ftPresentationField = document.getElementById('ftPresentationField');
+    el.ftConcRouteRow = document.getElementById('ftConcRouteRow');
     el.ftCancel = document.getElementById('ftCancel');
     el.ftConfirm = document.getElementById('ftConfirm');
     el.maxDoseModal = document.getElementById('maxDoseModal');
@@ -72,14 +82,30 @@
 
   function renderMedicationOptions(query) {
     const q = query.trim().toLowerCase();
-    const filtered = state.medications.filter((m) => {
-      if (!q) return true;
-      return (
-        m.name.toLowerCase().includes(q) ||
-        (m.category && m.category.toLowerCase().includes(q)) ||
-        (m.presentation && m.presentation.toLowerCase().includes(q))
-      );
-    });
+    if (!q) {
+      const n = state.medications.length;
+      el.medicationList.innerHTML = `<li class="empty">Digite para buscar entre ${n} medicamentos.</li>`;
+      el.addMedBtn.disabled = true;
+      el.medicationSearch.dataset.selectedId = '';
+      return;
+    }
+    // Rank: curated entries first, then taketomo refs, both sub-ranked by prefix match then substring.
+    const filtered = [];
+    for (const m of state.medications) {
+      const name = m.name.toLowerCase();
+      const cat = (m.category || '').toLowerCase();
+      const pres = (m.presentation || '').toLowerCase();
+      let score;
+      if (name.startsWith(q)) score = 0;
+      else if (name.includes(q)) score = 1;
+      else if (cat.includes(q)) score = 2;
+      else if (pres.includes(q)) score = 3;
+      else continue;
+      // Curated entries promote one tier.
+      if (m.source === 'curated') score -= 0.5;
+      filtered.push({ m, score });
+    }
+    filtered.sort((a, b) => a.score - b.score);
     if (!filtered.length) {
       el.medicationList.innerHTML =
         '<li class="empty">Nenhuma medicação encontrada.</li>';
@@ -87,16 +113,35 @@
       el.medicationSearch.dataset.selectedId = '';
       return;
     }
-    el.medicationList.innerHTML = filtered
-      .map(
-        (m) => `
-        <li role="option" data-id="${m.id}">
-          <span class="med-name">${escapeHtml(m.name)}</span>
-          <span class="med-pres">${escapeHtml(m.presentation)}</span>
-          <span class="med-cat">${escapeHtml(m.category || '')}</span>
-        </li>`
-      )
+    const limited = filtered.slice(0, SEARCH_RESULT_CAP);
+    let html = limited
+      .map(({ m }) => {
+        const presText = m.presentation || (m.source === 'taketomo' ? 'referência Taketomo — configure ao adicionar' : '');
+        const ipage = m.taketomo_page
+          ? `<button type="button" class="info-btn" data-page="${m.taketomo_page}" title="Abrir Taketomo p. ${m.taketomo_page}" aria-label="Abrir Taketomo página ${m.taketomo_page}">i</button>`
+          : '';
+        return `
+          <li role="option" data-id="${escapeHtml(m.id)}">
+            <div class="med-row">
+              <div class="med-info">
+                <span class="med-name">${escapeHtml(m.name)}</span>
+                <span class="med-pres">${escapeHtml(presText)}</span>
+                <span class="med-cat">${escapeHtml(m.category || '')}</span>
+              </div>
+              ${ipage}
+            </div>
+          </li>`;
+      })
       .join('');
+    if (filtered.length > SEARCH_RESULT_CAP) {
+      html += `<li class="empty">+${filtered.length - SEARCH_RESULT_CAP} resultados — refine a busca.</li>`;
+    }
+    el.medicationList.innerHTML = html;
+  }
+
+  function openTaketomo(page) {
+    if (!page) return;
+    window.open(`${TAKETOMO_URL}#page=${page}`, '_blank', 'noopener');
   }
 
   function escapeHtml(s) {
@@ -213,6 +258,12 @@
       renderMedicationOptions(e.target.value);
     });
     el.medicationList.addEventListener('click', (e) => {
+      const infoBtn = e.target.closest('.info-btn');
+      if (infoBtn) {
+        e.stopPropagation();
+        openTaketomo(parseInt(infoBtn.dataset.page, 10));
+        return;
+      }
       const li = e.target.closest('li[data-id]');
       if (!li) return;
       [...el.medicationList.querySelectorAll('li.active')].forEach((x) =>
@@ -299,7 +350,18 @@
   function openFirstTimeModal(med, params, editingIndex) {
     state.pendingMedicationId = med.id;
     state.editingIndex = editingIndex == null ? null : editingIndex;
-    el.firstTimeTitle.textContent = med.name + ' — ' + med.presentation;
+    el.firstTimeTitle.textContent = med.presentation
+      ? `${med.name} — ${med.presentation}`
+      : med.name;
+
+    // Reference-only medications (from taketomo) need presentation/concentration/route.
+    const showReferenceFields = !med.data_complete && !med.fixed_dose;
+    el.ftPresentationField.style.display = !med.data_complete ? '' : 'none';
+    el.ftConcRouteRow.style.display = showReferenceFields ? '' : 'none';
+    el.ftPresentation.value = med.presentation || '';
+    el.ftConcentration.value = med.concentration_mg_per_ml || '';
+    el.ftRoute.value = med.route || 'Oral';
+
     if (med.fixed_dose) {
       el.ftDoseField.style.display = 'none';
       el.ftMaxField.style.display = 'none';
@@ -339,11 +401,29 @@
     el.ftConfirm.addEventListener('click', (e) => {
       e.preventDefault();
       const id = state.pendingMedicationId;
-      const med = state.medications.find((m) => m.id === id);
-      if (!med) {
+      const catalogMed = state.medications.find((m) => m.id === id);
+      if (!catalogMed) {
         closeFirstTimeModal();
         return;
       }
+
+      // For reference-only meds, enrich with user-supplied presentation/concentration/route.
+      let med = catalogMed;
+      if (!catalogMed.data_complete && !catalogMed.fixed_dose) {
+        med = {
+          ...catalogMed,
+          presentation: el.ftPresentation.value.trim() || catalogMed.presentation,
+          concentration_mg_per_ml: parseFloat(el.ftConcentration.value) || catalogMed.concentration_mg_per_ml,
+          route: el.ftRoute.value || catalogMed.route,
+        };
+      } else if (!catalogMed.data_complete) {
+        // Fixed-dose reference: still let user set presentation/route.
+        med = {
+          ...catalogMed,
+          presentation: el.ftPresentation.value.trim() || catalogMed.presentation,
+        };
+      }
+
       const params = {
         doseMgPerKgPerDay: med.fixed_dose
           ? 0
@@ -357,7 +437,8 @@
       const editingIndex = state.editingIndex;
       closeFirstTimeModal();
       if (editingIndex != null) {
-        // Edit in place — no max-dose modal escalation, user is already reviewing.
+        // Edit in place — replace the medication ref so updated presentation/route stick.
+        state.selected[editingIndex].medication = med;
         state.selected[editingIndex].params = params;
         state.selected[editingIndex].calc = computeCalc(state.selected[editingIndex]);
         state.validatedIds.add(med.id);
@@ -442,6 +523,7 @@
                 <div class="sel-summary">${escapeHtml(summary)}</div>
               </div>
               <div class="sel-actions">
+                ${med.taketomo_page ? `<button type="button" data-action="info" data-page="${med.taketomo_page}" class="btn-sm info-btn-sel" title="Taketomo p. ${med.taketomo_page}" aria-label="Abrir Taketomo">i</button>` : ''}
                 <button type="button" data-action="edit" data-index="${idx}" class="btn-sm">Editar</button>
                 <button type="button" data-action="remove" data-index="${idx}" class="btn-sm btn-danger" aria-label="Remover ${escapeHtml(med.name)}">×</button>
               </div>
@@ -469,6 +551,10 @@
     el.selectedList.addEventListener('click', (e) => {
       const btn = e.target.closest('button[data-action]');
       if (!btn) return;
+      if (btn.dataset.action === 'info') {
+        openTaketomo(parseInt(btn.dataset.page, 10));
+        return;
+      }
       const idx = parseInt(btn.dataset.index, 10);
       if (btn.dataset.action === 'remove') {
         state.selected.splice(idx, 1);
